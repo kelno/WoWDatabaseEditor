@@ -7,7 +7,7 @@ namespace WDE.TrinityMySqlDatabase.Models
     public class MySqlGameEvent : IGameEvent
     {
         [PrimaryKey]
-        [Column(Name = "entry")]
+        [Column(Name = "eventEntry")]
         public ushort Entry { get; set; }
 
         [Column(Name = "description")]
