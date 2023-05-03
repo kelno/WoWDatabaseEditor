@@ -1,7 +1,7 @@
 {
   "id": "game_event_npc_vendor",
   "compatibility": [
-    "TrinityWrath"
+    "TrinityWrath", "Sunstrider"
   ],
   "name": "Game Event Npc Vendor",
   "single_solution_name": "Game Event Npc Vendor",

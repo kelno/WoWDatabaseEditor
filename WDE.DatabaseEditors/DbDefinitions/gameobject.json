@@ -1,7 +1,7 @@
 {
   "id": "gameobject",
   "compatibility": [
-    "TrinityWrath"
+    "TrinityWrath", "Sunstrider"
   ],
   "name": "Gameobject",
   "description": "The table contains all gameobject spawns",

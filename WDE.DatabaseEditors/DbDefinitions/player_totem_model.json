@@ -1,7 +1,7 @@
 {
   "id": "player_totem_model",
   "compatibility": [
-    "TrinityWrath"
+    "TrinityWrath", "Sunstrider"
   ],
   "name": "Player Totem Model",
   "single_solution_name": "Player Totem Model",

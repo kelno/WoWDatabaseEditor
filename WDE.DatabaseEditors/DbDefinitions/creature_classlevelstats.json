@@ -1,7 +1,7 @@
 {
   "id": "creature_classlevelstats",
   "compatibility": [
-    "TrinityWrath"
+    "TrinityWrath", "Sunstrider"
   ],
   "name": "Creature Classlevelstats",
   "single_solution_name": "Creature Classlevelstats",

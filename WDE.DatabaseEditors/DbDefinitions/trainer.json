@@ -1,7 +1,7 @@
 {
   "id": "trainer",
   "compatibility": [
-    "TrinityWrath", "TrinityCata"
+    "TrinityWrath", "Sunstrider", "TrinityCata"
   ],
   "name": "Trainer",
   "single_solution_name": "Trainer Table",

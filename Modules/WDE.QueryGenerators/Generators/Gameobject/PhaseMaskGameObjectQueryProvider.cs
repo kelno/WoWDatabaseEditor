@@ -6,7 +6,7 @@ using WDE.SqlQueryGenerator;
 namespace WDE.QueryGenerators.Generators.Gameobject;
 
 [AutoRegister]
-[RequiresCore("CMaNGOS-WoTLK", "Azeroth", "TrinityWrath")]
+[RequiresCore("CMaNGOS-WoTLK", "Azeroth", "TrinityWrath", "Sunstrider")]
 internal class PhaseMaskGameObjectQueryProvider : IInsertQueryProvider<GameObjectSpawnModelEssentials>
 {
     public IQuery Insert(GameObjectSpawnModelEssentials t)

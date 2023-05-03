@@ -1,7 +1,7 @@
 {
   "id": "lfg_dungeon_template",
   "compatibility": [
-    "TrinityWrath"
+    "TrinityWrath", "Sunstrider"
   ],
   "name": "LFG Dungeon Template",
   "single_solution_name": "LFG Dungeon Template",

@@ -1,7 +1,7 @@
 {
   "id": "gossip_menu_option",
   "compatibility": [
-    "TrinityWrath", "Azeroth", "TrinityCata"
+    "TrinityWrath", "Sunstrider", "Azeroth", "TrinityCata"
   ],
   "name": "Gossip Menu Option",
   "single_solution_name": "{key} gossip menu options",

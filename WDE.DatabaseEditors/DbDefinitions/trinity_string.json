@@ -1,7 +1,7 @@
 {
   "id": "trinity_string",
   "compatibility": [
-    "TrinityWrath", "TrinityCata"
+    "TrinityWrath", "Sunstrider", "TrinityCata"
   ],
   "name": "Trinity String",
   "single_solution_name": "Trinity String Table",

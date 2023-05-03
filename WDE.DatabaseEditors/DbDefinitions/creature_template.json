@@ -1,6 +1,6 @@
 ﻿{
   "id": "creature_template",
-  "compatibility": ["TrinityWrath"],
+  "compatibility": ["TrinityWrath", "Sunstrider"],
   "name": "Creature Template",
   "description": "Edit existing creature templates",
   "table_name": "creature_template",

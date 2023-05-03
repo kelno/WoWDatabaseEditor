@@ -1,7 +1,7 @@
 {
   "id": "item_enchantment_template",
   "compatibility": [
-    "TrinityWrath"
+    "TrinityWrath", "Sunstrider"
   ],
   "name": "Item Enchantment Template",
   "single_solution_name": "Item Enchantment Template",

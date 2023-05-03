@@ -1,7 +1,7 @@
 {
   "id": "waypoints",
   "compatibility": [
-    "TrinityWrath"
+    "TrinityWrath", "Sunstrider"
   ],
   "name": "Waypoints",
   "single_solution_name": "Waypoints",

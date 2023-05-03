@@ -1,7 +1,7 @@
 {
   "id": "gameobject_queststarter",
   "compatibility": [
-    "TrinityWrath", "Azeroth", "TrinityMaster", "TrinityCata"
+    "TrinityWrath", "Sunstrider", "Azeroth", "TrinityMaster", "TrinityCata"
   ],
   "name": "Game object Quest Starter",
   "single_solution_name": "Game object {name} quest starter",

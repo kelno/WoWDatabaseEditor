@@ -1,7 +1,7 @@
 {
   "id": "creature_movement_override",
   "compatibility": [
-    "TrinityWrath"
+    "TrinityWrath", "Sunstrider"
   ],
   "name": "Creature Movement Override",
   "description": "Override default creature movement per guid",

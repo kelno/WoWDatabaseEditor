@@ -498,7 +498,7 @@
     {
         "id": 29,
         "name": "SMART_TARGET_VEHICLE_ACCESSORY",
-        "tags": ["TrinityWrath", "TrinityMaster", "TrinityCata"],
+      "tags": [ "TrinityWrath", "TrinityMaster", "TrinityCata", "Sunstrider" ],
         "parameters": [
             {
                 "type": "Parameter",

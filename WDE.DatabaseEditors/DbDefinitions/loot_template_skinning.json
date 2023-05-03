@@ -1,7 +1,7 @@
 {
   "id": "skinning_loot_template",
   "compatibility": [
-    "TrinityWrath",
+    "TrinityWrath", "Sunstrider",
     "Azeroth",
     "TrinityMaster",
     "TrinityCata"

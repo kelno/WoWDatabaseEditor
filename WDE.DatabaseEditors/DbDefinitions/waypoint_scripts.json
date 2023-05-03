@@ -1,7 +1,7 @@
 {
   "id": "waypoint_scripts",
   "compatibility": [
-    "TrinityWrath"
+    "TrinityWrath", "Sunstrider"
   ],
   "name": "Waypoint Scripts",
   "single_solution_name": "Waypoint Scripts Table",

@@ -1,7 +1,7 @@
 {
   "id": "player_factionchange_items",
   "compatibility": [
-    "TrinityWrath"
+    "TrinityWrath", "Sunstrider"
   ],
   "name": "Player Faction Change Items",
   "single_solution_name": "Player Faction Change Items",

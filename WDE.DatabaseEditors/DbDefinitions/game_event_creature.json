@@ -1,7 +1,7 @@
 {
   "id": "game_event_creature",
   "compatibility": [
-    "TrinityWrath", "TrinityCata"
+    "TrinityWrath", "Sunstrider", "TrinityCata"
   ],
   "name": "Game Event Creature",
   "single_solution_name": "Game Event Creature",

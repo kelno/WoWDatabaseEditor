@@ -1,7 +1,7 @@
 {
   "id": "spell_area",
   "compatibility": [
-    "TrinityWrath", "Azeroth"
+    "TrinityWrath", "Sunstrider", "Azeroth"
   ],
   "name": "Spell area",
   "description": "Spell area table is responsible for applying auras in specific areas or zones",

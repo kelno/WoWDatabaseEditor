@@ -1,7 +1,7 @@
 {
   "id": "transports",
   "compatibility": [
-    "TrinityWrath"
+    "TrinityWrath", "Sunstrider"
   ],
   "name": "Transports",
   "single_solution_name": "Transports Table",

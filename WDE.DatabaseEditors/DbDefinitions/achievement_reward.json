@@ -1,7 +1,7 @@
 {
   "id": "achievement_reward",
   "compatibility": [
-    "TrinityWrath"
+    "TrinityWrath", "Sunstrider"
   ],
   "name": "Achievement Reward",
   "single_solution_name": "Achievement Reward",

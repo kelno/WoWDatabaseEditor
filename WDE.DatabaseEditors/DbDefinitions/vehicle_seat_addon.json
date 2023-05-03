@@ -1,7 +1,7 @@
 {
   "id": "vehicle_seat_addon",
   "compatibility": [
-    "TrinityWrath"
+    "TrinityWrath", "Sunstrider"
   ],
   "name": "Vehicle Seat Addon",
   "single_solution_name": "Vehicle Seat Addon Table",

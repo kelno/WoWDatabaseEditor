@@ -1,7 +1,7 @@
 {
   "id": "pet_levelstats",
   "compatibility": [
-    "TrinityWrath"
+    "TrinityWrath", "Sunstrider"
   ],
   "name": "Pet Level stats",
   "single_solution_name": "Pet Level stats",

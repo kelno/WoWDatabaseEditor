@@ -1,7 +1,7 @@
 {
   "id": "reputation_spillover_template",
   "compatibility": [
-    "TrinityWrath"
+    "TrinityWrath", "Sunstrider"
   ],
   "name": "Reputation Spillover Template",
   "single_solution_name": "Reputation Spillover Template Table",

@@ -1,7 +1,7 @@
 {
   "id": "spell_implicit_target",
   "compatibility": [
-    "TrinityWrath", "TrinityMaster", "Azeroth", "TrinityCata"
+    "TrinityWrath", "Sunstrider", "TrinityMaster", "Azeroth", "TrinityCata"
   ],
   "name": "Spell Implicit Target conditions",
   "single_solution_name": "{name} implicit target",

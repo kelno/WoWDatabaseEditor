@@ -1,7 +1,7 @@
 {
   "id": "player_classlevelstats",
   "compatibility": [
-    "TrinityWrath"
+    "TrinityWrath", "Sunstrider"
   ],
   "name": "Player class-level stats",
   "description": "This table holds information on the base health and mana of characters when they level up. Each class has different level stats.",

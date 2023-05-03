@@ -1942,7 +1942,7 @@
         }
       }
     ],
-    "tags": ["TrinityWrath"],
+    "tags": [ "TrinityWrath", "Sunstrider" ],
     "name": "SMART_EVENT_GOSSIP_HELLO_TC_WRATH",
     "description": "On player opened gossip",
     "name_readable": "On gossip hello",
@@ -2132,7 +2132,10 @@
       "Creature"
     ],
     "tags": [
-      "Azeroth", "TrinityWrath", "TrinityMaster"
+      "Azeroth",
+      "TrinityWrath",
+      "TrinityMaster",
+      "Sunstrider"
     ],
     "is_timed": true,
     "name": "SMART_EVENT_FRIENDLY_HEALTH_PCT",
@@ -2340,7 +2343,7 @@
       "Gameobject"
     ],
     "name": "SMART_EVENT_SUMMONED_UNIT_DIES",
-    "tags": ["TrinityWrath"],
+    "tags": [ "TrinityWrath", "Sunstrider" ],
     "parameters": [
       {
         "type": "CreatureParameter",
@@ -2377,7 +2380,7 @@
       "Gameobject"
     ],
     "name": "SMART_EVENT_ON_SPELL_CAST",
-    "tags": [ "TrinityWrath", "TrinityMaster" ],
+    "tags": [ "TrinityWrath", "TrinityMaster", "Sunstrider" ],
     "parameters": [
       {
         "type": "SpellParameter",
@@ -2416,7 +2419,7 @@
       "Gameobject"
     ],
     "name": "SMART_EVENT_ON_SPELL_FAILED",
-    "tags": [ "TrinityWrath", "TrinityMaster" ],
+    "tags": [ "TrinityWrath", "TrinityMaster", "Sunstrider" ],
     "parameters": [
       {
         "type": "SpellParameter",
@@ -2455,7 +2458,7 @@
       "Gameobject"
     ],
     "name": "SMART_EVENT_ON_SPELL_START",
-    "tags": [ "TrinityWrath", "TrinityMaster" ],
+    "tags": [ "TrinityWrath", "TrinityMaster", "Sunstrider" ],
     "parameters": [
       {
         "type": "SpellParameter",

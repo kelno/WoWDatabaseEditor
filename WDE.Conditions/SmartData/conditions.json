@@ -763,7 +763,7 @@
 
 	{
 		"id": 48,
-		"tags": ["Azeroth", "TrinityWrath"],
+		"tags": ["Azeroth", "TrinityWrath", "Sunstrider"],
 		"name": "CONDITION_QUEST_OBJECTIVE_PROGRESS",
 		"name_readable": "Has quest objective progress",
 		"parameters": [
@@ -821,7 +821,7 @@
 
 	{
 		"id": 50,
-		"tags": ["TrinityWrath"],
+		"tags": [ "TrinityWrath", "Sunstrider" ],
 		"name": "CONDITION_GAMEMASTER",
 		"name_readable": "Is gamemaster",
 		"parameters": [

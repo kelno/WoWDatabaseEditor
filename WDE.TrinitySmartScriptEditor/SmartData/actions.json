@@ -244,7 +244,7 @@
     {
         "id": 12,
         "name": "SMART_ACTION_SUMMON_CREATURE_TC_WRATH",
-        "tags": ["TrinityWrath"],
+        "tags": ["TrinityWrath", "Sunstrider" ],
         "parameters": [
             {
                 "type": "CreatureParameter",
@@ -461,7 +461,7 @@
     {
         "id": 18,
         "name": "SMART_ACTION_SET_UNIT_FLAG_HIDDEN",
-        "tags": ["TrinityWrath"],
+        "tags": ["TrinityWrath", "Sunstrider" ],
         "parameters": [
             {
                 "type": "UnitFlagParameter",
@@ -507,7 +507,7 @@
     {
         "id": 19,
         "name": "SMART_ACTION_REMOVE_UNIT_FLAG_HIDDEN",
-        "tags": ["TrinityWrath"],
+        "tags": ["TrinityWrath", "Sunstrider" ],
         "parameters": [
             {
                 "type": "UnitFlagParameter",
@@ -620,7 +620,7 @@
     {
         "id": 24,
         "name": "SMART_ACTION_EVADE",
-        "tags": ["TrinityWrath", "TrinityMaster", "TrinityCata"],
+        "tags": ["TrinityWrath", "Sunstrider" , "TrinityMaster", "TrinityCata"],
         "description": "{source}: Evade",
         "name_readable": "Evade",
         "target_is_source": false,
@@ -655,7 +655,7 @@
     {
         "id": 26,
         "name": "SMART_ACTION_CALL_GROUPEVENTHAPPENS",
-        "tags": ["TrinityWrath", "TrinityMaster", "TrinityCata"],
+        "tags": ["TrinityWrath", "Sunstrider" , "TrinityMaster", "TrinityCata"],
         "parameters": [
             {
                 "type": "QuestParameter",
@@ -912,7 +912,7 @@
     {
         "id": 38,
         "name": "SMART_ACTION_SET_IN_COMBAT_WITH_ZONE_335_CATA",
-        "tags": ["TrinityWrath", "TrinityCata", "TrinityMaster"],
+        "tags": ["TrinityWrath", "Sunstrider" , "TrinityCata", "TrinityMaster"],
         "description": "{target}: Set in combat with current zone",
         "name_readable": "Set in combat with zone",
         "implicit_source": "SMART_TARGET_SELF",
@@ -931,7 +931,7 @@
     {
         "id": 39,
         "name": "SMART_ACTION_CALL_FOR_HELP_335_CATA",
-        "tags": ["TrinityCata", "TrinityWrath", "TrinityMaster"],
+        "tags": ["TrinityCata", "TrinityWrath", "Sunstrider" , "TrinityMaster"],
         "parameters": [
             {
                 "type": "Parameter",
@@ -1038,7 +1038,7 @@
     {
         "id": 44,
         "name": "SMART_ACTION_SET_INGAME_PHASE_MASK",
-        "tags": ["TrinityWrath", "Azeroth"],
+        "tags": ["TrinityWrath", "Sunstrider" , "Azeroth"],
         "parameters": [
             {
                 "type": "PhaseMaskParameter",
@@ -1104,7 +1104,7 @@
     },
     {
         "id": 46,
-        "tags": ["TrinityWrath", "TrinityCata"],
+        "tags": ["TrinityWrath", "Sunstrider" , "TrinityCata"],
         "name": "SMART_ACTION_ATTACK_STOP",
         "description": "{source}: Stop attacking",
         "help": "This action is actually stopping the entire attack procedure. It requires a passive react state to prevent a immediate AttackStart ai reaction",
@@ -1257,7 +1257,7 @@
     {
         "id": 53,
         "name": "SMART_ACTION_WP_START_TC_WRATH",
-        "tags": ["TrinityWrath"],
+        "tags": ["TrinityWrath", "Sunstrider" ],
         "parameters": [
             {
                 "type": "SwitchParameter",
@@ -1434,7 +1434,7 @@
     {
         "id": 59,
         "name": "SMART_ACTION_SET_RUN",
-        "tags": ["TrinityWrath", "TrinityMaster", "TrinityCata"],
+        "tags": ["TrinityWrath", "Sunstrider" , "TrinityMaster", "TrinityCata"],
         "parameters": [
             {
                 "type": "SwitchParameter",
@@ -1473,7 +1473,7 @@
     {
         "id": 60,
         "name": "SMART_ACTION_SET_DISABLE_GRAVITY",
-        "tags": ["TrinityWrath", "TrinityMaster", "TrinityCata"],
+        "tags": ["TrinityWrath", "Sunstrider" , "TrinityMaster", "TrinityCata"],
         "parameters": [
             {
                 "type": "BoolParameter",
@@ -1591,7 +1591,7 @@
     {
         "id": 66,
         "name": "SMART_ACTION_SET_ORIENTATION",
-        "tags": ["TrinityWrath", "TrinityCata", "TrinityMaster"],
+        "tags": ["TrinityWrath", "Sunstrider" , "TrinityCata", "TrinityMaster"],
         "description": "{source}: {targetid:choose(1|8):Set orientation to home position orientation|Set orientation to [s]{target_o}[/s]|Look at {target}}",
         "name_readable": "Set orientation",
         "target_is_source": false,
@@ -1710,7 +1710,7 @@
     {
         "id": 70,
         "name": "SMART_ACTION_ENABLE_TEMP_GOBJ",
-        "tags": ["TrinityWrath", "TrinityCata", "TrinityMaster"],
+        "tags": ["TrinityWrath", "Sunstrider" , "TrinityCata", "TrinityMaster"],
         "parameters": [
             {
                 "type": "Parameter",
@@ -1827,7 +1827,7 @@
     {
         "id": 75,
         "name": "SMART_ACTION_ADD_AURA_WRATH",
-        "tags": ["TrinityWrath"],
+        "tags": ["TrinityWrath", "Sunstrider" ],
         "parameters": [
             {
                 "type": "SpellParameter",
@@ -2250,7 +2250,7 @@
     {
         "id": 95,
         "name": "SMART_ACTION_ADD_DYNAMIC_FLAG_HIDDEN",
-        "tags": ["TrinityWrath"],
+        "tags": ["TrinityWrath", "Sunstrider" ],
         "parameters": [
             {
                 "type": "DynamicFlagsParameter",
@@ -2280,7 +2280,7 @@
     {
         "id": 96,
         "name": "SMART_ACTION_REMOVE_DYNAMIC_FLAG_HIDDEN",
-        "tags": ["TrinityWrath"],
+        "tags": ["TrinityWrath", "Sunstrider" ],
         "parameters": [
             {
                 "type": "DynamicFlagsParameter",
@@ -2620,7 +2620,7 @@
     {
         "id": 114,
         "name": "SMART_ACTION_MOVE_OFFSET",
-        "tags": ["TrinityWrath", "TrinityCata", "TrinityMaster"],
+        "tags": ["TrinityWrath", "Sunstrider" , "TrinityCata", "TrinityMaster"],
         "description": "{source}: Move forward by {target_x}, left by {target_y}, up by {target_z} yards",
         "name_readable": "Move by offset",
         "target_types": ["Creature"],
@@ -2854,7 +2854,7 @@
     {
         "id": 127,
         "name": "SMART_ACTION_PAUSE_MOVEMENT",
-        "tags": ["TrinityWrath", "TrinityMaster"],
+        "tags": ["TrinityWrath", "Sunstrider" , "TrinityMaster"],
         "parameters": [
             {
                 "type": "Parameter",
@@ -3023,7 +3023,7 @@
     {
         "id": 133,
         "name": "SMART_ACTION_RESPAWN_BY_SPAWNID",
-        "tags": ["TrinityWrath", "TrinityCata", "TrinityMaster"],
+        "tags": ["TrinityWrath", "Sunstrider" , "TrinityCata", "TrinityMaster"],
         "parameters": [
             {
                 "type": "SwitchParameter",
@@ -3046,7 +3046,7 @@
     {
         "id": 134,
         "name": "SMART_ACTION_INVOKER_CAST",
-        "tags": ["TrinityWrath", "TrinityCata", "TrinityMaster"],
+        "tags": ["TrinityWrath", "Sunstrider" , "TrinityCata", "TrinityMaster"],
         "parameters": [
             {
                 "type": "SpellParameter",
@@ -3080,7 +3080,7 @@
     {
         "id": 135,
         "name": "SMART_ACTION_PLAY_CINEMATIC",
-        "tags": ["TrinityWrath", "TrinityCata"],
+        "tags": ["TrinityWrath", "Sunstrider" , "TrinityCata"],
         "parameters": [
             {
                 "type": "Parameter",
@@ -3095,7 +3095,7 @@
     {
         "id": 136,
         "name": "SMART_ACTION_SET_MOVEMENT_SPEED",
-        "tags": ["TrinityWrath", "TrinityCata", "TrinityMaster"],
+        "tags": ["TrinityWrath", "Sunstrider" , "TrinityCata", "TrinityMaster"],
         "parameters": [
             {
                 "type": "SwitchParameter",
@@ -3152,7 +3152,7 @@
     {
         "id": 138,
         "name": "SMART_ACTION_OVERRIDE_LIGHT",
-        "tags": ["TrinityWrath", "TrinityCata", "TrinityMaster"],
+        "tags": ["TrinityWrath", "Sunstrider" , "TrinityCata", "TrinityMaster"],
         "parameters": [
             {
                 "type": "ZoneAreaParameter",
@@ -3178,7 +3178,7 @@
     {
         "id": 139,
         "name": "SMART_ACTION_OVERRIDE_WEATHER",
-        "tags": ["TrinityWrath", "TrinityCata", "TrinityMaster"],
+        "tags": ["TrinityWrath", "Sunstrider" , "TrinityCata", "TrinityMaster"],
         "parameters": [
             {
                 "type": "ZoneAreaParameter",
@@ -3216,7 +3216,7 @@
     {
         "id": 141,
         "name": "SMART_ACTION_SET_HOVER",
-        "tags": ["TrinityWrath", "TrinityCata"],
+        "tags": ["TrinityWrath", "Sunstrider" , "TrinityCata"],
         "parameters": [
             {
                 "type": "BoolParameter",
@@ -3231,7 +3231,7 @@
     {
         "id": 142,
         "name": "SMART_ACTION_SET_HEALTH_PCT",
-        "tags": ["TrinityWrath", "TrinityMaster"],
+        "tags": ["TrinityWrath", "Sunstrider" , "TrinityMaster"],
         "parameters": [
             {
                 "type": "Parameter",
@@ -3261,7 +3261,7 @@
     {
         "id": 144,
         "name": "SMART_ACTION_SET_IMMUNE_PC",
-        "tags": ["TrinityWrath", "TrinityMaster"],
+        "tags": ["TrinityWrath", "Sunstrider" , "TrinityMaster"],
         "parameters": [
             {
                 "type": "BoolParameter",
@@ -3276,7 +3276,7 @@
     {
         "id": 145,
         "name": "SMART_ACTION_SET_IMMUNE_NPC",
-        "tags": ["TrinityWrath", "TrinityMaster"],
+        "tags": ["TrinityWrath", "Sunstrider" , "TrinityMaster"],
         "parameters": [
             {
                 "type": "BoolParameter",
@@ -3291,7 +3291,7 @@
     {
         "id": 146,
         "name": "SMART_ACTION_SET_UNINTERACTIBLE",
-        "tags": ["TrinityWrath", "TrinityMaster"],
+        "tags": ["TrinityWrath", "Sunstrider" , "TrinityMaster"],
         "parameters": [
             {
                 "type": "BoolParameter",
@@ -3307,7 +3307,7 @@
     {
         "id": 147,
         "name": "SMART_ACTION_ACTIVATE_GAMEOBJECT",
-        "tags": ["TrinityWrath"],
+        "tags": ["TrinityWrath", "Sunstrider" ],
         "parameters": [
             {
                 "type": "GameObjectActionParameter",

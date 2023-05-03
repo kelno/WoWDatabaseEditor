@@ -1,6 +1,6 @@
 {
   "id": "quest_template",
-  "compatibility": ["TrinityWrath"],
+  "compatibility": ["TrinityWrath", "Sunstrider"],
   "name": "Quest Template",
   "description": "Edit existing quest templates",
   "table_name": "quest_template",

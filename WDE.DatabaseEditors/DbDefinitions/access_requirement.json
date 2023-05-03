@@ -1,7 +1,7 @@
 {
   "id": "access_requirement",
   "compatibility": [
-    "TrinityWrath"
+    "TrinityWrath", "Sunstrider"
   ],
   "name": "Access Requirement",
   "single_solution_name": "Access Requirement",

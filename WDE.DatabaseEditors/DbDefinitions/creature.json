@@ -1,7 +1,7 @@
 {
   "id": "creature",
   "compatibility": [
-    "TrinityWrath"
+    "TrinityWrath", "Sunstrider"
   ],
   "name": "Creature",
   "description": "The table contains all creature spawns",

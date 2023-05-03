@@ -1,7 +1,7 @@
 {
   "id": "quest_conditions",
   "compatibility": [
-    "TrinityWrath", "TrinityMaster", "Azeroth", "TrinityCata"
+    "TrinityWrath", "Sunstrider", "TrinityMaster", "Azeroth", "TrinityCata"
   ],
   "name": "Quest conditions",
   "single_solution_name": "{name} quest conditions",

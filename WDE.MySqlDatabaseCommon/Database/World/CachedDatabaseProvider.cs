@@ -69,7 +69,7 @@ namespace WDE.MySqlDatabaseCommon.Database.World
                 //    Refresh(RefreshCreature);
                 else if (tableName == "gossip_menu")
                     Refresh(RefreshGossipMenu);
-                else if (tableName == "npc_text")
+                else if (tableName == "npc_text" || tableName == "gossip_text")
                     Refresh(RefreshNpcTexts);
                 else if (tableName == creatureTextInsertProvider.TableName)
                     Refresh(RefreshCreatureTexts);

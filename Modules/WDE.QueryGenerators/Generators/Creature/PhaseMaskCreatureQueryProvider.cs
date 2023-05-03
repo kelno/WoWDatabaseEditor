@@ -6,7 +6,7 @@ using WDE.SqlQueryGenerator;
 namespace WDE.QueryGenerators.Generators.Creature;
 
 [AutoRegister]
-[RequiresCore("CMaNGOS-WoTLK", "Azeroth", "TrinityWrath")]
+[RequiresCore("CMaNGOS-WoTLK", "Azeroth", "TrinityWrath", "Sunstrider")]
 internal class PhaseMaskCreatureQueryProvider : IInsertQueryProvider<CreatureSpawnModelEssentials>
 {
     public IQuery Insert(CreatureSpawnModelEssentials t)

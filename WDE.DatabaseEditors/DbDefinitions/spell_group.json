@@ -1,7 +1,7 @@
 {
   "id": "spell_group",
   "compatibility": [
-    "TrinityWrath", "TrinityCata"
+    "TrinityWrath", "Sunstrider", "TrinityCata"
   ],
   "name": "Spell Group",
   "single_solution_name": "Spell Group table",

@@ -1,7 +1,7 @@
 {
   "id": "item_set_names",
   "compatibility": [
-    "TrinityWrath"
+    "TrinityWrath", "Sunstrider"
   ],
   "name": "Item Set Names",
   "single_solution_name": "Item Set Names",

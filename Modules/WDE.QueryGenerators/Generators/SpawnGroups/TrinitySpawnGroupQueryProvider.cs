@@ -6,7 +6,7 @@ using WDE.SqlQueryGenerator;
 namespace WDE.QueryGenerators.Generators.SpawnGroups;
 
 [AutoRegister]
-[RequiresCore("TrinityMaster", "TrinityCata", "TrinityWrath", "AzerothCore")]
+[RequiresCore("TrinityMaster", "TrinityCata", "TrinityWrath", "AzerothCore", "Sunstrider")]
 internal class TrinitySpawnGroupQueryProvider : IInsertQueryProvider<ISpawnGroupTemplate>, IDeleteQueryProvider<ISpawnGroupTemplate>
 {
     public IQuery Insert(ISpawnGroupTemplate template)
