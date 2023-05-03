@@ -185,11 +185,6 @@
           "value_type": "CreatureModelDataParameter"
         },
         {
-          "name": "Equipment Id",
-          "db_column_name": "equipment_id",
-          "value_type": "EquipmentCreatureGuidParameter"
-        },
-        {
           "name": "Current waypoint",
           "db_column_name": "currentwaypoint",
           "value_type": "uint",
