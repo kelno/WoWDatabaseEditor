@@ -2,67 +2,142 @@
 	"SpellEffectIndexParameter": {
 		"isflag": false,
 		"values": {
-			"0": {"name": "EFFECT_0"},
-			"1": {"name": "EFFECT_1"},
-			"2": {"name": "EFFECT_2"}
+			"0": { "name": "EFFECT_0" },
+			"1": { "name": "EFFECT_1" },
+			"2": { "name": "EFFECT_2" }
 		}
 	},
 	"SpellEffectMaskParameter": {
 		"name": "Spell effect masks",
 		"isflag": true,
 		"values": {
-			"0": {"name": "EFFECT_ALL"},
-			"1": {"name": "EFFECT_0"},
-			"2": {"name": "EFFECT_1"},
-			"4": {"name": "EFFECT_2"}
+			"0": { "name": "EFFECT_ALL" },
+			"1": { "name": "EFFECT_0" },
+			"2": { "name": "EFFECT_1" },
+			"4": { "name": "EFFECT_2" }
 		}
 	},
 	"SpellEffectMaskNo0Parameter": {
 		"name": "Spell effect masks",
 		"isflag": true,
 		"values": {
-			"0": {"name": "(invalid)"},
-			"1": {"name": "EFFECT_0"},
-			"2": {"name": "EFFECT_1"},
-			"4": {"name": "EFFECT_2"}
+			"0": { "name": "(invalid)" },
+			"1": { "name": "EFFECT_0" },
+			"2": { "name": "EFFECT_1" },
+			"4": { "name": "EFFECT_2" }
 		}
 	},
 	"AuraEffectModeHandleMaskParameter": {
 		"isflag": true,
 		"name": "Aura effect handle modes",
 		"values": {
-			"0": {"name": "any"},
-			"1": {"name": "real", "description": "handler applies/removes effect from unit"},
-			"2": {"name": "send for client", "description": "handler sends apply/remove packet to unit"},
-			"4": {"name": "change amount", "description": "handler updates effect on target after effect amount change"},
-			"8": {"name": "reapply", "description": "handler updates effect on target after aura is reapplied on target"},
-			"16": {"name": "stat", "description": "handler updates effect on target when stat removal/apply is needed for calculations by core"},
-			"32": {"name": "skill", "description": "handler updates effect on target when skill removal/apply is needed for calculations by core"}
+			"0": { "name": "any" },
+			"1": {
+				"name": "real",
+				"description": "handler applies/removes effect from unit"
+			},
+			"2": {
+				"name": "send for client",
+				"description": "handler sends apply/remove packet to unit"
+			},
+			"4": {
+				"name": "change amount",
+				"description": "handler updates effect on target after effect amount change"
+			},
+			"8": {
+				"name": "reapply",
+				"description": "handler updates effect on target after aura is reapplied on target"
+			},
+			"16": {
+				"name": "stat",
+				"description": "handler updates effect on target when stat removal/apply is needed for calculations by core"
+			},
+			"32": {
+				"name": "skill",
+				"description": "handler updates effect on target when skill removal/apply is needed for calculations by core"
+			}
 		}
 	},
 	"TriggerFlagParameter": {
 		"isflag": true,
 		"name": "Trigger flags",
 		"values": {
-			"1": {"name": "IGNORE_GCD", "description": "Will ignore GCD"},
-			"2": {"name": "IGNORE_SPELL_AND_CATEGORY_CD", "description": "Will ignore Spell and Category cooldowns"},
-			"4": {"name": "IGNORE_POWER_AND_REAGENT_COST", "description": "Will ignore power and reagent cost"},
-			"8": {"name": "IGNORE_CAST_ITEM", "description": "Will not take away cast item or update related achievement criteria"},
-			"16": {"name": "IGNORE_AURA_SCALING", "description": "Will ignore aura scaling"},
-			"32": {"name": "IGNORE_CAST_IN_PROGRESS", "description": "Will not check if a current cast is in progress"},
-			"64": {"name": "IGNORE_COMBO_POINTS", "description": "Will ignore combo point requirement"},
-			"128": {"name": "CAST_DIRECTLY", "description": "In Spell::prepare, will be cast directly without setting containers for executed spell"},
-			"256": {"name": "IGNORE_AURA_INTERRUPT_FLAGS", "description": "Will ignore interruptible aura's at cast"},
-			"512": {"name": "IGNORE_SET_FACING", "description": "Will not adjust facing to target (if any)"},
-			"1024": {"name": "IGNORE_SHAPESHIFT", "description": "Will ignore shapeshift checks"},
-			"2048": {"name": "IGNORE_CASTER_AURASTATE", "description": "Will ignore caster aura states including combat requirements and death state"},
-			"4096": {"name": "DISALLOW_PROC_EVENTS", "description": "Disallows proc events from triggered spell (default)"},
-			"8192": {"name": "IGNORE_CASTER_MOUNTED_OR_ON_VEHICLE", "description": "Will ignore mounted/on vehicle restrictions"},
-			"65536": {"name": "IGNORE_CASTER_AURAS", "description": "Will ignore caster aura restrictions or requirements"},
-			"131072": {"name": "DONT_RESET_PERIODIC_TIMER", "description": "Will allow periodic aura timers to keep ticking (instead of resetting)"},
-			"262144": {"name": "DONT_REPORT_CAST_ERROR", "description": "Will return SPELL_FAILED_DONT_REPORT in CheckCast functions"},
-			"524288": {"name": "TREAT_PROC_AS_NON_TRIGGERED", "description": "Will treat procs from this spell as if it wasn't triggered"},
-			"1048576": {"name": "IGNORE_EQUIPPED_ITEM_REQUIREMENT", "description": "Will ignore equipped item requirements"}
+			"1": {
+				"name": "IGNORE_GCD",
+				"description": "Will ignore GCD"
+			},
+			"2": {
+				"name": "IGNORE_SPELL_AND_CATEGORY_CD",
+				"description": "Will ignore Spell and Category cooldowns"
+			},
+			"4": {
+				"name": "IGNORE_POWER_AND_REAGENT_COST",
+				"description": "Will ignore power and reagent cost"
+			},
+			"8": {
+				"name": "IGNORE_CAST_ITEM",
+				"description": "Will not take away cast item or update related achievement criteria"
+			},
+			"16": {
+				"name": "IGNORE_AURA_SCALING",
+				"description": "Will ignore aura scaling"
+			},
+			"32": {
+				"name": "IGNORE_CAST_IN_PROGRESS",
+				"description": "Will not check if a current cast is in progress"
+			},
+			"64": {
+				"name": "IGNORE_COMBO_POINTS",
+				"description": "Will ignore combo point requirement"
+			},
+			"128": {
+				"name": "CAST_DIRECTLY",
+				"description": "In Spell::prepare, will be cast directly without setting containers for executed spell"
+			},
+			"256": {
+				"name": "IGNORE_AURA_INTERRUPT_FLAGS",
+				"description": "Will ignore interruptible aura's at cast"
+			},
+			"512": {
+				"name": "IGNORE_SET_FACING",
+				"description": "Will not adjust facing to target (if any)"
+			},
+			"1024": {
+				"name": "IGNORE_SHAPESHIFT",
+				"description": "Will ignore shapeshift checks"
+			},
+			"2048": {
+				"name": "IGNORE_CASTER_AURASTATE",
+				"description": "Will ignore caster aura states including combat requirements and death state"
+			},
+			"4096": {
+				"name": "DISALLOW_PROC_EVENTS",
+				"description": "Disallows proc events from triggered spell (default)"
+			},
+			"8192": {
+				"name": "IGNORE_CASTER_MOUNTED_OR_ON_VEHICLE",
+				"description": "Will ignore mounted/on vehicle restrictions"
+			},
+			"65536": {
+				"name": "IGNORE_CASTER_AURAS",
+				"description": "Will ignore caster aura restrictions or requirements"
+			},
+			"131072": {
+				"name": "DONT_RESET_PERIODIC_TIMER",
+				"description": "Will allow periodic aura timers to keep ticking (instead of resetting)"
+			},
+			"262144": {
+				"name": "DONT_REPORT_CAST_ERROR",
+				"description": "Will return SPELL_FAILED_DONT_REPORT in CheckCast functions"
+			},
+			"524288": {
+				"name": "TREAT_PROC_AS_NON_TRIGGERED",
+				"description": "Will treat procs from this spell as if it wasn't triggered"
+			},
+			"1048576": {
+				"name": "IGNORE_EQUIPPED_ITEM_REQUIREMENT",
+				"description": "Will ignore equipped item requirements"
+			}
 		}
 	},
 	"QuestFlagParameter": {
@@ -72,39 +147,105 @@
 		"name": "Quest flags",
 		"prefix": "QUEST_FLAGS_",
 		"values": {
-			"0": {"name": "NONE"},
-			"1": {"name": "STAY_ALIVE", "description":  "If the player dies, the quest is failed.(question)"},
-			"2": {"name": "PARTY_ACCEPT", "description":  "Escort quests or any other event-driven quests. If player in party, all players that can accept this quest will receive confirmation box to accept quest."},
-			"4": {"name": "EXPLORATION", "description":  "Involves the activation of an areatrigger."},
-			"8": {"name": "SHARABLE", "description":  "Allows the quest to be shared with other players."},
-			"16": {"name": "HAS_CONDITION", "description":  "Not used currently"},
-			"32": {"name": "HIDE_REWARD_POI", "description":  "Not used currently: Unsure of content"},
-			"64": {"name": "RAID", "description":  "Can be completed while in raid"},
-			"128": {"name": "TBC", "description":  "Not used currently: Available if TBC expansion enabled only"},
-			"256": {"name": "NO_MONEY_FROM_XP", "description":  "Not used currently: Experience is not converted to gold at max level"},
-			"512": {"name": "HIDDEN_REWARDS", "description":  "Item and monetary rewards are hidden in the initial quest details page and in the quest log but will appear once ready to be rewarded."},
-			"1024": {"name": "TRACKING", "description":  "These quests are automatically rewarded on quest complete and they will never appear in quest log client side."},
-			"2048": {"name": "DEPRECATE_REPUTATION", "description":  "Not used currently"},
-			"4096": {"name": "DAILY", "description":  "Daily repeatable quests (only flag that the core applies specific behavior for)"},
-			"8192": {"name": "FLAGS_PVP", "description":  "Having this quest in log forces PvP flag"},
-			"16384": {"name": "UNAVAILABLE", "description":  "Used on quests that are not generically available"},
-			"32768": {"name": "WEEKLY", "description":  "Weekly repeatable quests (only flag that the core applies specific behavior for)"},
-			"65536": {"name": "AUTOCOMPLETE", "description":  "Auto complete"},
-			"131072": {"name": "DISPLAY_ITEM_IN_TRACKER", "description":  "Displays usable item in quest tracker"},
-			"262144": {"name": "OBJ_TEXT", "description":  "Use Objective text as Complete text"},
-			"524288": {"name": "AUTO_ACCEPT", "description":  "The client recognizes this flag as auto-accept. However, NONE of the current quests (3.3.5a) have this flag. Maybe blizz used to use it, or will use it in the future."},
-			"1048576": {"name": "PLAYER_CAST_ON_ACCEPT", "description":  "Quests with this flag player submit automatically by special button in player GUI"},
-			"2097152": {"name": "PLAYER_CAST_ON_COMPLETE", "description":  "Automatically suggestion of accepting quest. Not from npc."},
-			"4194304": {"name": "UPDATE_PHASE_SHIFT"},
-			"8388608": {"name": "SOR_WHITELIST"},
-			"16777216": {"name": "LAUNCH_GOSSIP_COMPLETE"},
-			"33554432": {"name": "REMOVE_EXTRA_GET_ITEMS"},
-			"67108864": {"name": "HIDE_UNTIL_DISCOVERED"},
-			"134217728": {"name": "PORTRAIT_IN_QUEST_LOG"},
-			"268435456": {"name": "SHOW_ITEM_WHEN_COMPLETED"},
-			"536870912": {"name": "LAUNCH_GOSSIP_ACCEPT"},
-			"1073741824": {"name": "ITEMS_GLOW_WHEN_DONE"},
-			"2147483648": {"name": "FAIL_ON_LOGOUT"}
+			"0": { "name": "NONE" },
+			"1": {
+				"name": "STAY_ALIVE",
+				"description": "If the player dies, the quest is failed.(question)"
+			},
+			"2": {
+				"name": "PARTY_ACCEPT",
+				"description": "Escort quests or any other event-driven quests. If player in party, all players that can accept this quest will receive confirmation box to accept quest."
+			},
+			"4": {
+				"name": "EXPLORATION",
+				"description": "Involves the activation of an areatrigger."
+			},
+			"8": {
+				"name": "SHARABLE",
+				"description": "Allows the quest to be shared with other players."
+			},
+			"16": {
+				"name": "HAS_CONDITION",
+				"description": "Not used currently"
+			},
+			"32": {
+				"name": "HIDE_REWARD_POI",
+				"description": "Not used currently: Unsure of content"
+			},
+			"64": {
+				"name": "RAID",
+				"description": "Can be completed while in raid"
+			},
+			"128": {
+				"name": "TBC",
+				"description": "Not used currently: Available if TBC expansion enabled only"
+			},
+			"256": {
+				"name": "NO_MONEY_FROM_XP",
+				"description": "Not used currently: Experience is not converted to gold at max level"
+			},
+			"512": {
+				"name": "HIDDEN_REWARDS",
+				"description": "Item and monetary rewards are hidden in the initial quest details page and in the quest log but will appear once ready to be rewarded."
+			},
+			"1024": {
+				"name": "TRACKING",
+				"description": "These quests are automatically rewarded on quest complete and they will never appear in quest log client side."
+			},
+			"2048": {
+				"name": "DEPRECATE_REPUTATION",
+				"description": "Not used currently"
+			},
+			"4096": {
+				"name": "DAILY",
+				"description": "Daily repeatable quests (only flag that the core applies specific behavior for)"
+			},
+			"8192": {
+				"name": "FLAGS_PVP",
+				"description": "Having this quest in log forces PvP flag"
+			},
+			"16384": {
+				"name": "UNAVAILABLE",
+				"description": "Used on quests that are not generically available"
+			},
+			"32768": {
+				"name": "WEEKLY",
+				"description": "Weekly repeatable quests (only flag that the core applies specific behavior for)"
+			},
+			"65536": {
+				"name": "AUTOCOMPLETE",
+				"description": "Auto complete"
+			},
+			"131072": {
+				"name": "DISPLAY_ITEM_IN_TRACKER",
+				"description": "Displays usable item in quest tracker"
+			},
+			"262144": {
+				"name": "OBJ_TEXT",
+				"description": "Use Objective text as Complete text"
+			},
+			"524288": {
+				"name": "AUTO_ACCEPT",
+				"description": "The client recognizes this flag as auto-accept. However, NONE of the current quests (3.3.5a) have this flag. Maybe blizz used to use it, or will use it in the future."
+			},
+			"1048576": {
+				"name": "PLAYER_CAST_ON_ACCEPT",
+				"description": "Quests with this flag player submit automatically by special button in player GUI"
+			},
+			"2097152": {
+				"name": "PLAYER_CAST_ON_COMPLETE",
+				"description": "Automatically suggestion of accepting quest. Not from npc."
+			},
+			"4194304": { "name": "UPDATE_PHASE_SHIFT" },
+			"8388608": { "name": "SOR_WHITELIST" },
+			"16777216": { "name": "LAUNCH_GOSSIP_COMPLETE" },
+			"33554432": { "name": "REMOVE_EXTRA_GET_ITEMS" },
+			"67108864": { "name": "HIDE_UNTIL_DISCOVERED" },
+			"134217728": { "name": "PORTRAIT_IN_QUEST_LOG" },
+			"268435456": { "name": "SHOW_ITEM_WHEN_COMPLETED" },
+			"536870912": { "name": "LAUNCH_GOSSIP_ACCEPT" },
+			"1073741824": { "name": "ITEMS_GLOW_WHEN_DONE" },
+			"2147483648": { "name": "FAIL_ON_LOGOUT" }
 		}
 	},
 	"UnitFlagParameter": {
@@ -115,37 +256,64 @@
 		"prefix": "UNIT_FLAG_",
 		"values": {
 			"0": { "name": "NONE" },
-			"1": {"name": "SERVER_CONTROLLED", "description": "set only when unit movement is controlled by server - by SPLINE/MONSTER_MOVE packets, together with STUNNED; only set to units controlled by client; client function CGUnit_C::IsClientControlled returns false when set for owner"},
-			"2": {"name": "NON_ATTACKABLE"},
-			"4": {"name": "REMOVE_CLIENT_CONTROL"},
-			"8": {"name": "PVP_ATTACKABLE", "description": "allow apply pvp rules to attackable state in addition to faction dependent state"},
-			"16": {"name": "RENAME"},
-			"32": {"name": "PREPARATION", "description": "don't take reagents for spells with SPELL_ATTR5_NO_REAGENT_WHILE_PREP"},
-			"64": {"name": "UNK_6"},
-			"128": {"name": "NOT_ATTACKABLE_1"},
-			"256": {"name": "IMMUNE_TO_PC", "description": "disables combat/assistance with PlayerCharacters (PC)"},
-			"512": {"name": "IMMUNE_TO_NPC", "description": "disables combat/assistance with NonPlayerCharacters (NPC)"},
-			"1024": {"name": "LOOTING", "description": "loot animation"},
-			"2048": {"name": "PET_IN_COMBAT"},
-			"4096": {"name": "PVP"},
-			"8192": {"name": "SILENCED"},
-			"16384": {"name": "CANNOT_SWIM"},
-			"32768": {"name": "UNK_15"},
-			"65536": {"name": "UNK_16"},
-			"131072": {"name": "PACIFIED"},
-			"262144": {"name": "STUNNED"},
-			"524288": {"name": "IN_COMBAT"},
-			"1048576": {"name": "TAXI_FLIGHT", "description": "disable casting at client side spell not allowed by taxi flight (mounted?), probably used with 0x4 flag"},
-			"2097152": {"name": "DISARMED", "description": "3.0.3, disable melee spells casting..., \"Required melee weapon\" added to melee spells tooltip."},
-			"4194304": {"name": "CONFUSED"},
-			"8388608": {"name": "FLEEING"},
-			"16777216": {"name": "PLAYER_CONTROLLED", "description": "used in spell Eyes of the Beast for pet... let attack by controlled creature"},
-			"33554432": {"name": "NOT_SELECTABLE"},
-			"67108864": {"name": "SKINNABLE"},
-			"134217728": {"name": "MOUNT"},
-			"268435456": {"name": "UNK_28"},
-			"536870912": {"name": "UNK_29"},
-			"1073741824": {"name": "SHEATHE"}
+			"1": {
+				"name": "SERVER_CONTROLLED",
+				"description": "set only when unit movement is controlled by server - by SPLINE/MONSTER_MOVE packets, together with STUNNED; only set to units controlled by client; client function CGUnit_C::IsClientControlled returns false when set for owner"
+			},
+			"2": { "name": "NON_ATTACKABLE" },
+			"4": { "name": "REMOVE_CLIENT_CONTROL" },
+			"8": {
+				"name": "PVP_ATTACKABLE",
+				"description": "allow apply pvp rules to attackable state in addition to faction dependent state"
+			},
+			"16": { "name": "RENAME" },
+			"32": {
+				"name": "PREPARATION",
+				"description": "don't take reagents for spells with SPELL_ATTR5_NO_REAGENT_WHILE_PREP"
+			},
+			"64": { "name": "UNK_6" },
+			"128": { "name": "NOT_ATTACKABLE_1" },
+			"256": {
+				"name": "IMMUNE_TO_PC",
+				"description": "disables combat/assistance with PlayerCharacters (PC)"
+			},
+			"512": {
+				"name": "IMMUNE_TO_NPC",
+				"description": "disables combat/assistance with NonPlayerCharacters (NPC)"
+			},
+			"1024": {
+				"name": "LOOTING",
+				"description": "loot animation"
+			},
+			"2048": { "name": "PET_IN_COMBAT" },
+			"4096": { "name": "PVP" },
+			"8192": { "name": "SILENCED" },
+			"16384": { "name": "CANNOT_SWIM" },
+			"32768": { "name": "UNK_15" },
+			"65536": { "name": "UNK_16" },
+			"131072": { "name": "PACIFIED" },
+			"262144": { "name": "STUNNED" },
+			"524288": { "name": "IN_COMBAT" },
+			"1048576": {
+				"name": "TAXI_FLIGHT",
+				"description": "disable casting at client side spell not allowed by taxi flight (mounted?), probably used with 0x4 flag"
+			},
+			"2097152": {
+				"name": "DISARMED",
+				"description": "3.0.3, disable melee spells casting..., \"Required melee weapon\" added to melee spells tooltip."
+			},
+			"4194304": { "name": "CONFUSED" },
+			"8388608": { "name": "FLEEING" },
+			"16777216": {
+				"name": "PLAYER_CONTROLLED",
+				"description": "used in spell Eyes of the Beast for pet... let attack by controlled creature"
+			},
+			"33554432": { "name": "NOT_SELECTABLE" },
+			"67108864": { "name": "SKINNABLE" },
+			"134217728": { "name": "MOUNT" },
+			"268435456": { "name": "UNK_28" },
+			"536870912": { "name": "UNK_29" },
+			"1073741824": { "name": "SHEATHE" }
 		}
 	},
 	"UnitFlags2Parameter": {
@@ -156,26 +324,50 @@
 		"prefix": "UNIT_FLAG2_",
 		"values": {
 			"0": { "name": "NONE" },
-			"1": {"name": "FEIGN_DEATH"},
-			"2": {"name": "UNK1", "description": "Hide unit model (show only player equip)"},
-			"4": {"name": "IGNORE_REPUTATION"},
-			"8": {"name": "COMPREHEND_LANG"},
-			"16": {"name": "MIRROR_IMAGE"},
-			"32": {"name": "INSTANTLY_APPEAR_MODEL", "description": "Unit model instantly appears when summoned (does not fade in)"},
-			"64": {"name": "FORCE_MOVEMENT"},
-			"128": {"name": "DISARM_OFFHAND"},
-			"256": {"name": "DISABLE_PRED_STATS", "description": "Player has disabled predicted stats (Used by raid frames)"},
-			"512": {"name": "ALLOW_CHANGING_TALENTS"},
-			"1024": {"name": "DISARM_RANGED", "description": "this does not disable ranged weapon display (maybe additional flag needed?)"},
-			"2048": {"name": "REGENERATE_POWER"},
-			"4096": {"name": "RESTRICT_PARTY_INTERACTION", "description": "Restrict interaction to party or raid"},
-			"8192": {"name": "PREVENT_SPELL_CLICK", "description": "Prevent spellclick"},
-			"16384": {"name": "ALLOW_ENEMY_INTERACT"},
-			"32768": {"name": "DISABLE_TURN"},
-			"65536": {"name": "UNK2"},
-			"131072": {"name": "PLAY_DEATH_ANIM", "description": "Plays special death animation upon death"},
-			"262144": {"name": "ALLOW_CHEAT_SPELLS", "description": "Allows casting spells with AttributesEx7 & SPELL_ATTR7_IS_CHEAT_SPELL"},
-			"8388608": {"name": "NO_ACTIONS"}
+			"1": { "name": "FEIGN_DEATH" },
+			"2": {
+				"name": "UNK1",
+				"description": "Hide unit model (show only player equip)"
+			},
+			"4": { "name": "IGNORE_REPUTATION" },
+			"8": { "name": "COMPREHEND_LANG" },
+			"16": { "name": "MIRROR_IMAGE" },
+			"32": {
+				"name": "INSTANTLY_APPEAR_MODEL",
+				"description": "Unit model instantly appears when summoned (does not fade in)"
+			},
+			"64": { "name": "FORCE_MOVEMENT" },
+			"128": { "name": "DISARM_OFFHAND" },
+			"256": {
+				"name": "DISABLE_PRED_STATS",
+				"description": "Player has disabled predicted stats (Used by raid frames)"
+			},
+			"512": { "name": "ALLOW_CHANGING_TALENTS" },
+			"1024": {
+				"name": "DISARM_RANGED",
+				"description": "this does not disable ranged weapon display (maybe additional flag needed?)"
+			},
+			"2048": { "name": "REGENERATE_POWER" },
+			"4096": {
+				"name": "RESTRICT_PARTY_INTERACTION",
+				"description": "Restrict interaction to party or raid"
+			},
+			"8192": {
+				"name": "PREVENT_SPELL_CLICK",
+				"description": "Prevent spellclick"
+			},
+			"16384": { "name": "ALLOW_ENEMY_INTERACT" },
+			"32768": { "name": "DISABLE_TURN" },
+			"65536": { "name": "UNK2" },
+			"131072": {
+				"name": "PLAY_DEATH_ANIM",
+				"description": "Plays special death animation upon death"
+			},
+			"262144": {
+				"name": "ALLOW_CHEAT_SPELLS",
+				"description": "Allows casting spells with AttributesEx7 & SPELL_ATTR7_IS_CHEAT_SPELL"
+			},
+			"8388608": { "name": "NO_ACTIONS" }
 		}
 	},
 	"NpcFlagParameter": {
@@ -186,36 +378,36 @@
 		"prefix": "UNIT_NPC_FLAG_",
 		"values": {
 			"0": { "name": "NONE" },
-			"1": {"name": "GOSSIP"},
-			"2": {"name": "QUESTGIVER"},
-			"4": {"name": "UNK1"},
-			"8": {"name": "UNK2"},
-			"16": {"name": "TRAINER"},
-			"32": {"name": "TRAINER_CLASS"},
-			"64": {"name": "TRAINER_PROFESSION"},
-			"128": {"name": "VENDOR"},
-			"256": {"name": "VENDOR_AMMO"},
-			"512": {"name": "VENDOR_FOOD"},
-			"1024": {"name": "VENDOR_POISON"},
-			"2048": {"name": "VENDOR_REAGENT"},
-			"4096": {"name": "REPAIR"},
-			"8192": {"name": "FLIGHTMASTER"},
-			"16384": {"name": "SPIRITHEALER"},
-			"32768": {"name": "SPIRITGUIDE"},
-			"65536": {"name": "INNKEEPER"},
-			"131072": {"name": "BANKER"},
-			"262144": {"name": "PETITIONER"},
-			"524288": {"name": "TABARDDESIGNER"},
-			"1048576": {"name": "BATTLEMASTER"},
-			"2097152": {"name": "AUCTIONEER"},
-			"4194304": {"name": "STABLEMASTER"},
-			"8388608": {"name": "GUILD_BANKER"},
-			"16777216": {"name": "SPELLCLICK"},
-			"33554432": {"name": "PLAYER_VEHICLE"},
-			"67108864": {"name": "MAILBOX"},
-			"134217728": {"name": "REFORGER"},
-			"268435456": {"name": "TRANSMOGRIFIER"},
-			"536870912": {"name": "VAULTKEEPER"}
+			"1": { "name": "GOSSIP" },
+			"2": { "name": "QUESTGIVER" },
+			"4": { "name": "UNK1" },
+			"8": { "name": "UNK2" },
+			"16": { "name": "TRAINER" },
+			"32": { "name": "TRAINER_CLASS" },
+			"64": { "name": "TRAINER_PROFESSION" },
+			"128": { "name": "VENDOR" },
+			"256": { "name": "VENDOR_AMMO" },
+			"512": { "name": "VENDOR_FOOD" },
+			"1024": { "name": "VENDOR_POISON" },
+			"2048": { "name": "VENDOR_REAGENT" },
+			"4096": { "name": "REPAIR" },
+			"8192": { "name": "FLIGHTMASTER" },
+			"16384": { "name": "SPIRITHEALER" },
+			"32768": { "name": "SPIRITGUIDE" },
+			"65536": { "name": "INNKEEPER" },
+			"131072": { "name": "BANKER" },
+			"262144": { "name": "PETITIONER" },
+			"524288": { "name": "TABARDDESIGNER" },
+			"1048576": { "name": "BATTLEMASTER" },
+			"2097152": { "name": "AUCTIONEER" },
+			"4194304": { "name": "STABLEMASTER" },
+			"8388608": { "name": "GUILD_BANKER" },
+			"16777216": { "name": "SPELLCLICK" },
+			"33554432": { "name": "PLAYER_VEHICLE" },
+			"67108864": { "name": "MAILBOX" },
+			"134217728": { "name": "REFORGER" },
+			"268435456": { "name": "TRANSMOGRIFIER" },
+			"536870912": { "name": "VAULTKEEPER" }
 		}
 	},
 	"FlagApplyModeParameter": {
@@ -223,22 +415,40 @@
 		"inmenu": false,
 		"name": "Flags apply mode",
 		"values": {
-			"0": {"name": "Add"},
-			"1": {"name": "Remove"},
-			"2": {"name": "Set"}
+			"0": { "name": "Add" },
+			"1": { "name": "Remove" },
+			"2": { "name": "Set" }
 		}
 	},
 	"SpellImmunityTypeParameter": {
 		"name": "Spell immunity type",
 		"prefix": "IMMUNITY_",
 		"values": {
-			"0": {"name": "effect", "description": "SpellEffects"},
-			"1": {"name": "state", "description": "AuraType"},
-			"2": {"name": "school", "description": "SpellSchoolMask"},
-			"3": {"name": "damage", "description": "SpellSchoolMask"},
-			"4": {"name": "dispel", "description": "DispelType"},
-			"5": {"name": "mechanic", "description": "Mechanics"},
-			"6": {"name": "id"}
+			"0": {
+				"name": "effect",
+				"description": "SpellEffects"
+			},
+			"1": {
+				"name": "state",
+				"description": "AuraType"
+			},
+			"2": {
+				"name": "school",
+				"description": "SpellSchoolMask"
+			},
+			"3": {
+				"name": "damage",
+				"description": "SpellSchoolMask"
+			},
+			"4": {
+				"name": "dispel",
+				"description": "DispelType"
+			},
+			"5": {
+				"name": "mechanic",
+				"description": "Mechanics"
+			},
+			"6": { "name": "id" }
 		}
 	},
 	"MovementFlagParameter": {
@@ -248,38 +458,80 @@
 		"name": "Movement flag",
 		"prefix": "MOVEMENT_FLAG_",
 		"values": {
-			"0": {"name": "NONE"},
-			"1": {"name": "FORWARD"},
-			"2": {"name": "BACKWARD"},
-			"4": {"name": "STRAFE_LEFT"},
-			"8": {"name": "STRAFE_RIGHT"},
-			"16": {"name": "LEFT"},
-			"32": {"name": "RIGHT"},
-			"64": {"name": "PITCH_UP"},
-			"128": {"name": "PITCH_DOWN"},
-			"256": {"name": "WALKING", "description": "Walking"},
-			"512": {"name": "ONTRANSPORT", "description": "Used for flying on some creatures"},
-			"1024": {"name": "DISABLE_GRAVITY", "description": "Former MOVEMENTFLAG_LEVITATING. This is used when walking is not possible."},
-			"2048": {"name": "ROOT", "description": "Must not be set along with MOVEMENTFLAG_MASK_MOVING"},
-			"4096": {"name": "FALLING", "description": "damage dealt on that type of falling"},
-			"8192": {"name": "FALLING_FAR"},
-			"16384": {"name": "PENDING_STOP"},
-			"32768": {"name": "PENDING_STRAFE_STOP"},
-			"65536": {"name": "PENDING_FORWARD"},
-			"131072": {"name": "PENDING_BACKWARD"},
-			"262144": {"name": "PENDING_STRAFE_LEFT"},
-			"524288": {"name": "PENDING_STRAFE_RIGHT"},
-			"1048576": {"name": "PENDING_ROOT"},
-			"2097152": {"name": "SWIMMING", "description": "appears with fly flag also"},
-			"4194304": {"name": "ASCENDING", "description": "press \"space\" when flying"},
-			"8388608": {"name": "DESCENDING"},
-			"16777216": {"name": "CAN_FLY", "description": "Appears when unit can fly AND also walk"},
-			"33554432": {"name": "FLYING", "description": "unit is actually flying. pretty sure this is only used for players. creatures use disable_gravity"},
-			"67108864": {"name": "SPLINE_ELEVATION", "description": "used for flight paths"},
-			"134217728": {"name": "SPLINE_ENABLED", "description": "used for flight paths"},
-			"268435456": {"name": "WATERWALKING", "description": "prevent unit from falling through water"},
-			"536870912": {"name": "FALLING_SLOW", "description": "active rogue safe fall spell (passive)"},
-			"1073741824": {"name": "HOVER", "description": "hover, cannot jump"}
+			"0": { "name": "NONE" },
+			"1": { "name": "FORWARD" },
+			"2": { "name": "BACKWARD" },
+			"4": { "name": "STRAFE_LEFT" },
+			"8": { "name": "STRAFE_RIGHT" },
+			"16": { "name": "LEFT" },
+			"32": { "name": "RIGHT" },
+			"64": { "name": "PITCH_UP" },
+			"128": { "name": "PITCH_DOWN" },
+			"256": {
+				"name": "WALKING",
+				"description": "Walking"
+			},
+			"512": {
+				"name": "ONTRANSPORT",
+				"description": "Used for flying on some creatures"
+			},
+			"1024": {
+				"name": "DISABLE_GRAVITY",
+				"description": "Former MOVEMENTFLAG_LEVITATING. This is used when walking is not possible."
+			},
+			"2048": {
+				"name": "ROOT",
+				"description": "Must not be set along with MOVEMENTFLAG_MASK_MOVING"
+			},
+			"4096": {
+				"name": "FALLING",
+				"description": "damage dealt on that type of falling"
+			},
+			"8192": { "name": "FALLING_FAR" },
+			"16384": { "name": "PENDING_STOP" },
+			"32768": { "name": "PENDING_STRAFE_STOP" },
+			"65536": { "name": "PENDING_FORWARD" },
+			"131072": { "name": "PENDING_BACKWARD" },
+			"262144": { "name": "PENDING_STRAFE_LEFT" },
+			"524288": { "name": "PENDING_STRAFE_RIGHT" },
+			"1048576": { "name": "PENDING_ROOT" },
+			"2097152": {
+				"name": "SWIMMING",
+				"description": "appears with fly flag also"
+			},
+			"4194304": {
+				"name": "ASCENDING",
+				"description": "press \"space\" when flying"
+			},
+			"8388608": { "name": "DESCENDING" },
+			"16777216": {
+				"name": "CAN_FLY",
+				"description": "Appears when unit can fly AND also walk"
+			},
+			"33554432": {
+				"name": "FLYING",
+				"description": "unit is actually flying. pretty sure this is only used for players. creatures use disable_gravity"
+			},
+			"67108864": {
+				"name": "SPLINE_ELEVATION",
+				"description": "used for flight paths"
+			},
+			"134217728": {
+				"name": "SPLINE_ENABLED",
+				"description": "used for flight paths"
+			},
+			"268435456": {
+				"name": "WATERWALKING",
+				"description": "prevent unit from falling through water"
+			},
+			"536870912": {
+				"name": "FALLING_SLOW",
+				"description": "active rogue safe fall spell (passive)"
+			},
+			"1073741824": {
+				"name": "HOVER",
+				"description": "hover, cannot jump"
+			}
 		}
 	},
 	"MovementFlagExtraParameter": {
@@ -288,35 +540,47 @@
 		"name": "Movement flag extra",
 		"prefix": "MOVEMENT_FLAG2_",
 		"values": {
-			"0": {"name": "NONE"},
-			"1": {"name": "NO_STRAFE"},
-			"2": {"name": "NO_JUMPING"},
-			"4": {"name": "DISABLE_COLLISION"},
-			"8": {"name": "FULL_SPEED_TURNING"},
-			"16": {"name": "FULL_SPEED_PITCHING"},
-			"32": {"name": "ALWAYS_ALLOW_PITCHING"},
-			"64": {"name": "IS_VEHICLE_EXIT_VOLUNTARY"},
-			"128": {"name": "IS_JUMP_SPLINE_IN_AIR"},
-			"256": {"name": "IS_ANIM_TIER_IN_TRAN"},
-			"512": {"name": "PREVENT_CHANGE_PITCH"},
-			"1024": {"name": "INTERPOLATED_MOVEMEN"},
-			"2048": {"name": "INTERPOLATED_TURNING"},
-			"4096": {"name": "INTERPOLATED_PITCHING"},
-			"8192": {"name": "VEHICLE_PASSENGER_IS_TRANSITION_ALLOWED"},
-			"16384": {"name": "CAN_TRANSITION_BETWEEN_SWIM_AND_FLY"},
-			"32768": {"name": "UNK16"}
+			"0": { "name": "NONE" },
+			"1": { "name": "NO_STRAFE" },
+			"2": { "name": "NO_JUMPING" },
+			"4": { "name": "DISABLE_COLLISION" },
+			"8": { "name": "FULL_SPEED_TURNING" },
+			"16": { "name": "FULL_SPEED_PITCHING" },
+			"32": { "name": "ALWAYS_ALLOW_PITCHING" },
+			"64": { "name": "IS_VEHICLE_EXIT_VOLUNTARY" },
+			"128": { "name": "IS_JUMP_SPLINE_IN_AIR" },
+			"256": { "name": "IS_ANIM_TIER_IN_TRAN" },
+			"512": { "name": "PREVENT_CHANGE_PITCH" },
+			"1024": { "name": "INTERPOLATED_MOVEMEN" },
+			"2048": { "name": "INTERPOLATED_TURNING" },
+			"4096": { "name": "INTERPOLATED_PITCHING" },
+			"8192": { "name": "VEHICLE_PASSENGER_IS_TRANSITION_ALLOWED" },
+			"16384": { "name": "CAN_TRANSITION_BETWEEN_SWIM_AND_FLY" },
+			"32768": { "name": "UNK16" }
 		}
-	},	
+	},
 	"SmartCastFlagsParameter": {
 		"isflag": true,
 		"inmenu": true,
 		"name": "Smart cast flags",
 		"prefix": "SMARTCAST_",
 		"values": {
-			"1": {"name": "interrupt previous", "description": "Interrupt any spell casting"},
-			"2": {"name": "triggered", "description": "Triggered (this makes spell cost zero mana and have no cast time)"},
-			"32": {"name": "aura not present", "description": "only cast if target does not have aura from spell"},
-			"64": {"name": "combat move", "description": "Prevents combat movement if cast successful. Allows movement on range, OOM, LOS"}
+			"1": {
+				"name": "interrupt previous",
+				"description": "Interrupt any spell casting"
+			},
+			"2": {
+				"name": "triggered",
+				"description": "Triggered (this makes spell cost zero mana and have no cast time)"
+			},
+			"32": {
+				"name": "aura not present",
+				"description": "only cast if target does not have aura from spell"
+			},
+			"64": {
+				"name": "combat move",
+				"description": "Prevents combat movement if cast successful. Allows movement on range, OOM, LOS"
+			}
 		}
 	},
 	"ExtraFlagParameter": {
@@ -327,241 +591,316 @@
 		"prefix": "CREATURE_FLAG_EXTRA_",
 		"values": {
 			"0": { "name": "NONE" },
-			"1": {"name": "INSTANCE_BIND", "description": "creature kill bind instance with killer and killer's group"},
-			"2": {"name": "CIVILIAN", "description": "not aggro (ignore faction/reputation hostility)"},
-			"4": {"name": "NO_PARRY", "description": "creature can't parry"},
-			"8": {"name": "NO_PARRY_HASTEN", "description": "creature can't counter-attack at parry"},
-			"16": {"name": "NO_BLOCK", "description": "creature can't block"},
-			"32": {"name": "NO_CRUSHING_BLOWS", "description": "creature can't do crush attacks"},
-			"64": {"name": "NO_XP", "description": "creature kill not provide XP"},
-			"128": {"name": "TRIGGER", "description": "trigger creature"},
-			"256": {"name": "NO_TAUNT", "description": "creature is immune to taunt auras and effect attack me"},
-			"512": {"name": "NO_MOVE_FLAGS_UPDATE", "description": "creature won't update movement flags"},
-			"1024": {"name": "GHOST_VISIBILITY", "description": "creature will only be visible to dead players"},
-			"2048": {"name": "USE_OFFHAND_ATTACK", "description": "creature will use offhand attacks"},
-			"4096": {"name": "NO_SELL_VENDOR", "description": "players can't sell items to this vendor"},
-			"8192": {"name": "IGNORE_COMBAT", "description": "creature is not allowed to enter combat"},
-			"16384": {"name": "WORLDEVENT", "description": "custom flag for world event creatures (left room for merging)"},
-			"32768": {"name": "GUARD", "description": "Creature is guard"},
-			"65536": {"name": "IGNORE_FEIGN_DEATH", "description": "creature ignores feign death"},
-			"131072": {"name": "NO_CRIT", "description": "creature can't do critical strikes"},
-			"262144": {"name": "NO_SKILLGAIN", "description": "creature won't increase weapon skills"},
-			"524288": {"name": "OBEYS_TAUNT_DIMINISHING_RETURNS", "description": "Taunt is a subject to diminishing returns on this creautre"},
-			"1048576": {"name": "ALL_DIMINISH", "description": "Creature is subject to all diminishing returns as player are"},
-			"2097152": {"name": "NO_PLAYER_DAMAGE_REQ", "description": "creature does not need to take player damage for kill credit"},
-			"268435456": {"name": "DUNGEON_BOSS", "description": "creature is a dungeon boss (SET DYNAMICALLY, DO NOT ADD IN DB)"},
-			"536870912": {"name": "IGNORE_PATHFINDING", "description": "creature ignore pathfinding"},
-			"1073741824": {"name": "IMMUNITY_KNOCKBACK", "description": "creature is immune to knockback effects"}
+			"1": {
+				"name": "INSTANCE_BIND",
+				"description": "creature kill bind instance with killer and killer's group"
+			},
+			"2": {
+				"name": "CIVILIAN",
+				"description": "not aggro (ignore faction/reputation hostility)"
+			},
+			"4": {
+				"name": "NO_PARRY",
+				"description": "creature can't parry"
+			},
+			"8": {
+				"name": "NO_PARRY_HASTEN",
+				"description": "creature can't counter-attack at parry"
+			},
+			"16": {
+				"name": "NO_BLOCK",
+				"description": "creature can't block"
+			},
+			"32": {
+				"name": "NO_CRUSHING_BLOWS",
+				"description": "creature can't do crush attacks"
+			},
+			"64": {
+				"name": "NO_XP",
+				"description": "creature kill not provide XP"
+			},
+			"128": {
+				"name": "TRIGGER",
+				"description": "trigger creature"
+			},
+			"256": {
+				"name": "NO_TAUNT",
+				"description": "creature is immune to taunt auras and effect attack me"
+			},
+			"512": {
+				"name": "NO_MOVE_FLAGS_UPDATE",
+				"description": "creature won't update movement flags"
+			},
+			"1024": {
+				"name": "GHOST_VISIBILITY",
+				"description": "creature will only be visible to dead players"
+			},
+			"2048": {
+				"name": "USE_OFFHAND_ATTACK",
+				"description": "creature will use offhand attacks"
+			},
+			"4096": {
+				"name": "NO_SELL_VENDOR",
+				"description": "players can't sell items to this vendor"
+			},
+			"8192": {
+				"name": "IGNORE_COMBAT",
+				"description": "creature is not allowed to enter combat"
+			},
+			"16384": {
+				"name": "WORLDEVENT",
+				"description": "custom flag for world event creatures (left room for merging)"
+			},
+			"32768": {
+				"name": "GUARD",
+				"description": "Creature is guard"
+			},
+			"65536": {
+				"name": "IGNORE_FEIGN_DEATH",
+				"description": "creature ignores feign death"
+			},
+			"131072": {
+				"name": "NO_CRIT",
+				"description": "creature can't do critical strikes"
+			},
+			"262144": {
+				"name": "NO_SKILLGAIN",
+				"description": "creature won't increase weapon skills"
+			},
+			"524288": {
+				"name": "OBEYS_TAUNT_DIMINISHING_RETURNS",
+				"description": "Taunt is a subject to diminishing returns on this creautre"
+			},
+			"1048576": {
+				"name": "ALL_DIMINISH",
+				"description": "Creature is subject to all diminishing returns as player are"
+			},
+			"2097152": {
+				"name": "NO_PLAYER_DAMAGE_REQ",
+				"description": "creature does not need to take player damage for kill credit"
+			},
+			"268435456": {
+				"name": "DUNGEON_BOSS",
+				"description": "creature is a dungeon boss (SET DYNAMICALLY, DO NOT ADD IN DB)"
+			},
+			"536870912": {
+				"name": "IGNORE_PATHFINDING",
+				"description": "creature ignore pathfinding"
+			},
+			"1073741824": {
+				"name": "IMMUNITY_KNOCKBACK",
+				"description": "creature is immune to knockback effects"
+			}
 		}
 	},
 
 	"SpellCastResultParameter": {
 		"values": {
-			"0": {"name": "SPELL_FAILED_SUCCESS"},
-			"1": {"name": "SPELL_FAILED_AFFECTING_COMBAT"},
-			"2": {"name": "SPELL_FAILED_ALREADY_AT_FULL_HEALTH"},
-			"3": {"name": "SPELL_FAILED_ALREADY_AT_FULL_MANA"},
-			"4": {"name": "SPELL_FAILED_ALREADY_AT_FULL_POWER"},
-			"5": {"name": "SPELL_FAILED_ALREADY_BEING_TAMED"},
-			"6": {"name": "SPELL_FAILED_ALREADY_HAVE_CHARM"},
-			"7": {"name": "SPELL_FAILED_ALREADY_HAVE_SUMMON"},
-			"8": {"name": "SPELL_FAILED_ALREADY_HAVE_PET"},
-			"9": {"name": "SPELL_FAILED_ALREADY_OPEN"},
-			"10": {"name": "SPELL_FAILED_AURA_BOUNCED"},
-			"11": {"name": "SPELL_FAILED_AUTOTRACK_INTERRUPTED"},
-			"12": {"name": "SPELL_FAILED_BAD_IMPLICIT_TARGETS"},
-			"13": {"name": "SPELL_FAILED_BAD_TARGETS"},
-			"14": {"name": "SPELL_FAILED_CANT_BE_CHARMED"},
-			"15": {"name": "SPELL_FAILED_CANT_BE_DISENCHANTED"},
-			"16": {"name": "SPELL_FAILED_CANT_BE_DISENCHANTED_SKILL"},
-			"17": {"name": "SPELL_FAILED_CANT_BE_MILLED"},
-			"18": {"name": "SPELL_FAILED_CANT_BE_PROSPECTED"},
-			"19": {"name": "SPELL_FAILED_CANT_CAST_ON_TAPPED"},
-			"20": {"name": "SPELL_FAILED_CANT_DUEL_WHILE_INVISIBLE"},
-			"21": {"name": "SPELL_FAILED_CANT_DUEL_WHILE_STEALTHED"},
-			"22": {"name": "SPELL_FAILED_CANT_STEALTH"},
-			"23": {"name": "SPELL_FAILED_CASTER_AURASTATE"},
-			"24": {"name": "SPELL_FAILED_CASTER_DEAD"},
-			"25": {"name": "SPELL_FAILED_CHARMED"},
-			"26": {"name": "SPELL_FAILED_CHEST_IN_USE"},
-			"27": {"name": "SPELL_FAILED_CONFUSED"},
-			"28": {"name": "SPELL_FAILED_DONT_REPORT"},
-			"29": {"name": "SPELL_FAILED_EQUIPPED_ITEM"},
-			"30": {"name": "SPELL_FAILED_EQUIPPED_ITEM_CLASS"},
-			"31": {"name": "SPELL_FAILED_EQUIPPED_ITEM_CLASS_MAINHAND"},
-			"32": {"name": "SPELL_FAILED_EQUIPPED_ITEM_CLASS_OFFHAND"},
-			"33": {"name": "SPELL_FAILED_ERROR"},
-			"34": {"name": "SPELL_FAILED_FALLING"},
-			"35": {"name": "SPELL_FAILED_FIZZLE"},
-			"36": {"name": "SPELL_FAILED_FLEEING"},
-			"37": {"name": "SPELL_FAILED_FOOD_LOWLEVEL"},
-			"38": {"name": "SPELL_FAILED_HIGHLEVEL"},
-			"39": {"name": "SPELL_FAILED_HUNGER_SATIATED"},
-			"40": {"name": "SPELL_FAILED_IMMUNE"},
-			"41": {"name": "SPELL_FAILED_INCORRECT_AREA"},
-			"42": {"name": "SPELL_FAILED_INTERRUPTED"},
-			"43": {"name": "SPELL_FAILED_INTERRUPTED_COMBAT"},
-			"44": {"name": "SPELL_FAILED_ITEM_ALREADY_ENCHANTED"},
-			"45": {"name": "SPELL_FAILED_ITEM_GONE"},
-			"46": {"name": "SPELL_FAILED_ITEM_NOT_FOUND"},
-			"47": {"name": "SPELL_FAILED_ITEM_NOT_READY"},
-			"48": {"name": "SPELL_FAILED_LEVEL_REQUIREMENT"},
-			"49": {"name": "SPELL_FAILED_LINE_OF_SIGHT"},
-			"50": {"name": "SPELL_FAILED_LOWLEVEL"},
-			"51": {"name": "SPELL_FAILED_LOW_CASTLEVEL"},
-			"52": {"name": "SPELL_FAILED_MAINHAND_EMPTY"},
-			"53": {"name": "SPELL_FAILED_MOVING"},
-			"54": {"name": "SPELL_FAILED_NEED_AMMO"},
-			"55": {"name": "SPELL_FAILED_NEED_AMMO_POUCH"},
-			"56": {"name": "SPELL_FAILED_NEED_EXOTIC_AMMO"},
-			"57": {"name": "SPELL_FAILED_NEED_MORE_ITEMS"},
-			"58": {"name": "SPELL_FAILED_NOPATH"},
-			"59": {"name": "SPELL_FAILED_NOT_BEHIND"},
-			"60": {"name": "SPELL_FAILED_NOT_FISHABLE"},
-			"61": {"name": "SPELL_FAILED_NOT_FLYING"},
-			"62": {"name": "SPELL_FAILED_NOT_HERE"},
-			"63": {"name": "SPELL_FAILED_NOT_INFRONT"},
-			"64": {"name": "SPELL_FAILED_NOT_IN_CONTROL"},
-			"65": {"name": "SPELL_FAILED_NOT_KNOWN"},
-			"66": {"name": "SPELL_FAILED_NOT_MOUNTED"},
-			"67": {"name": "SPELL_FAILED_NOT_ON_TAXI"},
-			"68": {"name": "SPELL_FAILED_NOT_ON_TRANSPORT"},
-			"69": {"name": "SPELL_FAILED_NOT_READY"},
-			"70": {"name": "SPELL_FAILED_NOT_SHAPESHIFT"},
-			"71": {"name": "SPELL_FAILED_NOT_STANDING"},
-			"72": {"name": "SPELL_FAILED_NOT_TRADEABLE"},
-			"73": {"name": "SPELL_FAILED_NOT_TRADING"},
-			"74": {"name": "SPELL_FAILED_NOT_UNSHEATHED"},
-			"75": {"name": "SPELL_FAILED_NOT_WHILE_GHOST"},
-			"76": {"name": "SPELL_FAILED_NOT_WHILE_LOOTING"},
-			"77": {"name": "SPELL_FAILED_NO_AMMO"},
-			"78": {"name": "SPELL_FAILED_NO_CHARGES_REMAIN"},
-			"79": {"name": "SPELL_FAILED_NO_CHAMPION"},
-			"80": {"name": "SPELL_FAILED_NO_COMBO_POINTS"},
-			"81": {"name": "SPELL_FAILED_NO_DUELING"},
-			"82": {"name": "SPELL_FAILED_NO_ENDURANCE"},
-			"83": {"name": "SPELL_FAILED_NO_FISH"},
-			"84": {"name": "SPELL_FAILED_NO_ITEMS_WHILE_SHAPESHIFTED"},
-			"85": {"name": "SPELL_FAILED_NO_MOUNTS_ALLOWED"},
-			"86": {"name": "SPELL_FAILED_NO_PET"},
-			"87": {"name": "SPELL_FAILED_NO_POWER"},
-			"88": {"name": "SPELL_FAILED_NOTHING_TO_DISPEL"},
-			"89": {"name": "SPELL_FAILED_NOTHING_TO_STEAL"},
-			"90": {"name": "SPELL_FAILED_ONLY_ABOVEWATER"},
-			"91": {"name": "SPELL_FAILED_ONLY_DAYTIME"},
-			"92": {"name": "SPELL_FAILED_ONLY_INDOORS"},
-			"93": {"name": "SPELL_FAILED_ONLY_MOUNTED"},
-			"94": {"name": "SPELL_FAILED_ONLY_NIGHTTIME"},
-			"95": {"name": "SPELL_FAILED_ONLY_OUTDOORS"},
-			"96": {"name": "SPELL_FAILED_ONLY_SHAPESHIFT"},
-			"97": {"name": "SPELL_FAILED_ONLY_STEALTHED"},
-			"98": {"name": "SPELL_FAILED_ONLY_UNDERWATER"},
-			"99": {"name": "SPELL_FAILED_OUT_OF_RANGE"},
-			"100": {"name": "SPELL_FAILED_PACIFIED"},
-			"101": {"name": "SPELL_FAILED_POSSESSED"},
-			"102": {"name": "SPELL_FAILED_REAGENTS"},
-			"103": {"name": "SPELL_FAILED_REQUIRES_AREA"},
-			"104": {"name": "SPELL_FAILED_REQUIRES_SPELL_FOCUS"},
-			"105": {"name": "SPELL_FAILED_ROOTED"},
-			"106": {"name": "SPELL_FAILED_SILENCED"},
-			"107": {"name": "SPELL_FAILED_SPELL_IN_PROGRESS"},
-			"108": {"name": "SPELL_FAILED_SPELL_LEARNED"},
-			"109": {"name": "SPELL_FAILED_SPELL_UNAVAILABLE"},
-			"110": {"name": "SPELL_FAILED_STUNNED"},
-			"111": {"name": "SPELL_FAILED_TARGETS_DEAD"},
-			"112": {"name": "SPELL_FAILED_TARGET_AFFECTING_COMBAT"},
-			"113": {"name": "SPELL_FAILED_TARGET_AURASTATE"},
-			"114": {"name": "SPELL_FAILED_TARGET_DUELING"},
-			"115": {"name": "SPELL_FAILED_TARGET_ENEMY"},
-			"116": {"name": "SPELL_FAILED_TARGET_ENRAGED"},
-			"117": {"name": "SPELL_FAILED_TARGET_FRIENDLY"},
-			"118": {"name": "SPELL_FAILED_TARGET_IN_COMBAT"},
-			"119": {"name": "SPELL_FAILED_TARGET_IS_PLAYER"},
-			"120": {"name": "SPELL_FAILED_TARGET_IS_PLAYER_CONTROLLED"},
-			"121": {"name": "SPELL_FAILED_TARGET_NOT_DEAD"},
-			"122": {"name": "SPELL_FAILED_TARGET_NOT_IN_PARTY"},
-			"123": {"name": "SPELL_FAILED_TARGET_NOT_LOOTED"},
-			"124": {"name": "SPELL_FAILED_TARGET_NOT_PLAYER"},
-			"125": {"name": "SPELL_FAILED_TARGET_NO_POCKETS"},
-			"126": {"name": "SPELL_FAILED_TARGET_NO_WEAPONS"},
-			"127": {"name": "SPELL_FAILED_TARGET_NO_RANGED_WEAPONS"},
-			"128": {"name": "SPELL_FAILED_TARGET_UNSKINNABLE"},
-			"129": {"name": "SPELL_FAILED_THIRST_SATIATED"},
-			"130": {"name": "SPELL_FAILED_TOO_CLOSE"},
-			"131": {"name": "SPELL_FAILED_TOO_MANY_OF_ITEM"},
-			"132": {"name": "SPELL_FAILED_TOTEM_CATEGORY"},
-			"133": {"name": "SPELL_FAILED_TOTEMS"},
-			"134": {"name": "SPELL_FAILED_TRY_AGAIN"},
-			"135": {"name": "SPELL_FAILED_UNIT_NOT_BEHIND"},
-			"136": {"name": "SPELL_FAILED_UNIT_NOT_INFRONT"},
-			"137": {"name": "SPELL_FAILED_VISION_OBSCURED"},
-			"138": {"name": "SPELL_FAILED_WRONG_PET_FOOD"},
-			"139": {"name": "SPELL_FAILED_NOT_WHILE_FATIGUED"},
-			"140": {"name": "SPELL_FAILED_TARGET_NOT_IN_INSTANCE"},
-			"141": {"name": "SPELL_FAILED_NOT_WHILE_TRADING"},
-			"142": {"name": "SPELL_FAILED_TARGET_NOT_IN_RAID"},
-			"143": {"name": "SPELL_FAILED_TARGET_FREEFORALL"},
-			"144": {"name": "SPELL_FAILED_NO_EDIBLE_CORPSES"},
-			"145": {"name": "SPELL_FAILED_ONLY_BATTLEGROUNDS"},
-			"146": {"name": "SPELL_FAILED_TARGET_NOT_GHOST"},
-			"147": {"name": "SPELL_FAILED_TRANSFORM_UNUSABLE"},
-			"148": {"name": "SPELL_FAILED_WRONG_WEATHER"},
-			"149": {"name": "SPELL_FAILED_DAMAGE_IMMUNE"},
-			"150": {"name": "SPELL_FAILED_PREVENTED_BY_MECHANIC"},
-			"151": {"name": "SPELL_FAILED_PLAY_TIME"},
-			"152": {"name": "SPELL_FAILED_REPUTATION"},
-			"153": {"name": "SPELL_FAILED_MIN_SKILL"},
-			"154": {"name": "SPELL_FAILED_NOT_IN_RATED_BATTLEGROUND"},
-			"155": {"name": "SPELL_FAILED_NOT_ON_SHAPESHIFT"},
-			"156": {"name": "SPELL_FAILED_NOT_ON_STEALTHED"},
-			"157": {"name": "SPELL_FAILED_NOT_ON_DAMAGE_IMMUNE"},
-			"158": {"name": "SPELL_FAILED_NOT_ON_MOUNTED"},
-			"159": {"name": "SPELL_FAILED_TOO_SHALLOW"},
-			"160": {"name": "SPELL_FAILED_TARGET_NOT_IN_SANCTUARY"},
-			"161": {"name": "SPELL_FAILED_TARGET_IS_TRIVIAL"},
-			"162": {"name": "SPELL_FAILED_BM_OR_INVISGOD"},
-			"163": {"name": "SPELL_FAILED_EXPERT_RIDING_REQUIREMENT"},
-			"164": {"name": "SPELL_FAILED_ARTISAN_RIDING_REQUIREMENT"},
-			"165": {"name": "SPELL_FAILED_NOT_IDLE"},
-			"166": {"name": "SPELL_FAILED_NOT_INACTIVE"},
-			"167": {"name": "SPELL_FAILED_PARTIAL_PLAYTIME"},
-			"168": {"name": "SPELL_FAILED_NO_PLAYTIME"},
-			"169": {"name": "SPELL_FAILED_NOT_IN_BATTLEGROUND"},
-			"170": {"name": "SPELL_FAILED_NOT_IN_RAID_INSTANCE"},
-			"171": {"name": "SPELL_FAILED_ONLY_IN_ARENA"},
-			"172": {"name": "SPELL_FAILED_TARGET_LOCKED_TO_RAID_INSTANCE"},
-			"173": {"name": "SPELL_FAILED_ON_USE_ENCHANT"},
-			"174": {"name": "SPELL_FAILED_NOT_ON_GROUND"},
-			"175": {"name": "SPELL_FAILED_CUSTOM_ERROR"},
-			"176": {"name": "SPELL_FAILED_CANT_DO_THAT_RIGHT_NOW"},
-			"177": {"name": "SPELL_FAILED_TOO_MANY_SOCKETS"},
-			"178": {"name": "SPELL_FAILED_INVALID_GLYPH"},
-			"179": {"name": "SPELL_FAILED_UNIQUE_GLYPH"},
-			"180": {"name": "SPELL_FAILED_GLYPH_SOCKET_LOCKED"},
-			"181": {"name": "SPELL_FAILED_NO_VALID_TARGETS"},
-			"182": {"name": "SPELL_FAILED_ITEM_AT_MAX_CHARGES"},
-			"183": {"name": "SPELL_FAILED_NOT_IN_BARBERSHOP"},
-			"184": {"name": "SPELL_FAILED_FISHING_TOO_LOW"},
-			"185": {"name": "SPELL_FAILED_ITEM_ENCHANT_TRADE_WINDOW"},
-			"186": {"name": "SPELL_FAILED_SUMMON_PENDING"},
-			"187": {"name": "SPELL_FAILED_MAX_SOCKETS"},
-			"188": {"name": "SPELL_FAILED_PET_CAN_RENAME"},
-			"189": {"name": "SPELL_FAILED_TARGET_CANNOT_BE_RESURRECTED"},
-			"190": {"name": "SPELL_FAILED_NO_ACTIONS"},
-			"191": {"name": "SPELL_FAILED_CURRENCY_WEIGHT_MISMATCH"},
-			"192": {"name": "SPELL_FAILED_WEIGHT_NOT_ENOUGH"},
-			"193": {"name": "SPELL_FAILED_WEIGHT_TOO_MUCH"},
-			"194": {"name": "SPELL_FAILED_NO_VACANT_SEAT"},
-			"195": {"name": "SPELL_FAILED_NO_LIQUID"},
-			"196": {"name": "SPELL_FAILED_ONLY_NOT_SWIMMING"},
-			"197": {"name": "SPELL_FAILED_BY_NOT_MOVING"},
-			"198": {"name": "SPELL_FAILED_IN_COMBAT_RES_LIMIT_REACHED"},
-			"199": {"name": "SPELL_FAILED_NOT_IN_ARENA"},
-			"200": {"name": "SPELL_FAILED_TARGET_NOT_GROUNDED"},
-			"201": {"name": "SPELL_FAILED_EXCEEDED_WEEKLY_USAGE"},
-			"202": {"name": "SPELL_FAILED_NOT_IN_LFG_DUNGEON"},
-			"254": {"name": "SPELL_FAILED_UNKNOWN"},
-			"255": {"name": "SPELL_CAST_OK"}
+			"0": { "name": "SPELL_FAILED_SUCCESS" },
+			"1": { "name": "SPELL_FAILED_AFFECTING_COMBAT" },
+			"2": { "name": "SPELL_FAILED_ALREADY_AT_FULL_HEALTH" },
+			"3": { "name": "SPELL_FAILED_ALREADY_AT_FULL_MANA" },
+			"4": { "name": "SPELL_FAILED_ALREADY_AT_FULL_POWER" },
+			"5": { "name": "SPELL_FAILED_ALREADY_BEING_TAMED" },
+			"6": { "name": "SPELL_FAILED_ALREADY_HAVE_CHARM" },
+			"7": { "name": "SPELL_FAILED_ALREADY_HAVE_SUMMON" },
+			"8": { "name": "SPELL_FAILED_ALREADY_HAVE_PET" },
+			"9": { "name": "SPELL_FAILED_ALREADY_OPEN" },
+			"10": { "name": "SPELL_FAILED_AURA_BOUNCED" },
+			"11": { "name": "SPELL_FAILED_AUTOTRACK_INTERRUPTED" },
+			"12": { "name": "SPELL_FAILED_BAD_IMPLICIT_TARGETS" },
+			"13": { "name": "SPELL_FAILED_BAD_TARGETS" },
+			"14": { "name": "SPELL_FAILED_CANT_BE_CHARMED" },
+			"15": { "name": "SPELL_FAILED_CANT_BE_DISENCHANTED" },
+			"16": { "name": "SPELL_FAILED_CANT_BE_DISENCHANTED_SKILL" },
+			"17": { "name": "SPELL_FAILED_CANT_BE_MILLED" },
+			"18": { "name": "SPELL_FAILED_CANT_BE_PROSPECTED" },
+			"19": { "name": "SPELL_FAILED_CANT_CAST_ON_TAPPED" },
+			"20": { "name": "SPELL_FAILED_CANT_DUEL_WHILE_INVISIBLE" },
+			"21": { "name": "SPELL_FAILED_CANT_DUEL_WHILE_STEALTHED" },
+			"22": { "name": "SPELL_FAILED_CANT_STEALTH" },
+			"23": { "name": "SPELL_FAILED_CASTER_AURASTATE" },
+			"24": { "name": "SPELL_FAILED_CASTER_DEAD" },
+			"25": { "name": "SPELL_FAILED_CHARMED" },
+			"26": { "name": "SPELL_FAILED_CHEST_IN_USE" },
+			"27": { "name": "SPELL_FAILED_CONFUSED" },
+			"28": { "name": "SPELL_FAILED_DONT_REPORT" },
+			"29": { "name": "SPELL_FAILED_EQUIPPED_ITEM" },
+			"30": { "name": "SPELL_FAILED_EQUIPPED_ITEM_CLASS" },
+			"31": { "name": "SPELL_FAILED_EQUIPPED_ITEM_CLASS_MAINHAND" },
+			"32": { "name": "SPELL_FAILED_EQUIPPED_ITEM_CLASS_OFFHAND" },
+			"33": { "name": "SPELL_FAILED_ERROR" },
+			"34": { "name": "SPELL_FAILED_FALLING" },
+			"35": { "name": "SPELL_FAILED_FIZZLE" },
+			"36": { "name": "SPELL_FAILED_FLEEING" },
+			"37": { "name": "SPELL_FAILED_FOOD_LOWLEVEL" },
+			"38": { "name": "SPELL_FAILED_HIGHLEVEL" },
+			"39": { "name": "SPELL_FAILED_HUNGER_SATIATED" },
+			"40": { "name": "SPELL_FAILED_IMMUNE" },
+			"41": { "name": "SPELL_FAILED_INCORRECT_AREA" },
+			"42": { "name": "SPELL_FAILED_INTERRUPTED" },
+			"43": { "name": "SPELL_FAILED_INTERRUPTED_COMBAT" },
+			"44": { "name": "SPELL_FAILED_ITEM_ALREADY_ENCHANTED" },
+			"45": { "name": "SPELL_FAILED_ITEM_GONE" },
+			"46": { "name": "SPELL_FAILED_ITEM_NOT_FOUND" },
+			"47": { "name": "SPELL_FAILED_ITEM_NOT_READY" },
+			"48": { "name": "SPELL_FAILED_LEVEL_REQUIREMENT" },
+			"49": { "name": "SPELL_FAILED_LINE_OF_SIGHT" },
+			"50": { "name": "SPELL_FAILED_LOWLEVEL" },
+			"51": { "name": "SPELL_FAILED_LOW_CASTLEVEL" },
+			"52": { "name": "SPELL_FAILED_MAINHAND_EMPTY" },
+			"53": { "name": "SPELL_FAILED_MOVING" },
+			"54": { "name": "SPELL_FAILED_NEED_AMMO" },
+			"55": { "name": "SPELL_FAILED_NEED_AMMO_POUCH" },
+			"56": { "name": "SPELL_FAILED_NEED_EXOTIC_AMMO" },
+			"57": { "name": "SPELL_FAILED_NEED_MORE_ITEMS" },
+			"58": { "name": "SPELL_FAILED_NOPATH" },
+			"59": { "name": "SPELL_FAILED_NOT_BEHIND" },
+			"60": { "name": "SPELL_FAILED_NOT_FISHABLE" },
+			"61": { "name": "SPELL_FAILED_NOT_FLYING" },
+			"62": { "name": "SPELL_FAILED_NOT_HERE" },
+			"63": { "name": "SPELL_FAILED_NOT_INFRONT" },
+			"64": { "name": "SPELL_FAILED_NOT_IN_CONTROL" },
+			"65": { "name": "SPELL_FAILED_NOT_KNOWN" },
+			"66": { "name": "SPELL_FAILED_NOT_MOUNTED" },
+			"67": { "name": "SPELL_FAILED_NOT_ON_TAXI" },
+			"68": { "name": "SPELL_FAILED_NOT_ON_TRANSPORT" },
+			"69": { "name": "SPELL_FAILED_NOT_READY" },
+			"70": { "name": "SPELL_FAILED_NOT_SHAPESHIFT" },
+			"71": { "name": "SPELL_FAILED_NOT_STANDING" },
+			"72": { "name": "SPELL_FAILED_NOT_TRADEABLE" },
+			"73": { "name": "SPELL_FAILED_NOT_TRADING" },
+			"74": { "name": "SPELL_FAILED_NOT_UNSHEATHED" },
+			"75": { "name": "SPELL_FAILED_NOT_WHILE_GHOST" },
+			"76": { "name": "SPELL_FAILED_NOT_WHILE_LOOTING" },
+			"77": { "name": "SPELL_FAILED_NO_AMMO" },
+			"78": { "name": "SPELL_FAILED_NO_CHARGES_REMAIN" },
+			"79": { "name": "SPELL_FAILED_NO_CHAMPION" },
+			"80": { "name": "SPELL_FAILED_NO_COMBO_POINTS" },
+			"81": { "name": "SPELL_FAILED_NO_DUELING" },
+			"82": { "name": "SPELL_FAILED_NO_ENDURANCE" },
+			"83": { "name": "SPELL_FAILED_NO_FISH" },
+			"84": { "name": "SPELL_FAILED_NO_ITEMS_WHILE_SHAPESHIFTED" },
+			"85": { "name": "SPELL_FAILED_NO_MOUNTS_ALLOWED" },
+			"86": { "name": "SPELL_FAILED_NO_PET" },
+			"87": { "name": "SPELL_FAILED_NO_POWER" },
+			"88": { "name": "SPELL_FAILED_NOTHING_TO_DISPEL" },
+			"89": { "name": "SPELL_FAILED_NOTHING_TO_STEAL" },
+			"90": { "name": "SPELL_FAILED_ONLY_ABOVEWATER" },
+			"91": { "name": "SPELL_FAILED_ONLY_DAYTIME" },
+			"92": { "name": "SPELL_FAILED_ONLY_INDOORS" },
+			"93": { "name": "SPELL_FAILED_ONLY_MOUNTED" },
+			"94": { "name": "SPELL_FAILED_ONLY_NIGHTTIME" },
+			"95": { "name": "SPELL_FAILED_ONLY_OUTDOORS" },
+			"96": { "name": "SPELL_FAILED_ONLY_SHAPESHIFT" },
+			"97": { "name": "SPELL_FAILED_ONLY_STEALTHED" },
+			"98": { "name": "SPELL_FAILED_ONLY_UNDERWATER" },
+			"99": { "name": "SPELL_FAILED_OUT_OF_RANGE" },
+			"100": { "name": "SPELL_FAILED_PACIFIED" },
+			"101": { "name": "SPELL_FAILED_POSSESSED" },
+			"102": { "name": "SPELL_FAILED_REAGENTS" },
+			"103": { "name": "SPELL_FAILED_REQUIRES_AREA" },
+			"104": { "name": "SPELL_FAILED_REQUIRES_SPELL_FOCUS" },
+			"105": { "name": "SPELL_FAILED_ROOTED" },
+			"106": { "name": "SPELL_FAILED_SILENCED" },
+			"107": { "name": "SPELL_FAILED_SPELL_IN_PROGRESS" },
+			"108": { "name": "SPELL_FAILED_SPELL_LEARNED" },
+			"109": { "name": "SPELL_FAILED_SPELL_UNAVAILABLE" },
+			"110": { "name": "SPELL_FAILED_STUNNED" },
+			"111": { "name": "SPELL_FAILED_TARGETS_DEAD" },
+			"112": { "name": "SPELL_FAILED_TARGET_AFFECTING_COMBAT" },
+			"113": { "name": "SPELL_FAILED_TARGET_AURASTATE" },
+			"114": { "name": "SPELL_FAILED_TARGET_DUELING" },
+			"115": { "name": "SPELL_FAILED_TARGET_ENEMY" },
+			"116": { "name": "SPELL_FAILED_TARGET_ENRAGED" },
+			"117": { "name": "SPELL_FAILED_TARGET_FRIENDLY" },
+			"118": { "name": "SPELL_FAILED_TARGET_IN_COMBAT" },
+			"119": { "name": "SPELL_FAILED_TARGET_IS_PLAYER" },
+			"120": { "name": "SPELL_FAILED_TARGET_IS_PLAYER_CONTROLLED" },
+			"121": { "name": "SPELL_FAILED_TARGET_NOT_DEAD" },
+			"122": { "name": "SPELL_FAILED_TARGET_NOT_IN_PARTY" },
+			"123": { "name": "SPELL_FAILED_TARGET_NOT_LOOTED" },
+			"124": { "name": "SPELL_FAILED_TARGET_NOT_PLAYER" },
+			"125": { "name": "SPELL_FAILED_TARGET_NO_POCKETS" },
+			"126": { "name": "SPELL_FAILED_TARGET_NO_WEAPONS" },
+			"127": { "name": "SPELL_FAILED_TARGET_NO_RANGED_WEAPONS" },
+			"128": { "name": "SPELL_FAILED_TARGET_UNSKINNABLE" },
+			"129": { "name": "SPELL_FAILED_THIRST_SATIATED" },
+			"130": { "name": "SPELL_FAILED_TOO_CLOSE" },
+			"131": { "name": "SPELL_FAILED_TOO_MANY_OF_ITEM" },
+			"132": { "name": "SPELL_FAILED_TOTEM_CATEGORY" },
+			"133": { "name": "SPELL_FAILED_TOTEMS" },
+			"134": { "name": "SPELL_FAILED_TRY_AGAIN" },
+			"135": { "name": "SPELL_FAILED_UNIT_NOT_BEHIND" },
+			"136": { "name": "SPELL_FAILED_UNIT_NOT_INFRONT" },
+			"137": { "name": "SPELL_FAILED_VISION_OBSCURED" },
+			"138": { "name": "SPELL_FAILED_WRONG_PET_FOOD" },
+			"139": { "name": "SPELL_FAILED_NOT_WHILE_FATIGUED" },
+			"140": { "name": "SPELL_FAILED_TARGET_NOT_IN_INSTANCE" },
+			"141": { "name": "SPELL_FAILED_NOT_WHILE_TRADING" },
+			"142": { "name": "SPELL_FAILED_TARGET_NOT_IN_RAID" },
+			"143": { "name": "SPELL_FAILED_TARGET_FREEFORALL" },
+			"144": { "name": "SPELL_FAILED_NO_EDIBLE_CORPSES" },
+			"145": { "name": "SPELL_FAILED_ONLY_BATTLEGROUNDS" },
+			"146": { "name": "SPELL_FAILED_TARGET_NOT_GHOST" },
+			"147": { "name": "SPELL_FAILED_TRANSFORM_UNUSABLE" },
+			"148": { "name": "SPELL_FAILED_WRONG_WEATHER" },
+			"149": { "name": "SPELL_FAILED_DAMAGE_IMMUNE" },
+			"150": { "name": "SPELL_FAILED_PREVENTED_BY_MECHANIC" },
+			"151": { "name": "SPELL_FAILED_PLAY_TIME" },
+			"152": { "name": "SPELL_FAILED_REPUTATION" },
+			"153": { "name": "SPELL_FAILED_MIN_SKILL" },
+			"154": { "name": "SPELL_FAILED_NOT_IN_RATED_BATTLEGROUND" },
+			"155": { "name": "SPELL_FAILED_NOT_ON_SHAPESHIFT" },
+			"156": { "name": "SPELL_FAILED_NOT_ON_STEALTHED" },
+			"157": { "name": "SPELL_FAILED_NOT_ON_DAMAGE_IMMUNE" },
+			"158": { "name": "SPELL_FAILED_NOT_ON_MOUNTED" },
+			"159": { "name": "SPELL_FAILED_TOO_SHALLOW" },
+			"160": { "name": "SPELL_FAILED_TARGET_NOT_IN_SANCTUARY" },
+			"161": { "name": "SPELL_FAILED_TARGET_IS_TRIVIAL" },
+			"162": { "name": "SPELL_FAILED_BM_OR_INVISGOD" },
+			"163": { "name": "SPELL_FAILED_EXPERT_RIDING_REQUIREMENT" },
+			"164": { "name": "SPELL_FAILED_ARTISAN_RIDING_REQUIREMENT" },
+			"165": { "name": "SPELL_FAILED_NOT_IDLE" },
+			"166": { "name": "SPELL_FAILED_NOT_INACTIVE" },
+			"167": { "name": "SPELL_FAILED_PARTIAL_PLAYTIME" },
+			"168": { "name": "SPELL_FAILED_NO_PLAYTIME" },
+			"169": { "name": "SPELL_FAILED_NOT_IN_BATTLEGROUND" },
+			"170": { "name": "SPELL_FAILED_NOT_IN_RAID_INSTANCE" },
+			"171": { "name": "SPELL_FAILED_ONLY_IN_ARENA" },
+			"172": { "name": "SPELL_FAILED_TARGET_LOCKED_TO_RAID_INSTANCE" },
+			"173": { "name": "SPELL_FAILED_ON_USE_ENCHANT" },
+			"174": { "name": "SPELL_FAILED_NOT_ON_GROUND" },
+			"175": { "name": "SPELL_FAILED_CUSTOM_ERROR" },
+			"176": { "name": "SPELL_FAILED_CANT_DO_THAT_RIGHT_NOW" },
+			"177": { "name": "SPELL_FAILED_TOO_MANY_SOCKETS" },
+			"178": { "name": "SPELL_FAILED_INVALID_GLYPH" },
+			"179": { "name": "SPELL_FAILED_UNIQUE_GLYPH" },
+			"180": { "name": "SPELL_FAILED_GLYPH_SOCKET_LOCKED" },
+			"181": { "name": "SPELL_FAILED_NO_VALID_TARGETS" },
+			"182": { "name": "SPELL_FAILED_ITEM_AT_MAX_CHARGES" },
+			"183": { "name": "SPELL_FAILED_NOT_IN_BARBERSHOP" },
+			"184": { "name": "SPELL_FAILED_FISHING_TOO_LOW" },
+			"185": { "name": "SPELL_FAILED_ITEM_ENCHANT_TRADE_WINDOW" },
+			"186": { "name": "SPELL_FAILED_SUMMON_PENDING" },
+			"187": { "name": "SPELL_FAILED_MAX_SOCKETS" },
+			"188": { "name": "SPELL_FAILED_PET_CAN_RENAME" },
+			"189": { "name": "SPELL_FAILED_TARGET_CANNOT_BE_RESURRECTED" },
+			"190": { "name": "SPELL_FAILED_NO_ACTIONS" },
+			"191": { "name": "SPELL_FAILED_CURRENCY_WEIGHT_MISMATCH" },
+			"192": { "name": "SPELL_FAILED_WEIGHT_NOT_ENOUGH" },
+			"193": { "name": "SPELL_FAILED_WEIGHT_TOO_MUCH" },
+			"194": { "name": "SPELL_FAILED_NO_VACANT_SEAT" },
+			"195": { "name": "SPELL_FAILED_NO_LIQUID" },
+			"196": { "name": "SPELL_FAILED_ONLY_NOT_SWIMMING" },
+			"197": { "name": "SPELL_FAILED_BY_NOT_MOVING" },
+			"198": { "name": "SPELL_FAILED_IN_COMBAT_RES_LIMIT_REACHED" },
+			"199": { "name": "SPELL_FAILED_NOT_IN_ARENA" },
+			"200": { "name": "SPELL_FAILED_TARGET_NOT_GROUNDED" },
+			"201": { "name": "SPELL_FAILED_EXCEEDED_WEEKLY_USAGE" },
+			"202": { "name": "SPELL_FAILED_NOT_IN_LFG_DUNGEON" },
+			"254": { "name": "SPELL_FAILED_UNKNOWN" },
+			"255": { "name": "SPELL_CAST_OK" }
 		}
 	},
 	"PowerParameter": {
@@ -626,13 +965,13 @@
 		"name": "Spell school type",
 		"prefix": "SPELL_SCHOOL_",
 		"values": {
-			"0": {"name": "normal"},
-			"1": {"name": "holy"},
-			"2": {"name": "fire"},
-			"3": {"name": "nature"},
-			"4": {"name": "frost"},
-			"5": {"name": "shadow"},
-			"6": {"name": "arcane"}
+			"0": { "name": "normal" },
+			"1": { "name": "holy" },
+			"2": { "name": "fire" },
+			"3": { "name": "nature" },
+			"4": { "name": "frost" },
+			"5": { "name": "shadow" },
+			"6": { "name": "arcane" }
 		}
 	},
 	"SpellSchoolMaskParameter": {
@@ -640,30 +979,30 @@
 		"prefix": "SPELL_SCHOOL_MASK_",
 		"isflag": true,
 		"values": {
-			"0": {"name": "none"},
-			"1": {"name": "normal"},
-			"2": {"name": "holy"},
-			"4": {"name": "fire"},
-			"8": {"name": "nature"},
-			"16": {"name": "frost"},
-			"32": {"name": "shadow"},
-			"64": {"name": "arcane"}
+			"0": { "name": "none" },
+			"1": { "name": "normal" },
+			"2": { "name": "holy" },
+			"4": { "name": "fire" },
+			"8": { "name": "nature" },
+			"16": { "name": "frost" },
+			"32": { "name": "shadow" },
+			"64": { "name": "arcane" }
 		}
 	},
-	"TypeIdParameter": {	
-		"name": "Type id",	
-		"prefix": "TYPE_",	
-		"values": {	
-			"0": {"name": "object"},	
-			"1": {"name": "item"},	
-			"2": {"name": "container"},	
-			"3": {"name": "creature"},	
-			"4": {"name": "player"},	
-			"5": {"name": "gameobject"},	
-			"6": {"name": "dynamic object"},	
-			"7": {"name": "corpse"},	
-			"8": {"name": "areatrigger"}	
-		}	
+	"TypeIdParameter": {
+		"name": "Type id",
+		"prefix": "TYPE_",
+		"values": {
+			"0": { "name": "object" },
+			"1": { "name": "item" },
+			"2": { "name": "container" },
+			"3": { "name": "creature" },
+			"4": { "name": "player" },
+			"5": { "name": "gameobject" },
+			"6": { "name": "dynamic object" },
+			"7": { "name": "corpse" },
+			"8": { "name": "areatrigger" }
+		}
 	},
 	"TypeMaskParameter": {
 		"name": "Type mask",
@@ -671,15 +1010,15 @@
 		"isflag": true,
 		"prefix": "TYPEMASK_",
 		"values": {
-			"0": {"name": "none"},
-			"1": {"name": "object"},
-			"2": {"name": "item"},
-			"4": {"name": "container"},
-			"8": {"name": "creature"},
-			"16": {"name": "player"},
-			"32": {"name": "gameobject"},
-			"64": {"name": "dynamic object"},
-			"128": {"name": "corpse"}
+			"0": { "name": "none" },
+			"1": { "name": "object" },
+			"2": { "name": "item" },
+			"4": { "name": "container" },
+			"8": { "name": "creature" },
+			"16": { "name": "player" },
+			"32": { "name": "gameobject" },
+			"64": { "name": "dynamic object" },
+			"128": { "name": "corpse" }
 		}
 	},
 	"UnitClassParameter": {
@@ -1189,112 +1528,112 @@
 		"prefix": "GAMEOBJECT_TYPE_",
 		"quickaccess": "Full",
 		"values": {
-			"0" : {
+			"0": {
 				"name": "DOOR"
 			},
-			"1" : {
+			"1": {
 				"name": "BUTTON"
 			},
-			"2" : {
+			"2": {
 				"name": "QUEST_GIVER"
 			},
-			"3" : {
+			"3": {
 				"name": "CHEST"
 			},
-			"4" : {
+			"4": {
 				"name": "BINDER"
 			},
-			"5" : {
+			"5": {
 				"name": "GENERIC"
 			},
-			"6" : {
+			"6": {
 				"name": "TRAP"
 			},
-			"7" : {
+			"7": {
 				"name": "CHAIR"
 			},
-			"8" : {
+			"8": {
 				"name": "SPELL_FOCUS"
 			},
-			"9" : {
+			"9": {
 				"name": "TEXT"
 			},
-			"10" : {
+			"10": {
 				"name": "GOOBER"
 			},
-			"11" : {
+			"11": {
 				"name": "TRANSPORT"
 			},
-			"12" : {
+			"12": {
 				"name": "AREA_DAMAGE"
 			},
-			"13" : {
+			"13": {
 				"name": "CAMERA"
 			},
-			"14" : {
+			"14": {
 				"name": "MAP_OBJECT"
 			},
-			"15" : {
+			"15": {
 				"name": "MO_TRANSPORT"
 			},
-			"16" : {
+			"16": {
 				"name": "DUEL_ARBITER"
 			},
-			"17" : {
+			"17": {
 				"name": "FISHING_NODE"
 			},
-			"18" : {
+			"18": {
 				"name": "RITUAL"
 			},
-			"19" : {
+			"19": {
 				"name": "MAILBOX"
 			},
-			"20" : {
+			"20": {
 				"name": "AUCTIONHOUSE"
 			},
-			"21" : {
+			"21": {
 				"name": "GUARDPOST"
 			},
-			"22" : {
+			"22": {
 				"name": "SPELL_CASTER"
 			},
-			"23" : {
+			"23": {
 				"name": "MEETING_STONE"
 			},
-			"24" : {
+			"24": {
 				"name": "FLAG_STAND"
 			},
-			"25" : {
+			"25": {
 				"name": "FISHING_HOLE"
 			},
-			"26" : {
+			"26": {
 				"name": "FLAG_DROP"
 			},
-			"27" : {
+			"27": {
 				"name": "MINI_GAME"
 			},
-			"28" : {
+			"28": {
 				"name": "LOTTERY_KIOSK"
 			},
-			"29" : {
+			"29": {
 				"name": "CAPTURE_POINT"
 			},
-			"30" : {
+			"30": {
 				"name": "AURA_GENERATOR"
 			},
-			"31" : {
+			"31": {
 				"name": "DUNGEON_DIFFICULTY"
 			},
-			"32" : {
+			"32": {
 				"name": "BARBER_CHAIR"
 			},
-			"33" : {
+			"33": {
 				"name": "DESTRUCTIBLE_BUILDING"
 			},
-			"34" : {
+			"34": {
 				"name": "GUILD_BANK"
 			},
-			"35" : {
+			"35": {
 				"name": "TRAPDOOR"
 			}
 		}
@@ -1349,56 +1688,98 @@
 		"name": "Summon type",
 		"prefix": "TEMPSUMMON_",
 		"values": {
-			"1": {"name": "timed or dead despawn", "description":  "despawns after a specified time OR when the creature disappears"},
-			"2": {"name": "timed or corpse despawn", "description": "despawns after a specified time OR when the creature dies"},
-			"3": {"name": "timed despawn", "description": "despawns after a specified time OR when the creature dies"},
-			"4": {"name": "timed despawn out of combat", "description": "despawns after a specified time after the creature is out of combat"},
-			"5": {"name": "corpse despawn", "description":  "despawns instantly after death"},
-			"6": {"name": "corpse timed despawn", "description":  "despawns after a specified time after death"},
-			"7": {"name": "dead despawn", "description": "despawns when the creature disappears"},
-			"8": {"name": "manual despawn", "description": "despawns when Despawn action is called"}
+			"1": {
+				"name": "timed or dead despawn",
+				"description": "despawns after a specified time OR when the creature disappears"
+			},
+			"2": {
+				"name": "timed or corpse despawn",
+				"description": "despawns after a specified time OR when the creature dies"
+			},
+			"3": {
+				"name": "timed despawn",
+				"description": "despawns after a specified time OR when the creature dies"
+			},
+			"4": {
+				"name": "timed despawn out of combat",
+				"description": "despawns after a specified time after the creature is out of combat"
+			},
+			"5": {
+				"name": "corpse despawn",
+				"description": "despawns instantly after death"
+			},
+			"6": {
+				"name": "corpse timed despawn",
+				"description": "despawns after a specified time after death"
+			},
+			"7": {
+				"name": "dead despawn",
+				"description": "despawns when the creature disappears"
+			},
+			"8": {
+				"name": "manual despawn",
+				"description": "despawns when Despawn action is called"
+			}
 		}
 	},
 	"PageTextMaterialParameter": {
 		"name": "Page text material",
 		"values": {
-			"1": {"name": "Parchment"},
-			"2": {"name": "Stone"},
-			"3": {"name": "Marble"},
-			"4": {"name": "Silver"},
-			"5": {"name": "Bronze"},
-			"6": {"name": "Valentine"},
-			"8": {"name": "Parchment large"}
+			"1": { "name": "Parchment" },
+			"2": { "name": "Stone" },
+			"3": { "name": "Marble" },
+			"4": { "name": "Silver" },
+			"5": { "name": "Bronze" },
+			"6": { "name": "Valentine" },
+			"8": { "name": "Parchment large" }
 		}
 	},
 	"TrapTypeParameter": {
 		"name": "Trap type",
 		"values": {
-			"0": {"name": "trap with no despawn after cast"},
-			"1": {"name": "trap despawns after cast"},
-			"2": {"name": "bomb casts on spawn"}
+			"0": { "name": "trap with no despawn after cast" },
+			"1": { "name": "trap despawns after cast" },
+			"2": { "name": "bomb casts on spawn" }
 		}
 	},
 	"QuestTypeParameter": {
 		"name": "Quest type",
 		"values": {
-			"0": {"name": "enabled, autocomplete", "description": "Quest is enabled, but it is auto-completed when accepted; this skips quest objectives and quest details."},
-			"1": {"name": "disabled", "description": "Quest is disabled (not yet implemented in the core)."},
-			"2": {"name": "enabled", "description": "Quest is enabled (does not auto-complete)."},
-			"3": {"name": "world quest", "description": "Quest is a World Quest."}
+			"0": {
+				"name": "enabled, autocomplete",
+				"description": "Quest is enabled, but it is auto-completed when accepted; this skips quest objectives and quest details."
+			},
+			"1": {
+				"name": "disabled",
+				"description": "Quest is disabled (not yet implemented in the core)."
+			},
+			"2": {
+				"name": "enabled",
+				"description": "Quest is enabled (does not auto-complete)."
+			},
+			"3": {
+				"name": "world quest",
+				"description": "Quest is a World Quest."
+			}
 		}
 	},
 	"QuestSpecialFlagParameter": {
 		"name": "Quest special flags",
 		"isflag": true,
 		"values": {
-			"0": {"name": "none"},
-			"1": {"name": "repeatable"},
-			"2": {"name": "completable only by external event"},
-			"4": {"name": "auto-accept", "description": "As of patch 3.3.5a only quests in the starter area need this flag."},
-			"8": {"name": "Dungeon Finder quest"},
-			"16": {"name": "monthly"},
-			"32": {"name": "use spell cast kill credit", "description": "The quest requires RequiredOrNpcGo killcredit (a spell cast), but NOT an actual NPC kill. This action usually involves killing an invisible \"bunny\" NPC."}
+			"0": { "name": "none" },
+			"1": { "name": "repeatable" },
+			"2": { "name": "completable only by external event" },
+			"4": {
+				"name": "auto-accept",
+				"description": "As of patch 3.3.5a only quests in the starter area need this flag."
+			},
+			"8": { "name": "Dungeon Finder quest" },
+			"16": { "name": "monthly" },
+			"32": {
+				"name": "use spell cast kill credit",
+				"description": "The quest requires RequiredOrNpcGo killcredit (a spell cast), but NOT an actual NPC kill. This action usually involves killing an invisible \"bunny\" NPC."
+			}
 		}
 	},
 	"GameObjectFlagParameter": {
@@ -1407,39 +1788,66 @@
 		"quickaccess": "Full",
 		"prefix": "GO_FLAG_",
 		"values": {
-			"0": {"name": "none"},
-			"1": {"name": "IN_USE", "description": "Gameobject in use - Disables interaction while being animated"},
-			"2": {"name": "LOCKED", "description": "Makes the Gameobject Locked. Requires a key, spell, or event to be opened. \"Locked\" appears in tooltip"},
-			"4": {"name": "INTERACT_COND", "description": "Untargetable, cannot interact"},
-			"8": {"name": "TRANSPORT", "description": "Gameobject can transport (boat, elevator, car)"},
-			"16": {"name": "NOT_SELECTABLE", "description": "Not selectable (Not even in GM-mode)"},
-			"32": {"name": "NODESPAWN", "description": "Never despawns. Typical for gameobjects with on/off state (doors for example)"},
-			"64": {"name": "TRIGGERED", "description": "typically, summoned objects. Triggered by spell or other events"},
-			"512": {"name": "DAMAGED", "description": "Gameobject has been siege damaged"},
-			"1024": {"name": "DESTROYED", "description": "Gameobject has been destroyed"}
+			"0": { "name": "none" },
+			"1": {
+				"name": "IN_USE",
+				"description": "Gameobject in use - Disables interaction while being animated"
+			},
+			"2": {
+				"name": "LOCKED",
+				"description": "Makes the Gameobject Locked. Requires a key, spell, or event to be opened. \"Locked\" appears in tooltip"
+			},
+			"4": {
+				"name": "INTERACT_COND",
+				"description": "Untargetable, cannot interact"
+			},
+			"8": {
+				"name": "TRANSPORT",
+				"description": "Gameobject can transport (boat, elevator, car)"
+			},
+			"16": {
+				"name": "NOT_SELECTABLE",
+				"description": "Not selectable (Not even in GM-mode)"
+			},
+			"32": {
+				"name": "NODESPAWN",
+				"description": "Never despawns. Typical for gameobjects with on/off state (doors for example)"
+			},
+			"64": {
+				"name": "TRIGGERED",
+				"description": "typically, summoned objects. Triggered by spell or other events"
+			},
+			"512": {
+				"name": "DAMAGED",
+				"description": "Gameobject has been siege damaged"
+			},
+			"1024": {
+				"name": "DESTROYED",
+				"description": "Gameobject has been destroyed"
+			}
 		}
 	},
 	"GenderParameter": {
 		"name": "Gender",
 		"values": {
-			"0": {"name": "male"},
-			"1": {"name": "female"},
-			"2": {"name": "none"}
+			"0": { "name": "male" },
+			"1": { "name": "female" },
+			"2": { "name": "none" }
 		}
 	},
 	"PowerTypeParameter": {
 		"name": "Power type",
 		"values": {
-			"0": {"name": "mana"},
-			"1": {"name": "rage"},
-			"2": {"name": "focus"},
-			"3": {"name": "energy"},
-			"5": {"name": "runes"},
-			"6": {"name": "runic power"},
-			"7": {"name": "soul shards"},
-			"8": {"name": "eclipse"},
-			"9": {"name": "holy power"},
-			"10": {"name": "alternate power"}
+			"0": { "name": "mana" },
+			"1": { "name": "rage" },
+			"2": { "name": "focus" },
+			"3": { "name": "energy" },
+			"5": { "name": "runes" },
+			"6": { "name": "runic power" },
+			"7": { "name": "soul shards" },
+			"8": { "name": "eclipse" },
+			"9": { "name": "holy power" },
+			"10": { "name": "alternate power" }
 		}
 	},
 	"StandStateParameter": {
@@ -1447,16 +1855,16 @@
 		"quickaccess": "Full",
 		"name": "Stand state",
 		"values": {
-			"0": {"name": "STAND"},
-			"1": {"name": "SIT"},
-			"2": {"name": "SIT_CHAIR"},
-			"3": {"name": "SLEEP"},
-			"4": {"name": "SIT_LOW_CHAIR"},
-			"5": {"name": "SIT_MEDIUM_CHAIR"},
-			"6": {"name": "SIT_HIGH_CHAIR power"},
-			"7": {"name": "DEAD"},
-			"8": {"name": "KNEEL"},
-			"9": {"name": "SUBMERGED"}
+			"0": { "name": "STAND" },
+			"1": { "name": "SIT" },
+			"2": { "name": "SIT_CHAIR" },
+			"3": { "name": "SLEEP" },
+			"4": { "name": "SIT_LOW_CHAIR" },
+			"5": { "name": "SIT_MEDIUM_CHAIR" },
+			"6": { "name": "SIT_HIGH_CHAIR power" },
+			"7": { "name": "DEAD" },
+			"8": { "name": "KNEEL" },
+			"9": { "name": "SUBMERGED" }
 		}
 	},
 	"UnitStandFlagParameter": {
@@ -1465,32 +1873,32 @@
 		"quickaccess": "Full",
 		"name": "Unit stand",
 		"values": {
-			"0": {"name": "none"},
-			"1": {"name": "UNK1"},
-			"2": {"name": "CREEP"},
-			"4": {"name": "UNTRACKABLE"},
-			"8": {"name": "UNK4"},
-			"16": {"name": "UNK5"}
+			"0": { "name": "none" },
+			"1": { "name": "UNK1" },
+			"2": { "name": "CREEP" },
+			"4": { "name": "UNTRACKABLE" },
+			"8": { "name": "UNK4" },
+			"16": { "name": "UNK5" }
 		}
 	},
 	"AnimationTierParameter": {
 		"name": "Animation tier",
 		"quickaccess": "Full",
 		"values": {
-			"0": {"name": "Ground"},
-			"1": {"name": "Swim"},
-			"2": {"name": "Hover"},
-			"3": {"name": "Fly"},
-			"4": {"name": "Submerged"}
+			"0": { "name": "Ground" },
+			"1": { "name": "Swim" },
+			"2": { "name": "Hover" },
+			"3": { "name": "Fly" },
+			"4": { "name": "Submerged" }
 		}
 	},
 	"SheathStateParameter": {
 		"name": "Sheath state",
 		"quickaccess": "Full",
 		"values": {
-			"0": {"name": "Unarmed"},
-			"1": {"name": "Melee"},
-			"2": {"name": "Ranged"}
+			"0": { "name": "Unarmed" },
+			"1": { "name": "Melee" },
+			"2": { "name": "Ranged" }
 		}
 	},
 	"UnitPVPStateFlagParameter": {
@@ -1498,60 +1906,60 @@
 		"prefix": "UNIT_BYTE2_FLAG_",
 		"name": "Unit stand",
 		"values": {
-			"0": {"name": "none"},
-			"1": {"name": "PVP"},
-			"2": {"name": "UNK1"},
-			"4": {"name": "FFA_PVP"},
-			"8": {"name": "SANCTUARY"},
-			"16": {"name": "UNK4"},
-			"32": {"name": "UNK5"},
-			"64": {"name": "UNK6"},
-			"128": {"name": "UNK7"}
+			"0": { "name": "none" },
+			"1": { "name": "PVP" },
+			"2": { "name": "UNK1" },
+			"4": { "name": "FFA_PVP" },
+			"8": { "name": "SANCTUARY" },
+			"16": { "name": "UNK4" },
+			"32": { "name": "UNK5" },
+			"64": { "name": "UNK6" },
+			"128": { "name": "UNK7" }
 		}
 	},
 	"UnitBytesPetFlagParameter": {
 		"isflag": true,
 		"name": "Pet flags (bytes 2)",
 		"values": {
-			"1": {"name": "can be renamed"},
-			"2": {"name": "can be abandoned"}
+			"1": { "name": "can be renamed" },
+			"2": { "name": "can be abandoned" }
 		}
 	},
 	"ShapeshiftFormParameter": {
 		"prefix": "FORM_",
 		"name": "Shapeshift form",
 		"values": {
-			"0": {"name": "NONE"},
-			"1": {"name": "CAT"},
-			"2": {"name": "TREE"},
-			"3": {"name": "TRAVEL"},
-			"4": {"name": "AQUA"},
-			"5": {"name": "BEAR"},
-			"6": {"name": "AMBIENT"},
-			"7": {"name": "GHOUL"},
-			"8": {"name": "DIREBEAR"},
-			"9": {"name": "STEVES_GHOUL"},
-			"10": {"name": "THARONJA_SKELETON"},
-			"11": {"name": "TEST_OF_STRENGTH"},
-			"12": {"name": "BLB_PLAYER"},
-			"13": {"name": "SHADOW_DANCE"},
-			"14": {"name": "CREATUREBEAR"},
-			"15": {"name": "CREATURECAT"},
-			"16": {"name": "GHOSTWOLF"},
-			"17": {"name": "BATTLESTANCE"},
-			"18": {"name": "DEFENSIVESTANCE"},
-			"19": {"name": "BERSERKERSTANCE"},
-			"20": {"name": "TEST"},
-			"21": {"name": "ZOMBIE"},
-			"22": {"name": "METAMORPHOSIS"},
-			"25": {"name": "UNDEAD"},
-			"26": {"name": "MASTER_ANGLER"},
-			"27": {"name": "FLIGHT_EPIC"},
-			"28": {"name": "SHADOW"},
-			"29": {"name": "FLIGHT"},
-			"30": {"name": "STEALTH"},
-			"31": {"name": "MOONKIN"},
-			"32": {"name": "SPIRITOFREDEMPTION"}
+			"0": { "name": "NONE" },
+			"1": { "name": "CAT" },
+			"2": { "name": "TREE" },
+			"3": { "name": "TRAVEL" },
+			"4": { "name": "AQUA" },
+			"5": { "name": "BEAR" },
+			"6": { "name": "AMBIENT" },
+			"7": { "name": "GHOUL" },
+			"8": { "name": "DIREBEAR" },
+			"9": { "name": "STEVES_GHOUL" },
+			"10": { "name": "THARONJA_SKELETON" },
+			"11": { "name": "TEST_OF_STRENGTH" },
+			"12": { "name": "BLB_PLAYER" },
+			"13": { "name": "SHADOW_DANCE" },
+			"14": { "name": "CREATUREBEAR" },
+			"15": { "name": "CREATURECAT" },
+			"16": { "name": "GHOSTWOLF" },
+			"17": { "name": "BATTLESTANCE" },
+			"18": { "name": "DEFENSIVESTANCE" },
+			"19": { "name": "BERSERKERSTANCE" },
+			"20": { "name": "TEST" },
+			"21": { "name": "ZOMBIE" },
+			"22": { "name": "METAMORPHOSIS" },
+			"25": { "name": "UNDEAD" },
+			"26": { "name": "MASTER_ANGLER" },
+			"27": { "name": "FLIGHT_EPIC" },
+			"28": { "name": "SHADOW" },
+			"29": { "name": "FLIGHT" },
+			"30": { "name": "STEALTH" },
+			"31": { "name": "MOONKIN" },
+			"32": { "name": "SPIRITOFREDEMPTION" }
 		}
 	},
 	"ShapeshiftFormMaskParameter": {
@@ -1566,22 +1974,37 @@
 		"quickaccess": "Full",
 		"name": "Quest status (mask)",
 		"values": {
-			"1": {"name": "none", "description": "Player does not have or had quest at all. He could accept it, but he did not (yet)."},
-			"2": {"name": "complete", "description": "Player fulfilled objectives, but did not hand it in yet."},
-			"8": {"name": "incomplete", "description": "Player did not fulfill objectives yet"},
-			"32": {"name": "failed", "description": "Player failed to fulfill objectives for any reason, e.g. time limit"},
-			"64": {"name": "rewarded", "description": "Player handed quest in and this is sort of a post-quest interaction"}
+			"1": {
+				"name": "none",
+				"description": "Player does not have or had quest at all. He could accept it, but he did not (yet)."
+			},
+			"2": {
+				"name": "complete",
+				"description": "Player fulfilled objectives, but did not hand it in yet."
+			},
+			"8": {
+				"name": "incomplete",
+				"description": "Player did not fulfill objectives yet"
+			},
+			"32": {
+				"name": "failed",
+				"description": "Player failed to fulfill objectives for any reason, e.g. time limit"
+			},
+			"64": {
+				"name": "rewarded",
+				"description": "Player handed quest in and this is sort of a post-quest interaction"
+			}
 		}
 	},
 	"CreatureTextTypeParameter": {
 		"name": "Creature text type",
 		"values": {
-			"12": {"name": "Say"},
-			"14": {"name": "Yell"},
-			"15": {"name": "Whisper"},
-			"16": {"name": "Emote"},
-			"41": {"name": "Boss emote"},
-			"42": {"name": "Boss whisper"}
+			"12": { "name": "Say" },
+			"14": { "name": "Yell" },
+			"15": { "name": "Whisper" },
+			"16": { "name": "Emote" },
+			"41": { "name": "Boss emote" },
+			"42": { "name": "Boss whisper" }
 		}
 	},
 	"GossipIconParameter": {
@@ -1589,17 +2012,50 @@
 		"quickaccess": "Full",
 		"prefix": "GOSSIP_ICON_",
 		"values": {
-			"0": {"name": "Chat", "description": "White chat bubble"},
-			"1": {"name": "Vendor", "description": "Brown bag"},
-			"2": {"name": "Taxi", "description": "Flight"},
-			"3": {"name": "Trainer", "description": "Book"},
-			"4": {"name": "Interact 1", "description": "Interaction wheel"},
-			"5": {"name": "Interact 2", "description": "Interaction wheel"},
-			"6": {"name": "Money bag", "description": "Brown bag with yellow dot (gold)"},
-			"7": {"name": "Talk", "description": "White chat bubble with black dots (...)"},
-			"8": {"name": "Tabard", "description": "Tabard"},
-			"9": {"name": "Battle", "description": "Two swords"},
-			"10": {"name": "Dot", "description": "Yellow dot"}
+			"0": {
+				"name": "Chat",
+				"description": "White chat bubble"
+			},
+			"1": {
+				"name": "Vendor",
+				"description": "Brown bag"
+			},
+			"2": {
+				"name": "Taxi",
+				"description": "Flight"
+			},
+			"3": {
+				"name": "Trainer",
+				"description": "Book"
+			},
+			"4": {
+				"name": "Interact 1",
+				"description": "Interaction wheel"
+			},
+			"5": {
+				"name": "Interact 2",
+				"description": "Interaction wheel"
+			},
+			"6": {
+				"name": "Money bag",
+				"description": "Brown bag with yellow dot (gold)"
+			},
+			"7": {
+				"name": "Talk",
+				"description": "White chat bubble with black dots (...)"
+			},
+			"8": {
+				"name": "Tabard",
+				"description": "Tabard"
+			},
+			"9": {
+				"name": "Battle",
+				"description": "Two swords"
+			},
+			"10": {
+				"name": "Dot",
+				"description": "Yellow dot"
+			}
 		}
 	},
 	"GossipOptionNpcSlParameter": {
@@ -1658,1173 +2114,1344 @@
 		"quickaccess": "Full",
 		"prefix": "GOSSIP_OPTION_",
 		"values": {
-			"0": {"name": "None", "description": "Requires npc flag NONE"},
-			"1": {"name": "Gossip", "description": "Requires npc flag GOSSIP"},
-			"2": {"name": "Questgiver", "description": "Requires npc flag QUESTGIVER"},
-			"3": {"name": "Vendor", "description": "Requires npc flag VENDOR (Make sure there is npc_vendor data for this creature)"},
-			"4": {"name": "Taxi vendor", "description": "Requires npc flag TAXIVENDOR"},
-			"5": {"name": "Trainer", "description": "Requires npc flag TRAINER (Remember to set trainer_class in creature_template) "},
-			"6": {"name": "Spirit healer", "description": "Requires npc flag SPIRITHEALER"},
-			"7": {"name": "Spirit guide", "description": "Requires npc flag SPIRITGUIDE"},
-			"8": {"name": "Innkeeper", "description": "Requires npc flag INNKEEPER"},
-			"9": {"name": "Banker", "description": "Requires npc flag BANKER"},
-			"10": {"name": "Petitioner", "description": "Requires npc flag PETITIONER"},
-			"11": {"name": "Tabard designer", "description": "Requires npc flag TABARDDESIGNER"},
-			"12": {"name": "Battlefield", "description": "Requires npc flag BATTLEFIELDPERSON"},
-			"13": {"name": "Auctioneer", "description": "Requires npc flag AUCTIONEER"},
-			"14": {"name": "Stable pet", "description": "Requires npc flag STABLE"},
-			"15": {"name": "Armorer", "description": "Requires npc flag ARMORER (not used)"},
-			"16": {"name": "Unlearn talents", "description": "Requires npc flag TRAINER (bonus option for GOSSIP_OPTION_TRAINER)"},
-			"17": {"name": "Unlearn pet talents", "description": "Requires npc flag TRAINER (bonus option for GOSSIP_OPTION_TRAINER)"},
-			"18": {"name": "Learn dual spec", "description": "Requires npc flag TRAINER (bonus option for GOSSIP_OPTION_TRAINER)"},
-			"19": {"name": "Outdoor pvp"}
+			"0": {
+				"name": "None",
+				"description": "Requires npc flag NONE"
+			},
+			"1": {
+				"name": "Gossip",
+				"description": "Requires npc flag GOSSIP"
+			},
+			"2": {
+				"name": "Questgiver",
+				"description": "Requires npc flag QUESTGIVER"
+			},
+			"3": {
+				"name": "Vendor",
+				"description": "Requires npc flag VENDOR (Make sure there is npc_vendor data for this creature)"
+			},
+			"4": {
+				"name": "Taxi vendor",
+				"description": "Requires npc flag TAXIVENDOR"
+			},
+			"5": {
+				"name": "Trainer",
+				"description": "Requires npc flag TRAINER (Remember to set trainer_class in creature_template) "
+			},
+			"6": {
+				"name": "Spirit healer",
+				"description": "Requires npc flag SPIRITHEALER"
+			},
+			"7": {
+				"name": "Spirit guide",
+				"description": "Requires npc flag SPIRITGUIDE"
+			},
+			"8": {
+				"name": "Innkeeper",
+				"description": "Requires npc flag INNKEEPER"
+			},
+			"9": {
+				"name": "Banker",
+				"description": "Requires npc flag BANKER"
+			},
+			"10": {
+				"name": "Petitioner",
+				"description": "Requires npc flag PETITIONER"
+			},
+			"11": {
+				"name": "Tabard designer",
+				"description": "Requires npc flag TABARDDESIGNER"
+			},
+			"12": {
+				"name": "Battlefield",
+				"description": "Requires npc flag BATTLEFIELDPERSON"
+			},
+			"13": {
+				"name": "Auctioneer",
+				"description": "Requires npc flag AUCTIONEER"
+			},
+			"14": {
+				"name": "Stable pet",
+				"description": "Requires npc flag STABLE"
+			},
+			"15": {
+				"name": "Armorer",
+				"description": "Requires npc flag ARMORER (not used)"
+			},
+			"16": {
+				"name": "Unlearn talents",
+				"description": "Requires npc flag TRAINER (bonus option for GOSSIP_OPTION_TRAINER)"
+			},
+			"17": {
+				"name": "Unlearn pet talents",
+				"description": "Requires npc flag TRAINER (bonus option for GOSSIP_OPTION_TRAINER)"
+			},
+			"18": {
+				"name": "Learn dual spec",
+				"description": "Requires npc flag TRAINER (bonus option for GOSSIP_OPTION_TRAINER)"
+			},
+			"19": { "name": "Outdoor pvp" }
 		}
 	},
 	"SpellAreaFlagsParameter": {
 		"name": "Spell area flags",
 		"isflag": true,
 		"values": {
-			"1": {"name": "autocast"},
-			"2": {"name": "autoremove"}
+			"1": { "name": "autocast" },
+			"2": { "name": "autoremove" }
 		}
 	},
 	"IconNameParameter": {
 		"name": "Icon names",
 		"stringValues": {
-			"Directions": {"name": "Directions"},
-			"Buy": {"name": "Buy"},
-			"Taxi": {"name": "Taxi"},
-			"Trainer": {"name": "Trainer"},
-			"vehichleCursor": {"name": "vehichleCursor"},
-			"Attack": {"name": "Attack"},
-			"Interact": {"name": "Interact"},
-			"Speak": {"name": "Speak"},
-			"LootAll": {"name": "LootAll"},
-			"Gunner": {"name": "Gunner"},
-			"Pickup": {"name": "Pickup"},
-			"PVP": {"name": "PVP"},
-			"Point": {"name": "Point"},
-			"Quest": {"name": "Quest"},
-			"Repair": {"name": "Repair"},
-			"Driver": {"name": "Driver"}
+			"Directions": { "name": "Directions" },
+			"Buy": { "name": "Buy" },
+			"Taxi": { "name": "Taxi" },
+			"Trainer": { "name": "Trainer" },
+			"vehichleCursor": { "name": "vehichleCursor" },
+			"Attack": { "name": "Attack" },
+			"Interact": { "name": "Interact" },
+			"Speak": { "name": "Speak" },
+			"LootAll": { "name": "LootAll" },
+			"Gunner": { "name": "Gunner" },
+			"Pickup": { "name": "Pickup" },
+			"PVP": { "name": "PVP" },
+			"Point": { "name": "Point" },
+			"Quest": { "name": "Quest" },
+			"Repair": { "name": "Repair" },
+			"Driver": { "name": "Driver" }
 		}
 	},
 	"GameObjectIconNameParameter": {
 		"name": "GameObject icon names",
 		"stringValues": {
-			"": {"name": ""},
-			"Point": {"name": "Point"},
-			"Attack": {"name": "Attack"},
-			"PVP": {"name": "PVP"},
-			"Infused Moonstone": {"name": "Infused Moonstone"},
-			"Mine": {"name": "Mine"},
-			"Interact": {"name": "Interact"},
-			"LootAll": {"name": "LootAll"},
-			"Inspect": {"name": "Inspect"}
+			"": { "name": "" },
+			"Point": { "name": "Point" },
+			"Attack": { "name": "Attack" },
+			"PVP": { "name": "PVP" },
+			"Infused Moonstone": { "name": "Infused Moonstone" },
+			"Mine": { "name": "Mine" },
+			"Interact": { "name": "Interact" },
+			"LootAll": { "name": "LootAll" },
+			"Inspect": { "name": "Inspect" }
 		}
 	},
 	"GameObjectCastBarCaptionParameter": {
 		"name": "GameObject cast bar caption names",
 		"stringValues": {
-			"": {"name": ""},
-			"Reading": {"name": "Reading"},
-			"Burning": {"name": "Burning"},
-			"Retrieving": {"name": "Retrieving"},
-			"Collecting": {"name": "Collecting"},
-			"Examining": {"name": "Examining"},
-			"Searching": {"name": "Searching"},
-			"Stealing": {"name": "Stealing"},
-			"Using": {"name": "Using"},
-			"Opening": {"name": "Opening"},
-			"Breaking": {"name": "Breaking"},
-			"Extinguishing": {"name": "Extinguishing"},
-			"Drinking": {"name": "Drinking"},
-			"Summoning": {"name": "Summoning"},
-			"Gathering": {"name": "Gathering"},
-			"Destroying": {"name": "Destroying"},
-			"Unlocking": {"name": "Unlocking"},
-			"Ringing": {"name": "Ringing"},
-			"Removing": {"name": "Removing"},
-			"Acquiring": {"name": "Acquiring"},
-			"Activating": {"name": "Activating"},
-			"Lighting": {"name": "Lighting"},
-			"Taking Readings": {"name": "Taking Readings"},
-			"Disturbing": {"name": "Disturbing"},
-			"Activating Defenses": {"name": "Activating Defenses"}
+			"": { "name": "" },
+			"Reading": { "name": "Reading" },
+			"Burning": { "name": "Burning" },
+			"Retrieving": { "name": "Retrieving" },
+			"Collecting": { "name": "Collecting" },
+			"Examining": { "name": "Examining" },
+			"Searching": { "name": "Searching" },
+			"Stealing": { "name": "Stealing" },
+			"Using": { "name": "Using" },
+			"Opening": { "name": "Opening" },
+			"Breaking": { "name": "Breaking" },
+			"Extinguishing": { "name": "Extinguishing" },
+			"Drinking": { "name": "Drinking" },
+			"Summoning": { "name": "Summoning" },
+			"Gathering": { "name": "Gathering" },
+			"Destroying": { "name": "Destroying" },
+			"Unlocking": { "name": "Unlocking" },
+			"Ringing": { "name": "Ringing" },
+			"Removing": { "name": "Removing" },
+			"Acquiring": { "name": "Acquiring" },
+			"Activating": { "name": "Activating" },
+			"Lighting": { "name": "Lighting" },
+			"Taking Readings": { "name": "Taking Readings" },
+			"Disturbing": { "name": "Disturbing" },
+			"Activating Defenses": { "name": "Activating Defenses" }
 		}
 	},
 	"ReactStateParameter": {
 		"name": "React state",
 		"values": {
-			"0": {"name": "Passive"},
-			"1": {"name": "Defensive"},
-			"2": {"name": "Aggressive"}
+			"0": { "name": "Passive" },
+			"1": { "name": "Defensive" },
+			"2": { "name": "Aggressive" }
 		}
 	},
 	"SpellclickCastFlagParameter": {
 		"name": "Spellclick cast flag",
 		"values": {
-			"0": {"name": "clickee casts on clickee"},
-			"1": {"name": "clicker casts on clickee"},
-			"2": {"name": "clickee casts on clicker"},
-			"3": {"name": "clicker casts on clicker"}
+			"0": { "name": "clickee casts on clickee" },
+			"1": { "name": "clicker casts on clickee" },
+			"2": { "name": "clickee casts on clicker" },
+			"3": { "name": "clicker casts on clicker" }
 		}
 	},
 	"SpellclickUserTypeParameter": {
 		"name": "Spellclick user type",
 		"values": {
-			"0": {"name": "any"},
-			"1": {"name": "friend"},
-			"2": {"name": "raid"},
-			"3": {"name": "party"}
+			"0": { "name": "any" },
+			"1": { "name": "friend" },
+			"2": { "name": "raid" },
+			"3": { "name": "party" }
 		}
 	},
 	"SpellLinkedSpellTypeParameter": {
 		"name": "Spell linked spell type",
 		"values": {
-			"0": {"name": "cast"},
-			"1": {"name": "hit"},
-			"2": {"name": "aura"}
+			"0": { "name": "cast" },
+			"1": { "name": "hit" },
+			"2": { "name": "aura" }
 		}
 	},
-	"PetTypeParameter": {	
-		"name": "Pet type",	
-		"values": {	
-			"0": {"name": "summoned pet"},	
-			"1": {"name": "hunter pet"}	
-		}	
-	},	
-	"PetTypeMaskParameter": {	
-		"name": "Pet type mask",	
-		"isflag": true,	
-		"values": {	
-			"1": {"name": "summoned"},	
-			"2": {"name": "hunter"}	
-		}	
-	},	
-	"MapDifficultyParameter": {	
-	  "name": "Map difficulty",	
-	  "values": {	
-		"0": {"name": "regular / normal dung / 10man norm"},	
-		"1": {"name": "heroic dung/25 norm raid"},	
-		"2": {"name": "epic dung/10 heroic raid"},	
-		"3": {"name": "25 heroic raid"}	
-	  }	
-	},	
-	"MapDifficultyMaskParameter": {	
-	  "name": "Map difficulty Mask",	
-	  "isflag": true,	
-	  "values": {	
-		"0": {"name": "any"},	
-		"1": {"name": "regular"},	
-		"2": {"name": "heroic dung/25 norm raid"},	
-		"4": {"name": "epic dung/10 heroic raid"},	
-		"8": {"name": "25 heroic raid"}	
-	  }	
+	"PetTypeParameter": {
+		"name": "Pet type",
+		"values": {
+			"0": { "name": "summoned pet" },
+			"1": { "name": "hunter pet" }
+		}
+	},
+	"PetTypeMaskParameter": {
+		"name": "Pet type mask",
+		"isflag": true,
+		"values": {
+			"1": { "name": "summoned" },
+			"2": { "name": "hunter" }
+		}
+	},
+	"MapDifficultyParameter": {
+		"name": "Map difficulty",
+		"values": {
+			"0": { "name": "regular / normal dung / 10man norm" },
+			"1": { "name": "heroic dung/25 norm raid" },
+			"2": { "name": "epic dung/10 heroic raid" },
+			"3": { "name": "25 heroic raid" }
+		}
+	},
+	"MapDifficultyMaskParameter": {
+		"name": "Map difficulty Mask",
+		"isflag": true,
+		"values": {
+			"0": { "name": "any" },
+			"1": { "name": "regular" },
+			"2": { "name": "heroic dung/25 norm raid" },
+			"4": { "name": "epic dung/10 heroic raid" },
+			"8": { "name": "25 heroic raid" }
+		}
 	},
 	"SpawnMaskParameter": {
 		"name": "Spawn Mask",
 		"isflag": true,
 		"values": {
-			"15": {"name": "any raid"},
-			"12": {"name": "heroic raid"},
-			"8": {"name": "25 man heroic raid"},
-			"4": {"name": "10 man heroic raid"},
-			"3": {"name": "normal raid / any dungeon"},
-			"2": {"name": "heroic dungeon / 25 man raid normal"},
-			"1": {"name": "normal dungeon / 10 man raid normal / continent"}
+			"15": { "name": "any raid" },
+			"12": { "name": "heroic raid" },
+			"8": { "name": "25 man heroic raid" },
+			"4": { "name": "10 man heroic raid" },
+			"3": { "name": "normal raid / any dungeon" },
+			"2": { "name": "heroic dungeon / 25 man raid normal" },
+			"1": { "name": "normal dungeon / 10 man raid normal / continent" }
 		}
 	},
-	"ConditionsComparisonTypeParameter": {	
-		"name": "Conditions comparison type",	
-		"values": {	
-			"0": {"name": "equals (=)"},	
-			"1": {"name": "higher than (>)"},	
-			"2": {"name": "lower than (<)"},	
-			"3": {"name": "higher or equals (>=)"},	
-			"4": {"name": "lower or equals (<=)"}	
-		}	
-	},	
-	"ReputationRankParameter": {	
-		"name": "Reputation rank",	
-		"values": {	
-			"0": {"name": "Hated"},	
-			"1": {"name": "Hostile"},	
-			"2": {"name": "Unfriendly"},	
-			"3": {"name": "Neutral"},	
-			"4": {"name": "Friendly"},	
-			"5": {"name": "Honored"},	
-			"6": {"name": "Revered"},	
-			"7": {"name": "Exalted"}	
-		}	
-	},	
-	"ReputationRankMaskParameter": {	
-		"name": "Reputation rank",	
-		"isflag": true,	
-		"values": {	
-			"1": {"name": "REP_HATED"},	
-			"2": {"name": "REP_HOSTILE"},	
-			"4": {"name": "REP_UNFRIENDLY"},	
-			"8": {"name": "REP_NEUTRAL"},	
-			"16": {"name": "REP_FRIENDLY"},	
-			"32": {"name": "REP_HONORED"},	
-			"64": {"name": "REP_REVERED"},	
-			"128": {"name": "REP_EXALTED"}	
-		}	
-	},	
-	"TeamAllianceParameter": {	
-		"name": "Team",	
-		"values": {	
-			"67": {"name": "Horde"},	
-			"469": {"name": "Alliance"}	
-		}	
-	},	
-	"DrunkStateParameter": {	
-		"name": "Drunken state",	
-		"values": {	
-			"0": {"name": "sober"},	
-			"1": {"name": "tipsy"},	
-			"2": {"name": "drunk"},	
-			"3": {"name": "smashed"}	
-		}	
-	},	
+	"ConditionsComparisonTypeParameter": {
+		"name": "Conditions comparison type",
+		"values": {
+			"0": { "name": "equals (=)" },
+			"1": { "name": "higher than (>)" },
+			"2": { "name": "lower than (<)" },
+			"3": { "name": "higher or equals (>=)" },
+			"4": { "name": "lower or equals (<=)" }
+		}
+	},
+	"ReputationRankParameter": {
+		"name": "Reputation rank",
+		"values": {
+			"0": { "name": "Hated" },
+			"1": { "name": "Hostile" },
+			"2": { "name": "Unfriendly" },
+			"3": { "name": "Neutral" },
+			"4": { "name": "Friendly" },
+			"5": { "name": "Honored" },
+			"6": { "name": "Revered" },
+			"7": { "name": "Exalted" }
+		}
+	},
+	"ReputationRankMaskParameter": {
+		"name": "Reputation rank",
+		"isflag": true,
+		"values": {
+			"1": { "name": "REP_HATED" },
+			"2": { "name": "REP_HOSTILE" },
+			"4": { "name": "REP_UNFRIENDLY" },
+			"8": { "name": "REP_NEUTRAL" },
+			"16": { "name": "REP_FRIENDLY" },
+			"32": { "name": "REP_HONORED" },
+			"64": { "name": "REP_REVERED" },
+			"128": { "name": "REP_EXALTED" }
+		}
+	},
+	"TeamAllianceParameter": {
+		"name": "Team",
+		"values": {
+			"67": { "name": "Horde" },
+			"469": { "name": "Alliance" }
+		}
+	},
+	"DrunkStateParameter": {
+		"name": "Drunken state",
+		"values": {
+			"0": { "name": "sober" },
+			"1": { "name": "tipsy" },
+			"2": { "name": "drunk" },
+			"3": { "name": "smashed" }
+		}
+	},
 	"AiReactionParameter": {
 		"name": "AI reaction",
 		"values": {
-			"0": {"name": "alert", "description": "pre-aggro (used in client packet handler)"},
-			"1": {"name": "friendly", "description": "(NOT used in client packet handler)"},
-			"2": {"name": "hostile", "description": "sent on every attack, triggers aggro sound (used in client packet handler)"},
-			"3": {"name": "afraid", "description": "seen for polymorph (when AI not in control of self?) (NOT used in client packet handler)"},
-			"4": {"name": "destroy", "description": "used on object destroy (NOT used in client packet handler)"}
+			"0": {
+				"name": "alert",
+				"description": "pre-aggro (used in client packet handler)"
+			},
+			"1": {
+				"name": "friendly",
+				"description": "(NOT used in client packet handler)"
+			},
+			"2": {
+				"name": "hostile",
+				"description": "sent on every attack, triggers aggro sound (used in client packet handler)"
+			},
+			"3": {
+				"name": "afraid",
+				"description": "seen for polymorph (when AI not in control of self?) (NOT used in client packet handler)"
+			},
+			"4": {
+				"name": "destroy",
+				"description": "used on object destroy (NOT used in client packet handler)"
+			}
 		}
 	},
 	"SmartAiPhaseParameter": {
 		"name": "Smart AI phase",
 		"values": {
-			"0": {"name": "default (0)"},
-			"1": {"name": "phase 1"},
-			"2": {"name": "phase 2"},
-			"3": {"name": "phase 3"},
-			"4": {"name": "phase 4"},
-			"5": {"name": "phase 5"},
-			"6": {"name": "phase 6"},
-			"7": {"name": "phase 7"},
-			"8": {"name": "phase 8"},
-			"9": {"name": "phase 9"},
-			"10": {"name": "phase 10"},
-			"11": {"name": "phase 11"},
-			"12": {"name": "phase 12"}
+			"0": { "name": "default (0)" },
+			"1": { "name": "phase 1" },
+			"2": { "name": "phase 2" },
+			"3": { "name": "phase 3" },
+			"4": { "name": "phase 4" },
+			"5": { "name": "phase 5" },
+			"6": { "name": "phase 6" },
+			"7": { "name": "phase 7" },
+			"8": { "name": "phase 8" },
+			"9": { "name": "phase 9" },
+			"10": { "name": "phase 10" },
+			"11": { "name": "phase 11" },
+			"12": { "name": "phase 12" }
 		}
 	},
 	"SmartAiPhaseMaskParameter": {
 		"name": "Smart AI phase masek",
 		"isflag": true,
 		"values": {
-			"0": {"name": "default (0)"},
-			"1": {"name": "phase 1"},
-			"2": {"name": "phase 2"},
-			"3": {"name": "phase 3"},
-			"4": {"name": "phase 4"},
-			"5": {"name": "phase 5"},
-			"6": {"name": "phase 6"},
-			"7": {"name": "phase 7"},
-			"8": {"name": "phase 8"},
-			"9": {"name": "phase 9"},
-			"10": {"name": "phase 10"},
-			"11": {"name": "phase 11"},
-			"12": {"name": "phase 12"}
+			"0": { "name": "default (0)" },
+			"1": { "name": "phase 1" },
+			"2": { "name": "phase 2" },
+			"3": { "name": "phase 3" },
+			"4": { "name": "phase 4" },
+			"5": { "name": "phase 5" },
+			"6": { "name": "phase 6" },
+			"7": { "name": "phase 7" },
+			"8": { "name": "phase 8" },
+			"9": { "name": "phase 9" },
+			"10": { "name": "phase 10" },
+			"11": { "name": "phase 11" },
+			"12": { "name": "phase 12" }
 		}
 	},
-	"UnitStateParameter": {	
-		"name": "Unit state",	
+	"UnitStateParameter": {
+		"name": "Unit state",
 		"isflag": true,
 		"quickaccess": "Full",
-		"values": {	
-			"1": {"name": "UNIT_STATE_DIED", "description": "player has fake death aura"},	
-			"2": {"name": "UNIT_STATE_MELEE_ATTACKING", "description": "player is melee attacking someone"},	
-			"8": {"name": "UNIT_STATE_STUNNED"},	
-			"16": {"name": "UNIT_STATE_ROAMING"},	
-			"32": {"name": "UNIT_STATE_CHASE"},	
-			"128": {"name": "UNIT_STATE_FLEEING"},	
-			"256": {"name": "UNIT_STATE_IN_FLIGHT", "description": "player is in flight mode"},	
-			"512": {"name": "UNIT_STATE_FOLLOW"},	
-			"1024": {"name": "UNIT_STATE_ROOT"},	
-			"2048": {"name": "UNIT_STATE_CONFUSED"},	
-			"4096": {"name": "UNIT_STATE_DISTRACTED"},	
-			"8192": {"name": "UNIT_STATE_ISOLATED", "description": "area auras do not affect other players"},	
-			"16384": {"name": "UNIT_STATE_ATTACK_PLAYER"},	
-			"32768": {"name": "UNIT_STATE_CASTING"},	
-			"65536": {"name": "UNIT_STATE_POSSESSED"},	
-			"131072": {"name": "UNIT_STATE_CHARGING"},	
-			"262144": {"name": "UNIT_STATE_JUMPING"},	
-			"1048576": {"name": "UNIT_STATE_MOVE"},	
-			"2097152": {"name": "UNIT_STATE_ROTATING"},	
-			"4194304": {"name": "UNIT_STATE_EVADE"},	
-			"8388608": {"name": "UNIT_STATE_ROAMING_MOVE"},	
-			"16777216": {"name": "UNIT_STATE_CONFUSED_MOVE"},	
-			"33554432": {"name": "UNIT_STATE_FLEEING_MOVE"},	
-			"67108864": {"name": "UNIT_STATE_CHASE_MOVE"},	
-			"134217728": {"name": "UNIT_STATE_FOLLOW_MOVE"},	
-			"268435456": {"name": "UNIT_STATE_IGNORE_PATHFINDING"}	
-		}	
+		"values": {
+			"1": {
+				"name": "UNIT_STATE_DIED",
+				"description": "player has fake death aura"
+			},
+			"2": {
+				"name": "UNIT_STATE_MELEE_ATTACKING",
+				"description": "player is melee attacking someone"
+			},
+			"8": { "name": "UNIT_STATE_STUNNED" },
+			"16": { "name": "UNIT_STATE_ROAMING" },
+			"32": { "name": "UNIT_STATE_CHASE" },
+			"128": { "name": "UNIT_STATE_FLEEING" },
+			"256": {
+				"name": "UNIT_STATE_IN_FLIGHT",
+				"description": "player is in flight mode"
+			},
+			"512": { "name": "UNIT_STATE_FOLLOW" },
+			"1024": { "name": "UNIT_STATE_ROOT" },
+			"2048": { "name": "UNIT_STATE_CONFUSED" },
+			"4096": { "name": "UNIT_STATE_DISTRACTED" },
+			"8192": {
+				"name": "UNIT_STATE_ISOLATED",
+				"description": "area auras do not affect other players"
+			},
+			"16384": { "name": "UNIT_STATE_ATTACK_PLAYER" },
+			"32768": { "name": "UNIT_STATE_CASTING" },
+			"65536": { "name": "UNIT_STATE_POSSESSED" },
+			"131072": { "name": "UNIT_STATE_CHARGING" },
+			"262144": { "name": "UNIT_STATE_JUMPING" },
+			"1048576": { "name": "UNIT_STATE_MOVE" },
+			"2097152": { "name": "UNIT_STATE_ROTATING" },
+			"4194304": { "name": "UNIT_STATE_EVADE" },
+			"8388608": { "name": "UNIT_STATE_ROAMING_MOVE" },
+			"16777216": { "name": "UNIT_STATE_CONFUSED_MOVE" },
+			"33554432": { "name": "UNIT_STATE_FLEEING_MOVE" },
+			"67108864": { "name": "UNIT_STATE_CHASE_MOVE" },
+			"134217728": { "name": "UNIT_STATE_FOLLOW_MOVE" },
+			"268435456": { "name": "UNIT_STATE_IGNORE_PATHFINDING" }
+		}
 	},
 	"AnimTierParameter": {
 		"name": "Anim tier",
 		"values": {
-			"0": {"name": "ground"},
-			"1": {"name": "swim"},
-			"2": {"name": "hover"},
-			"3": {"name": "fly"},
-			"4": {"name": "submerged"}
+			"0": { "name": "ground" },
+			"1": { "name": "swim" },
+			"2": { "name": "hover" },
+			"3": { "name": "fly" },
+			"4": { "name": "submerged" }
 		}
 	},
 	"TextRangeParameter": {
 		"name": "Text range",
 		"values": {
-			"0": {"name": "default"},
-			"1": {"name": "area"},
-			"2": {"name": "zone"},
-			"3": {"name": "map"},
-			"4": {"name": "world"},
-			"5": {"name": "personal"}
+			"0": { "name": "default" },
+			"1": { "name": "area" },
+			"2": { "name": "zone" },
+			"3": { "name": "map" },
+			"4": { "name": "world" },
+			"5": { "name": "personal" }
 		}
 	},
 	"MovementGroundStateParameter": {
 		"name": "Ground state",
 		"values": {
-			"0": {"name": "none"},
-			"1": {"name": "run"},
-			"2": {"name": "hover"}
+			"0": { "name": "none" },
+			"1": { "name": "run" },
+			"2": { "name": "hover" }
 		}
 	},
 	"MovementFlightStateParameter": {
 		"name": "Flight state",
 		"values": {
-			"0": {"name": "none"},
-			"1": {"name": "disable gravity"},
-			"2": {"name": "can fly"}
+			"0": { "name": "none" },
+			"1": { "name": "disable gravity" },
+			"2": { "name": "can fly" }
 		}
 	},
 	"MovementChaseStateParameter": {
 		"name": "Chase state",
 		"values": {
-			"0": {"name": "run"},
-			"1": {"name": "can walk"},
-			"2": {"name": "always walk"}
+			"0": { "name": "run" },
+			"1": { "name": "can walk" },
+			"2": { "name": "always walk" }
 		}
 	},
 	"MovementRandomMoveStateParameter": {
 		"name": "Random movement state",
 		"values": {
-			"0": {"name": "walk"},
-			"1": {"name": "can run"},
-			"2": {"name": "always run"}
+			"0": { "name": "walk" },
+			"1": { "name": "can run" },
+			"2": { "name": "always run" }
 		}
 	},
 	"VisibilityDistanceTypeParameter": {
 		"name": "Visibility distance type",
 		"values": {
-			"0": {"name": "normal (100yd)"},
-			"1": {"name": "tiny (25yd)"},
-			"2": {"name": "small (50yd)"},
-			"3": {"name": "large (200yd)"},
-			"4": {"name": "gigantic (400yd)"},
-			"5": {"name": "infinite (533yd)"}
+			"0": { "name": "normal (100yd)" },
+			"1": { "name": "tiny (25yd)" },
+			"2": { "name": "small (50yd)" },
+			"3": { "name": "large (200yd)" },
+			"4": { "name": "gigantic (400yd)" },
+			"5": { "name": "infinite (533yd)" }
 		}
 	},
 	"GameObjectActionParameter": {
 		"name": "Gameobject action type",
 		"values": {
-			"1": {"name": "Animate custom 0"},
-			"2": {"name": "Animate custom 1"},
-			"3": {"name": "Animate custom 2"},
-			"4": {"name": "Animate custom 3"},
-			"5": {"name": "Disturb", "description": "Triggers trap"},
-			"6": {"name": "Unlock", "description": "Resets GO_FLAG_LOCKED"},
-			"7": {"name": "Lock", "description": "Sets GO_FLAG_LOCKED"},
-			"8": {"name": "Open", "description": "Sets GO_STATE_ACTIVE"},
-			"9": {"name": "Open and Unlock", "description": "Sets GO_STATE_ACTIVE and resets GO_FLAG_LOCKED"},
-			"10": {"name": "Close", "description": "Sets GO_STATE_READY"},
+			"1": { "name": "Animate custom 0" },
+			"2": { "name": "Animate custom 1" },
+			"3": { "name": "Animate custom 2" },
+			"4": { "name": "Animate custom 3" },
+			"5": {
+				"name": "Disturb",
+				"description": "Triggers trap"
+			},
+			"6": {
+				"name": "Unlock",
+				"description": "Resets GO_FLAG_LOCKED"
+			},
+			"7": {
+				"name": "Lock",
+				"description": "Sets GO_FLAG_LOCKED"
+			},
+			"8": {
+				"name": "Open",
+				"description": "Sets GO_STATE_ACTIVE"
+			},
+			"9": {
+				"name": "Open and Unlock",
+				"description": "Sets GO_STATE_ACTIVE and resets GO_FLAG_LOCKED"
+			},
+			"10": {
+				"name": "Close",
+				"description": "Sets GO_STATE_READY"
+			},
 			//"11": {"name": "Toggle Open", "description": "Sets GO_STATE_DESTROYED"},
-			"12": {"name": "Destroy"},
-			"13": {"name": "Rebuild", "description": "Resets from GO_STATE_DESTROYED"},
+			"12": { "name": "Destroy" },
+			"13": {
+				"name": "Rebuild",
+				"description": "Resets from GO_STATE_DESTROYED"
+			},
 			//"14": {"name": "Creation"},
-			"15": {"name": "Despawn"},
-			"16": {"name": "Make Inert", "description": "Disables interactions"},
-			"17": {"name": "Make Active", "description": "Enables interactions"},
-			"18": {"name": "Close and Lock", "description": "Sets GO_STATE_READY and sets GO_FLAG_LOCKED"},
-			"19": {"name": "Use Art Kit 0"},
-			"20": {"name": "Use Art Kit 1"},
-			"21": {"name": "Use Art Kit 2"},
-			"22": {"name": "Use Art Kit 3"},
+			"15": { "name": "Despawn" },
+			"16": {
+				"name": "Make Inert",
+				"description": "Disables interactions"
+			},
+			"17": {
+				"name": "Make Active",
+				"description": "Enables interactions"
+			},
+			"18": {
+				"name": "Close and Lock",
+				"description": "Sets GO_STATE_READY and sets GO_FLAG_LOCKED"
+			},
+			"19": { "name": "Use Art Kit 0" },
+			"20": { "name": "Use Art Kit 1" },
+			"21": { "name": "Use Art Kit 2" },
+			"22": { "name": "Use Art Kit 3" }
 			//"23": {"name": "Set Tap List"}
+		}
+	},
+
+	"PatchParameter": {
+		"name": "Patch parameter",
+		"isflag": false,
+		"values": {
+			"0":  { "name": "Patch 2.0" },
+			"1":  { "name": "Patch 2.1" },
+			"2":  { "name": "Patch 2.2" },
+			"3":  { "name": "Patch 2.3" },
+			"4":  { "name": "Patch 2.4" },
+			"5":  { "name": "Patch 3.0" },
+			"6":  { "name": "Patch 3.1" },
+			"7":  { "name": "Patch 3.2" },
+			"8":  { "name": "Patch 3.2.2" },
+			"9":  { "name": "Patch 3.3" },
+			"10": { "name": "Patch 3.3.5" }
 		}
 	},
 	"PhaseMaskParameter": {
 		"name": "Phasemask parameter",
 		"isflag": true,
 		"values": {
-			"1": {"name": "Phase 1"},
-			"2": {"name": "Phase 2"},
-			"4": {"name": "Phase 3"},
-			"8": {"name": "Phase 4"},
-			"16": {"name": "Phase 5"},
-			"32": {"name": "Phase 6"},
-			"64": {"name": "Phase 7"},
-			"128": {"name": "Phase 8"},
-			"256": {"name": "Phase 9"},
-			"512": {"name": "Phase 10"},
-			"1024": {"name": "Phase 11"},
-			"2048": {"name": "Phase 12"},
-			"4096": {"name": "Phase 13"},
-			"8192": {"name": "Phase 14"},
-			"16384": {"name": "Phase 15"},
-			"32768": {"name": "Phase 16"},
-			"65536": {"name": "Phase 17"},
-			"131072": {"name": "Phase 18"},
-			"262144": {"name": "Phase 19"},
-			"524288": {"name": "Phase 20"},
-			"1048576": {"name": "Phase 21"},
-			"2097152": {"name": "Phase 22"},
-			"4194304": {"name": "Phase 23"},
-			"8388608": {"name": "Phase 24"},
-			"16777216": {"name": "Phase 25"},
-			"33554432": {"name": "Phase 26"},
-			"67108864": {"name": "Phase 27"},
-			"134217728": {"name": "Phase 28"},
-			"268435456": {"name": "Phase 29"},
-			"536870912": {"name": "Phase 30"},
-			"1073741824": {"name": "Phase 31"}
+			"1": { "name": "Phase 1" },
+			"2": { "name": "Phase 2" },
+			"4": { "name": "Phase 3" },
+			"8": { "name": "Phase 4" },
+			"16": { "name": "Phase 5" },
+			"32": { "name": "Phase 6" },
+			"64": { "name": "Phase 7" },
+			"128": { "name": "Phase 8" },
+			"256": { "name": "Phase 9" },
+			"512": { "name": "Phase 10" },
+			"1024": { "name": "Phase 11" },
+			"2048": { "name": "Phase 12" },
+			"4096": { "name": "Phase 13" },
+			"8192": { "name": "Phase 14" },
+			"16384": { "name": "Phase 15" },
+			"32768": { "name": "Phase 16" },
+			"65536": { "name": "Phase 17" },
+			"131072": { "name": "Phase 18" },
+			"262144": { "name": "Phase 19" },
+			"524288": { "name": "Phase 20" },
+			"1048576": { "name": "Phase 21" },
+			"2097152": { "name": "Phase 22" },
+			"4194304": { "name": "Phase 23" },
+			"8388608": { "name": "Phase 24" },
+			"16777216": { "name": "Phase 25" },
+			"33554432": { "name": "Phase 26" },
+			"67108864": { "name": "Phase 27" },
+			"134217728": { "name": "Phase 28" },
+			"268435456": { "name": "Phase 29" },
+			"536870912": { "name": "Phase 30" },
+			"1073741824": { "name": "Phase 31" }
 		}
 	},
 	"CreatureSummonGroupSummonerTypeParameter": {
 		"name": "Creature summon group summoner type parameter",
 		"values": {
-			"0": {"name": "Creature"},
-			"1": {"name": "GameObject"},
-			"2": {"name": "Map"}
+			"0": { "name": "Creature" },
+			"1": { "name": "GameObject" },
+			"2": { "name": "Map" }
 		}
 	},
 	"InhabitTypeParameter": {
 		"name": "Inhabit type",
 		"isflag": true,
 		"values": {
-			"1": {"name": "ground"},
-			"2": {"name": "water"},
-			"4": {"name": "air"}
+			"1": { "name": "ground" },
+			"2": { "name": "water" },
+			"4": { "name": "air" }
 		}
 	},
 	"CreatureDifficultyFlags1Parameter": {
 		"name": "Creature Difficulty Flags 1",
 		"isflag": true,
 		"values": {
-			"1": {"name": "Mountable"},
-			"2": {"name": "No XP"},
-			"4": {"name": "No loot"},
-			"8": {"name": "Unkillable"},
-			"16": {"name": "Tameable"},
-			"32": {"name": "Immune PC"},
-			"64": {"name": "Immune NPC"},
-			"128": {"name": "Can wield loot"},
-			"256": {"name": "Sessile"},
-			"512": {"name": "Uninteractible"},
-			"1024": {"name": "No automatic regen"},
-			"2024": {"name": "Despawn instantly"},
-			"4096": {"name": "Corpse raid"},
-			"8192": {"name": "Creator loot"},
-			"16384": {"name": "No defense"},
-			"32768": {"name": "No spell defense"},
-			"65536": {"name": "Raid boss mob"},
-			"131072": {"name": "Combat ping"},
-			"262144": {"name": "Aquatic"},
-			"524288": {"name": "Amphibious"},
-			"1048576": {"name": "No melee flee"},
-			"2097152": {"name": "Visible to ghosts"},
-			"4194304": {"name": "Pvp enabling"},
-			"8388608": {"name": "Do not play wound anim"},
-			"16777216": {"name": "No faction tooltip"},
-			"33554432": {"name": "Ignore combat"},
-			"67108864": {"name": "Only attack targets that are pvp enabling"},
-			"134217728": {"name": "Calls guards"},
-			"268435456": {"name": "Can swim"},
-			"536870912": {"name": "Floating"},
-			"1073741824": {"name": "More audible"},
-			"2147483648": {"name": "Large aoi"}
+			"1": { "name": "Mountable" },
+			"2": { "name": "No XP" },
+			"4": { "name": "No loot" },
+			"8": { "name": "Unkillable" },
+			"16": { "name": "Tameable" },
+			"32": { "name": "Immune PC" },
+			"64": { "name": "Immune NPC" },
+			"128": { "name": "Can wield loot" },
+			"256": { "name": "Sessile" },
+			"512": { "name": "Uninteractible" },
+			"1024": { "name": "No automatic regen" },
+			"2024": { "name": "Despawn instantly" },
+			"4096": { "name": "Corpse raid" },
+			"8192": { "name": "Creator loot" },
+			"16384": { "name": "No defense" },
+			"32768": { "name": "No spell defense" },
+			"65536": { "name": "Raid boss mob" },
+			"131072": { "name": "Combat ping" },
+			"262144": { "name": "Aquatic" },
+			"524288": { "name": "Amphibious" },
+			"1048576": { "name": "No melee flee" },
+			"2097152": { "name": "Visible to ghosts" },
+			"4194304": { "name": "Pvp enabling" },
+			"8388608": { "name": "Do not play wound anim" },
+			"16777216": { "name": "No faction tooltip" },
+			"33554432": { "name": "Ignore combat" },
+			"67108864": { "name": "Only attack targets that are pvp enabling" },
+			"134217728": { "name": "Calls guards" },
+			"268435456": { "name": "Can swim" },
+			"536870912": { "name": "Floating" },
+			"1073741824": { "name": "More audible" },
+			"2147483648": { "name": "Large aoi" }
 		}
 	},
 	"CreatureDifficultyFlags2Parameter": {
 		"name": "Creature Difficulty Flags 2",
 		"isflag": true,
 		"values": {
-			"1": {"name": "No pet scaling"},
-			"2": {"name": "Force raid combat"},
-			"4": {"name": "Lock tappers to raid on death"},
-			"8": {"name": "No harmful vertex coloring"},
-			"16": {"name": "No crushing blows"},
-			"32": {"name": "No owner threat"},
-			"64": {"name": "No wounded slowdown"},
-			"128": {"name": "Use creator bonuses"},
-			"256": {"name": "Ignore feign death"},
-			"512": {"name": "Ignore sanctuary"},
-			"1024": {"name": "Action triggers while charmed"},
-			"2024": {"name": "Interact while dead"},
-			"4096": {"name": "No interrupt school cooldown"},
-			"8192": {"name": "Return soul shard to master of pet"},
-			"16384": {"name": "Skin with herbalism"},
-			"32768": {"name": "Skin with mining"},
-			"65536": {"name": "Alert content team on death"},
-			"131072": {"name": "Alert content team on 90 pct health"},
-			"262144": {"name": "Allow mounted combat"},
-			"524288": {"name": "Pvp enabling ooc"},
-			"1048576": {"name": "No death message"},
-			"2097152": {"name": "Ignore pathing failure"},
-			"4194304": {"name": "Full spell list"},
-			"8388608": {"name": "Doesnt reduce reputation for raids"},
-			"16777216": {"name": "Ignore misdirection"},
-			"33554432": {"name": "Hide body"},
-			"67108864": {"name": "Spawn defensive"},
-			"134217728": {"name": "Server only"},
-			"268435456": {"name": "No collision"},
-			"536870912": {"name": "Player can heal buff"},
-			"1073741824": {"name": "No skill gains"},
-			"2147483648": {"name": "No pet bar"}
+			"1": { "name": "No pet scaling" },
+			"2": { "name": "Force raid combat" },
+			"4": { "name": "Lock tappers to raid on death" },
+			"8": { "name": "No harmful vertex coloring" },
+			"16": { "name": "No crushing blows" },
+			"32": { "name": "No owner threat" },
+			"64": { "name": "No wounded slowdown" },
+			"128": { "name": "Use creator bonuses" },
+			"256": { "name": "Ignore feign death" },
+			"512": { "name": "Ignore sanctuary" },
+			"1024": { "name": "Action triggers while charmed" },
+			"2024": { "name": "Interact while dead" },
+			"4096": { "name": "No interrupt school cooldown" },
+			"8192": { "name": "Return soul shard to master of pet" },
+			"16384": { "name": "Skin with herbalism" },
+			"32768": { "name": "Skin with mining" },
+			"65536": { "name": "Alert content team on death" },
+			"131072": { "name": "Alert content team on 90 pct health" },
+			"262144": { "name": "Allow mounted combat" },
+			"524288": { "name": "Pvp enabling ooc" },
+			"1048576": { "name": "No death message" },
+			"2097152": { "name": "Ignore pathing failure" },
+			"4194304": { "name": "Full spell list" },
+			"8388608": { "name": "Doesnt reduce reputation for raids" },
+			"16777216": { "name": "Ignore misdirection" },
+			"33554432": { "name": "Hide body" },
+			"67108864": { "name": "Spawn defensive" },
+			"134217728": { "name": "Server only" },
+			"268435456": { "name": "No collision" },
+			"536870912": { "name": "Player can heal buff" },
+			"1073741824": { "name": "No skill gains" },
+			"2147483648": { "name": "No pet bar" }
 		}
 	},
 	"CreatureDifficultyFlags3Parameter": {
 		"name": "Creature Difficulty Flags 3",
 		"isflag": true,
 		"values": {
-			"1": {"name": "No damage history"},
-			"2": {"name": "Dont pvp enable owner"},
-			"4": {"name": "Dont fade in"},
-			"8": {"name": "Non unique in combat log"},
-			"16": {"name": "Skin with engineering"},
-			"32": {"name": "No aggro on leash"},
-			"64": {"name": "No friendly area auras"},
-			"128": {"name": "Extended corpse duration"},
-			"256": {"name": "Cant swim"},
-			"512": {"name": "Tameable exotic"},
-			"1024": {"name": "Gigantic aoi"},
-			"2024": {"name": "Infinite aoi"},
-			"4096": {"name": "Cannot penetrate water"},
-			"8192": {"name": "No name plate"},
-			"16384": {"name": "Checks liquids"},
-			"32768": {"name": "No threat feedback"},
-			"65536": {"name": "Use model collision size"},
-			"131072": {"name": "Attacker ignores facing"},
-			"262144": {"name": "Allow interaction while in combat"},
-			"524288": {"name": "Spell click for party only"},
-			"1048576": {"name": "Faction leader"},
-			"2097152": {"name": "Immune to player buffs"},
-			"4194304": {"name": "Collide with missiles"},
-			"8388608": {"name": "Do not tap credit to threat list"},
-			"16777216": {"name": "Disable dodge parry and block animations"},
-			"33554432": {"name": "Cannot turn"},
-			"67108864": {"name": "Enemy check ignores line of sight"},
-			"134217728": {"name": "Forever corpse duration"},
-			"268435456": {"name": "Pets attack with 3d pathing"},
-			"536870912": {"name": "Linkall flag"},
-			"1073741824": {"name": "Ai can auto takeoff in combat"},
-			"2147483648": {"name": "Ai can auto land in combat"}
+			"1": { "name": "No damage history" },
+			"2": { "name": "Dont pvp enable owner" },
+			"4": { "name": "Dont fade in" },
+			"8": { "name": "Non unique in combat log" },
+			"16": { "name": "Skin with engineering" },
+			"32": { "name": "No aggro on leash" },
+			"64": { "name": "No friendly area auras" },
+			"128": { "name": "Extended corpse duration" },
+			"256": { "name": "Cant swim" },
+			"512": { "name": "Tameable exotic" },
+			"1024": { "name": "Gigantic aoi" },
+			"2024": { "name": "Infinite aoi" },
+			"4096": { "name": "Cannot penetrate water" },
+			"8192": { "name": "No name plate" },
+			"16384": { "name": "Checks liquids" },
+			"32768": { "name": "No threat feedback" },
+			"65536": { "name": "Use model collision size" },
+			"131072": { "name": "Attacker ignores facing" },
+			"262144": { "name": "Allow interaction while in combat" },
+			"524288": { "name": "Spell click for party only" },
+			"1048576": { "name": "Faction leader" },
+			"2097152": { "name": "Immune to player buffs" },
+			"4194304": { "name": "Collide with missiles" },
+			"8388608": { "name": "Do not tap credit to threat list" },
+			"16777216": { "name": "Disable dodge parry and block animations" },
+			"33554432": { "name": "Cannot turn" },
+			"67108864": { "name": "Enemy check ignores line of sight" },
+			"134217728": { "name": "Forever corpse duration" },
+			"268435456": { "name": "Pets attack with 3d pathing" },
+			"536870912": { "name": "Linkall flag" },
+			"1073741824": { "name": "Ai can auto takeoff in combat" },
+			"2147483648": { "name": "Ai can auto land in combat" }
 		}
 	},
 	"CreatureDifficultyFlags4Parameter": {
 		"name": "Creature Difficulty Flags 4",
 		"isflag": true,
 		"values": {
-			"1": {"name": "No birth anim"},
-			"2": {"name": "Treat as player for diminishing returns"},
-			"4": {"name": "Treat as player for pvp debuff duration"},
-			"8": {"name": "Only display gossip for summoner"},
-			"16": {"name": "No death scream"},
-			"32": {"name": "Can be healed by enemies"},
-			"64": {"name": "Deals triple damage to pc controlled pets"},
-			"128": {"name": "No npc damage below 85 pct"},
-			"256": {"name": "Obeys taunt diminishing returns"},
-			"512": {"name": "No melee approach"},
-			"1024": {"name": "Update creature record when instance changes difficulty"},
-			"2024": {"name": "Cannot daze combat stun"},
-			"4096": {"name": "Flat honor award"},
-			"8192": {"name": "Other objects can ignore line of sight requirements when casting spells on me"},
-			"16384": {"name": "Give quest kill credit while offline"},
-			"32768": {"name": "Treat as raid unit for helpful spells"},
-			"65536": {"name": "Dont reposition because melee target is too close"},
-			"131072": {"name": "Pet guardian ai dont go behind target"},
-			"262144": {"name": "Five minute loot roll timer"},
-			"524288": {"name": "Force gossip"},
-			"1048576": {"name": "Dont reposition with friends in combat"},
-			"2097152": {"name": "Manual sheathing control"},
-			"4194304": {"name": "Attacker ignores minimum ranges"},
-			"8388608": {"name": "Suppress instance wide release in combat"},
-			"16777216": {"name": "Ai will only swim if target swims"},
-			"33554432": {"name": "Dont generate combat log when engaged with npcs"},
-			"67108864": {"name": "Allow npc combat while uninteractible"},
-			"134217728": {"name": "Prefer npcs when searching for enemies"},
-			"268435456": {"name": "Only generate initial threat"},
-			"536870912": {"name": "Doesnt change target on right click"},
-			"1073741824": {"name": "Hide name in world frame"},
-			"2147483648": {"name": "Quest boss"}
+			"1": { "name": "No birth anim" },
+			"2": { "name": "Treat as player for diminishing returns" },
+			"4": { "name": "Treat as player for pvp debuff duration" },
+			"8": { "name": "Only display gossip for summoner" },
+			"16": { "name": "No death scream" },
+			"32": { "name": "Can be healed by enemies" },
+			"64": { "name": "Deals triple damage to pc controlled pets" },
+			"128": { "name": "No npc damage below 85 pct" },
+			"256": { "name": "Obeys taunt diminishing returns" },
+			"512": { "name": "No melee approach" },
+			"1024": { "name": "Update creature record when instance changes difficulty" },
+			"2024": { "name": "Cannot daze combat stun" },
+			"4096": { "name": "Flat honor award" },
+			"8192": { "name": "Other objects can ignore line of sight requirements when casting spells on me" },
+			"16384": { "name": "Give quest kill credit while offline" },
+			"32768": { "name": "Treat as raid unit for helpful spells" },
+			"65536": { "name": "Dont reposition because melee target is too close" },
+			"131072": { "name": "Pet guardian ai dont go behind target" },
+			"262144": { "name": "Five minute loot roll timer" },
+			"524288": { "name": "Force gossip" },
+			"1048576": { "name": "Dont reposition with friends in combat" },
+			"2097152": { "name": "Manual sheathing control" },
+			"4194304": { "name": "Attacker ignores minimum ranges" },
+			"8388608": { "name": "Suppress instance wide release in combat" },
+			"16777216": { "name": "Ai will only swim if target swims" },
+			"33554432": { "name": "Dont generate combat log when engaged with npcs" },
+			"67108864": { "name": "Allow npc combat while uninteractible" },
+			"134217728": { "name": "Prefer npcs when searching for enemies" },
+			"268435456": { "name": "Only generate initial threat" },
+			"536870912": { "name": "Doesnt change target on right click" },
+			"1073741824": { "name": "Hide name in world frame" },
+			"2147483648": { "name": "Quest boss" }
 		}
 	},
 	"CreatureDifficultyFlags5Parameter": {
 		"name": "Creature Difficulty Flags 5",
 		"isflag": true,
 		"values": {
-			"1": {"name": "Untargetable by client"},
-			"2": {"name": "Force self mounting"},
-			"4": {"name": "Uninteractible if hostile"},
-			"8": {"name": "Disables xp award"},
-			"16": {"name": "Disable ai prediction"},
-			"32": {"name": "No leavecombat state restore"},
-			"64": {"name": "Bypass interact interrupts"},
-			"128": {"name": "240 degree back arc"},
-			"256": {"name": "Interact while hostile"},
-			"512": {"name": "Dont dismiss on flying mount"},
-			"1024": {"name": "Predictive power regen"},
-			"2024": {"name": "Hide level info in tooltip"},
-			"4096": {"name": "Hide health bar under tooltip"},
-			"8192": {"name": "Suppress highlight when targeted or moused over"},
-			"16384": {"name": "Ai prefer pathable targets"},
-			"32768": {"name": "Frequent area trigger checks"},
-			"65536": {"name": "Assign kill credit to encounter list"},
-			"131072": {"name": "Never evade"},
-			"262144": {"name": "Ai cant path on steep slopes"},
-			"524288": {"name": "Ai ignore los to melee target"},
-			"1048576": {"name": "Never display emote or chat text in a chat bubble"},
-			"2097152": {"name": "Ai pets close in on unpathable target"},
-			"4194304": {"name": "Pet guardian ai dont go behind me"},
-			"8388608": {"name": "No death thud"},
-			"16777216": {"name": "Client local creature"},
-			"33554432": {"name": "Can drop loot while in a challenge mode instance"},
-			"67108864": {"name": "Has safe location"},
-			"134217728": {"name": "No health regen"},
-			"268435456": {"name": "No power regen"},
-			"536870912": {"name": "No pet unit frame"},
-			"1073741824": {"name": "No interact on left click"},
-			"2147483648": {"name": "Give criteria kill credit when charmed"}
+			"1": { "name": "Untargetable by client" },
+			"2": { "name": "Force self mounting" },
+			"4": { "name": "Uninteractible if hostile" },
+			"8": { "name": "Disables xp award" },
+			"16": { "name": "Disable ai prediction" },
+			"32": { "name": "No leavecombat state restore" },
+			"64": { "name": "Bypass interact interrupts" },
+			"128": { "name": "240 degree back arc" },
+			"256": { "name": "Interact while hostile" },
+			"512": { "name": "Dont dismiss on flying mount" },
+			"1024": { "name": "Predictive power regen" },
+			"2024": { "name": "Hide level info in tooltip" },
+			"4096": { "name": "Hide health bar under tooltip" },
+			"8192": { "name": "Suppress highlight when targeted or moused over" },
+			"16384": { "name": "Ai prefer pathable targets" },
+			"32768": { "name": "Frequent area trigger checks" },
+			"65536": { "name": "Assign kill credit to encounter list" },
+			"131072": { "name": "Never evade" },
+			"262144": { "name": "Ai cant path on steep slopes" },
+			"524288": { "name": "Ai ignore los to melee target" },
+			"1048576": { "name": "Never display emote or chat text in a chat bubble" },
+			"2097152": { "name": "Ai pets close in on unpathable target" },
+			"4194304": { "name": "Pet guardian ai dont go behind me" },
+			"8388608": { "name": "No death thud" },
+			"16777216": { "name": "Client local creature" },
+			"33554432": { "name": "Can drop loot while in a challenge mode instance" },
+			"67108864": { "name": "Has safe location" },
+			"134217728": { "name": "No health regen" },
+			"268435456": { "name": "No power regen" },
+			"536870912": { "name": "No pet unit frame" },
+			"1073741824": { "name": "No interact on left click" },
+			"2147483648": { "name": "Give criteria kill credit when charmed" }
 		}
 	},
 	"MapTypeParameter": {
 		"name": "Map type",
 		"values": {
-			"0": {"name": "Continent"},
-			"1": {"name": "Dungeon"},
-			"2": {"name": "Raid"},
-			"3": {"name": "Battleground"},
-			"4": {"name": "Arena"}
+			"0": { "name": "Continent" },
+			"1": { "name": "Dungeon" },
+			"2": { "name": "Raid" },
+			"3": { "name": "Battleground" },
+			"4": { "name": "Arena" }
 		}
 	},
 	"DatabaseMovementTypeParameter": {
 		"name": "Database movement type",
 		"values": {
-			"0": {"name": "idle"},
-			"1": {"name": "random"},
-			"2": {"name": "path"}
+			"0": { "name": "idle" },
+			"1": { "name": "random" },
+			"2": { "name": "path" }
 		}
 	},
 	"AuraStateTypeParameter": {
 		"name": "Aura state type",
 		"values": {
-			"1": {"name": "Defense"},
-			"2": {"name": "Healthless 20 percent"},
-			"3": {"name": "Berserking"},
-			"4": {"name": "Frozen"},
-			"5": {"name": "Judgement"},
-			"6": {"name": "Unknown 6"},
-			"7": {"name": "Hunter parry"},
-			"8": {"name": "Unknown 8"},
-			"9": {"name": "Unknown 9"},
-			"10": {"name": "Warrior victory rush"},
-			"11": {"name": "Unknown 11"},
-			"12": {"name": "Faerie fire"},
-			"13": {"name": "Healthless 35 percent"},
-			"14": {"name": "Conflagrate"},
-			"15": {"name": "Swiftmend"},
-			"16": {"name": "Deadly poison"},
-			"17": {"name": "Enrage"},
-			"18": {"name": "Bleeding"},
-			"19": {"name": "Unknown 19"},
-			"20": {"name": "Unknown 20"},
-			"21": {"name": "Unknown 21"},
-			"22": {"name": "Unknown 22"},
-			"23": {"name": "Health above 75 percent"}
+			"1": { "name": "Defense" },
+			"2": { "name": "Healthless 20 percent" },
+			"3": { "name": "Berserking" },
+			"4": { "name": "Frozen" },
+			"5": { "name": "Judgement" },
+			"6": { "name": "Unknown 6" },
+			"7": { "name": "Hunter parry" },
+			"8": { "name": "Unknown 8" },
+			"9": { "name": "Unknown 9" },
+			"10": { "name": "Warrior victory rush" },
+			"11": { "name": "Unknown 11" },
+			"12": { "name": "Faerie fire" },
+			"13": { "name": "Healthless 35 percent" },
+			"14": { "name": "Conflagrate" },
+			"15": { "name": "Swiftmend" },
+			"16": { "name": "Deadly poison" },
+			"17": { "name": "Enrage" },
+			"18": { "name": "Bleeding" },
+			"19": { "name": "Unknown 19" },
+			"20": { "name": "Unknown 20" },
+			"21": { "name": "Unknown 21" },
+			"22": { "name": "Unknown 22" },
+			"23": { "name": "Health above 75 percent" }
 		}
 	},
 	"SpellCustomAttributeParameter": {
 		"isflag": true,
 		"values": {
-			"1": {"name": "Enchant proc"},
-			"2": {"name": "Cone back"},
-			"4": {"name": "Cone line"},
-			"8": {"name": "Share damage"},
-			"16": {"name": "No initial threat"},
-			"32": {"name": "Aura CC"},
-			"64": {"name": "Dont break stealth"},
-			"128": {"name": "Can crit"},
-			"256": {"name": "Direct damage"},
-			"512": {"name": "Charge"},
-			"1024": {"name": "Pickpocket"},
-			"2048": {"name": "Rolling periodic"},
-			"4096": {"name": "Negative eff0"},
-			"8192": {"name": "Negative eff1"},
-			"16384": {"name": "Negative eff2"},
-			"32768": {"name": "Ignore armor"},
-			"65536": {"name": "Req target facing_caster"},
-			"131072": {"name": "Req caster behind_target"},
-			"262144": {"name": "Allow inflight target"},
-			"524288": {"name": "Needs ammo data"},
-			"1048576": {"name": "Binary spell"},
-			"2097152": {"name": "Schoolmask normal with magic"},
-			"4194304": {"name": "Liquid aura"}
+			"1": { "name": "Enchant proc" },
+			"2": { "name": "Cone back" },
+			"4": { "name": "Cone line" },
+			"8": { "name": "Share damage" },
+			"16": { "name": "No initial threat" },
+			"32": { "name": "Aura CC" },
+			"64": { "name": "Dont break stealth" },
+			"128": { "name": "Can crit" },
+			"256": { "name": "Direct damage" },
+			"512": { "name": "Charge" },
+			"1024": { "name": "Pickpocket" },
+			"2048": { "name": "Rolling periodic" },
+			"4096": { "name": "Negative eff0" },
+			"8192": { "name": "Negative eff1" },
+			"16384": { "name": "Negative eff2" },
+			"32768": { "name": "Ignore armor" },
+			"65536": { "name": "Req target facing_caster" },
+			"131072": { "name": "Req caster behind_target" },
+			"262144": { "name": "Allow inflight target" },
+			"524288": { "name": "Needs ammo data" },
+			"1048576": { "name": "Binary spell" },
+			"2097152": { "name": "Schoolmask normal with magic" },
+			"4194304": { "name": "Liquid aura" }
 		}
 	},
 	"TrainerTypeParameter": {
 		"values": {
-			"0": {"name": "class trainer"},
-			"1": {"name": "mount trainer"},
-			"2": {"name": "tradeskill trainer"},
-			"3": {"name": "pet trainer"}
+			"0": { "name": "class trainer" },
+			"1": { "name": "mount trainer" },
+			"2": { "name": "tradeskill trainer" },
+			"3": { "name": "pet trainer" }
 		}
 	},
 	"SpellSpecificParameter": {
 		"values": {
-			"0": {"name": "Normal"},
-			"1": {"name": "Seal"},
-			"3": {"name": "Aura"},
-			"4": {"name": "Sting"},
-			"5": {"name": "Curse"},
-			"6": {"name": "Aspect"},
-			"7": {"name": "Tracker"},
-			"8": {"name": "Warlock armor"},
-			"9": {"name": "Mage armor"},
-			"10": {"name": "Elemental shield"},
-			"11": {"name": "Mage polymorph"},
-			"13": {"name": "Judgement"},
-			"17": {"name": "Warlock corruption"},
-			"19": {"name": "Food"},
-			"20": {"name": "Drink"},
-			"21": {"name": "Food and drink"},
-			"22": {"name": "Presence"},
-			"23": {"name": "Charm"},
-			"24": {"name": "Scroll"},
-			"25": {"name": "Mage arcane brillance"},
-			"26": {"name": "Warrior enrage"},
-			"27": {"name": "Priest divine spirit"},
-			"28": {"name": "Hand"}			
+			"0": { "name": "Normal" },
+			"1": { "name": "Seal" },
+			"3": { "name": "Aura" },
+			"4": { "name": "Sting" },
+			"5": { "name": "Curse" },
+			"6": { "name": "Aspect" },
+			"7": { "name": "Tracker" },
+			"8": { "name": "Warlock armor" },
+			"9": { "name": "Mage armor" },
+			"10": { "name": "Elemental shield" },
+			"11": { "name": "Mage polymorph" },
+			"13": { "name": "Judgement" },
+			"17": { "name": "Warlock corruption" },
+			"19": { "name": "Food" },
+			"20": { "name": "Drink" },
+			"21": { "name": "Food and drink" },
+			"22": { "name": "Presence" },
+			"23": { "name": "Charm" },
+			"24": { "name": "Scroll" },
+			"25": { "name": "Mage arcane brillance" },
+			"26": { "name": "Warrior enrage" },
+			"27": { "name": "Priest divine spirit" },
+			"28": { "name": "Hand" }
 		}
 	},
 	"SpellFamilyNameParameter": {
 		"values": {
-			"0": {"name": "Generic"},
-			"1": {"name": "Unk1"},
-			"3": {"name": "Mage"},
-			"4": {"name": "Warrior"},
-			"5": {"name": "Warlock"},
-			"6": {"name": "Priest"},
-			"7": {"name": "Druid"},
-			"8": {"name": "Rogue"},
-			"9": {"name": "Hunter"},
-			"10": {"name": "Paladin"},
-			"11": {"name": "Shaman"},
-			"12": {"name": "Unk2"},
-			"13": {"name": "Potion"},
-			"15": {"name": "Death Knight"},
-			"17": {"name": "Pet"},
-			"53": {"name": "Monk"},
-			"107": {"name": "Demon hunter"}
+			"0": { "name": "Generic" },
+			"1": { "name": "Unk1" },
+			"3": { "name": "Mage" },
+			"4": { "name": "Warrior" },
+			"5": { "name": "Warlock" },
+			"6": { "name": "Priest" },
+			"7": { "name": "Druid" },
+			"8": { "name": "Rogue" },
+			"9": { "name": "Hunter" },
+			"10": { "name": "Paladin" },
+			"11": { "name": "Shaman" },
+			"12": { "name": "Unk2" },
+			"13": { "name": "Potion" },
+			"15": { "name": "Death Knight" },
+			"17": { "name": "Pet" },
+			"53": { "name": "Monk" },
+			"107": { "name": "Demon hunter" }
 		}
 	},
 	"InventoryTypeParameter": {
 		"values": {
-			"0": {"name": "Non equip"},
-			"1": {"name": "Head"},
-			"2": {"name": "Neck"},
-			"3": {"name": "Shoulders"},
-			"4": {"name": "Body"},
-			"5": {"name": "Chest"},
-			"6": {"name": "Waist"},
-			"7": {"name": "Legs"},
-			"8": {"name": "Feet"},
-			"9": {"name": "Wrists"},
-			"10": {"name": "Hands"},
-			"11": {"name": "Finger"},
-			"12": {"name": "Trinket"},
-			"13": {"name": "Weapon"},
-			"14": {"name": "Shield"},
-			"15": {"name": "Ranged"},
-			"16": {"name": "Cloak"},
-			"17": {"name": "Two-hand weapon"},
-			"18": {"name": "Bag"},
-			"19": {"name": "Tabard"},
-			"20": {"name": "Robe"},
-			"21": {"name": "Weapon main hand"},
-			"22": {"name": "Weapon off-hand"},
-			"23": {"name": "Holdable"},
-			"24": {"name": "Ammo"},
-			"25": {"name": "Thrown"},
-			"26": {"name": "Ranged right"},
-			"27": {"name": "Quiver"},
-			"28": {"name": "Relic"}			
+			"0": { "name": "Non equip" },
+			"1": { "name": "Head" },
+			"2": { "name": "Neck" },
+			"3": { "name": "Shoulders" },
+			"4": { "name": "Body" },
+			"5": { "name": "Chest" },
+			"6": { "name": "Waist" },
+			"7": { "name": "Legs" },
+			"8": { "name": "Feet" },
+			"9": { "name": "Wrists" },
+			"10": { "name": "Hands" },
+			"11": { "name": "Finger" },
+			"12": { "name": "Trinket" },
+			"13": { "name": "Weapon" },
+			"14": { "name": "Shield" },
+			"15": { "name": "Ranged" },
+			"16": { "name": "Cloak" },
+			"17": { "name": "Two-hand weapon" },
+			"18": { "name": "Bag" },
+			"19": { "name": "Tabard" },
+			"20": { "name": "Robe" },
+			"21": { "name": "Weapon main hand" },
+			"22": { "name": "Weapon off-hand" },
+			"23": { "name": "Holdable" },
+			"24": { "name": "Ammo" },
+			"25": { "name": "Thrown" },
+			"26": { "name": "Ranged right" },
+			"27": { "name": "Quiver" },
+			"28": { "name": "Relic" }
 		}
 	},
 	"QuestGreetingTypeParameter": {
 		"values": {
-			"0": {"name": "Creature"},
-			"1": {"name": "GameObject"}
+			"0": { "name": "Creature" },
+			"1": { "name": "GameObject" }
 		}
 	},
 	"PoolMemberTypeParameter": {
 		"values": {
-			"0": {"name": "Creature"},
-			"1": {"name": "GameObject"},
-			"2": {"name": "Pool"}
+			"0": { "name": "Creature" },
+			"1": { "name": "GameObject" },
+			"2": { "name": "Pool" }
 		}
 	},
 	"PlayerCreateinfoActionTypeParameter": {
 		"values": {
-			"0": {"name": "Spell"},
-			"64": {"name": "Macro"},
-			"128": {"name": "Item"}
+			"0": { "name": "Spell" },
+			"64": { "name": "Macro" },
+			"128": { "name": "Item" }
 		}
 	},
 	"PlayercreateinfoActionButtonParameter": {
 		"values": {
-			"0": {"name": "1 (SHIFT + 1) (slot 1)"},
-			"1": {"name": "1 (SHIFT + 1) (slot 2)"},
-			"2": {"name": "1 (SHIFT + 1) (slot 3)"},
-			"3": {"name": "1 (SHIFT + 1) (slot 4)"},
-			"4": {"name": "1 (SHIFT + 1) (slot 5)"},
-			"5": {"name": "1 (SHIFT + 1) (slot 6)"},
-			"6": {"name": "1 (SHIFT + 1) (slot 7)"},
-			"7": {"name": "1 (SHIFT + 1) (slot 8)"},
-			"8": {"name": "1 (SHIFT + 1) (slot 9)"},
-			"9": {"name": "1 (SHIFT + 1) (slot 10)"},
-			"10": {"name": "1 (SHIFT + 1) (slot 11)"},
-			"11": {"name": "1 (SHIFT + 1) (slot 12)"},
-			"12": {"name": "2 (SHIFT + 2) (slot 1)"},
-			"13": {"name": "2 (SHIFT + 2) (slot 2)"},
-			"14": {"name": "2 (SHIFT + 2) (slot 3)"},
-			"15": {"name": "2 (SHIFT + 2) (slot 4)"},
-			"16": {"name": "2 (SHIFT + 2) (slot 5)"},
-			"17": {"name": "2 (SHIFT + 2) (slot 6)"},
-			"18": {"name": "2 (SHIFT + 2) (slot 7)"},
-			"19": {"name": "2 (SHIFT + 2) (slot 8)"},
-			"20": {"name": "2 (SHIFT + 2) (slot 9)"},
-			"21": {"name": "2 (SHIFT + 2) (slot 10)"},
-			"22": {"name": "2 (SHIFT + 2) (slot 11)"},
-			"23": {"name": "2 (SHIFT + 2) (slot 12)"},
-			"24": {"name": "3 (SHIFT + 3) Right Side Bar (slot 1)"},
-			"25": {"name": "3 (SHIFT + 3) Right Side Bar (slot 2)"},
-			"26": {"name": "3 (SHIFT + 3) Right Side Bar (slot 3)"},
-			"27": {"name": "3 (SHIFT + 3) Right Side Bar (slot 4)"},
-			"28": {"name": "3 (SHIFT + 3) Right Side Bar (slot 5)"},
-			"29": {"name": "3 (SHIFT + 3) Right Side Bar (slot 6)"},
-			"30": {"name": "3 (SHIFT + 3) Right Side Bar (slot 7)"},
-			"31": {"name": "3 (SHIFT + 3) Right Side Bar (slot 8)"},
-			"32": {"name": "3 (SHIFT + 3) Right Side Bar (slot 9)"},
-			"33": {"name": "3 (SHIFT + 3) Right Side Bar (slot 10)"},
-			"34": {"name": "3 (SHIFT + 3) Right Side Bar (slot 11)"},
-			"35": {"name": "3 (SHIFT + 3) Right Side Bar (slot 12)"},
-			"36": {"name": "4 (SHIFT + 4) Right Side Bar 2 (slot 1)"},
-			"37": {"name": "4 (SHIFT + 4) Right Side Bar 2 (slot 2)"},
-			"38": {"name": "4 (SHIFT + 4) Right Side Bar 2 (slot 3)"},
-			"39": {"name": "4 (SHIFT + 4) Right Side Bar 2 (slot 4)"},
-			"40": {"name": "4 (SHIFT + 4) Right Side Bar 2 (slot 5)"},
-			"41": {"name": "4 (SHIFT + 4) Right Side Bar 2 (slot 6)"},
-			"42": {"name": "4 (SHIFT + 4) Right Side Bar 2 (slot 7)"},
-			"43": {"name": "4 (SHIFT + 4) Right Side Bar 2 (slot 8)"},
-			"44": {"name": "4 (SHIFT + 4) Right Side Bar 2 (slot 9)"},
-			"45": {"name": "4 (SHIFT + 4) Right Side Bar 2 (slot 10)"},
-			"46": {"name": "4 (SHIFT + 4) Right Side Bar 2 (slot 11)"},
-			"47": {"name": "4 (SHIFT + 4) Right Side Bar 2 (slot 12)"},
-			"48": {"name": "5 (SHIFT + 5) Bottom Rigth Bar (slot 1)"},
-			"49": {"name": "5 (SHIFT + 5) Bottom Rigth Bar (slot 2)"},
-			"50": {"name": "5 (SHIFT + 5) Bottom Rigth Bar (slot 3)"},
-			"51": {"name": "5 (SHIFT + 5) Bottom Rigth Bar (slot 4)"},
-			"52": {"name": "5 (SHIFT + 5) Bottom Rigth Bar (slot 5)"},
-			"53": {"name": "5 (SHIFT + 5) Bottom Rigth Bar (slot 6)"},
-			"54": {"name": "5 (SHIFT + 5) Bottom Rigth Bar (slot 7)"},
-			"55": {"name": "5 (SHIFT + 5) Bottom Rigth Bar (slot 8)"},
-			"56": {"name": "5 (SHIFT + 5) Bottom Rigth Bar (slot 9)"},
-			"57": {"name": "5 (SHIFT + 5) Bottom Rigth Bar (slot 10)"},
-			"58": {"name": "5 (SHIFT + 5) Bottom Rigth Bar (slot 11)"},
-			"59": {"name": "5 (SHIFT + 5) Bottom Rigth Bar (slot 12)"},
-			"60": {"name": "6 (SHIFT + 6) Bottom Left Bar (slot 1)"},
-			"61": {"name": "6 (SHIFT + 6) Bottom Left Bar (slot 2)"},
-			"62": {"name": "6 (SHIFT + 6) Bottom Left Bar (slot 3)"},
-			"63": {"name": "6 (SHIFT + 6) Bottom Left Bar (slot 4)"},
-			"64": {"name": "6 (SHIFT + 6) Bottom Left Bar (slot 5)"},
-			"65": {"name": "6 (SHIFT + 6) Bottom Left Bar (slot 6)"},
-			"66": {"name": "6 (SHIFT + 6) Bottom Left Bar (slot 7)"},
-			"67": {"name": "6 (SHIFT + 6) Bottom Left Bar (slot 8)"},
-			"68": {"name": "6 (SHIFT + 6) Bottom Left Bar (slot 9)"},
-			"69": {"name": "6 (SHIFT + 6) Bottom Left Bar (slot 10)"},
-			"70": {"name": "6 (SHIFT + 6) Bottom Left Bar (slot 11)"},
-			"71": {"name": "6 (SHIFT + 6) Bottom Left Bar (slot 12)"},
-			"72": {"name": "1 SpecialA (slot 1)"},
-			"73": {"name": "1 SpecialA (slot 2)"},
-			"74": {"name": "1 SpecialA (slot 3)"},
-			"75": {"name": "1 SpecialA (slot 4)"},
-			"76": {"name": "1 SpecialA (slot 5)"},
-			"77": {"name": "1 SpecialA (slot 6)"},
-			"78": {"name": "1 SpecialA (slot 7)"},
-			"79": {"name": "1 SpecialA (slot 8)"},
-			"80": {"name": "1 SpecialA (slot 9)"},
-			"81": {"name": "1 SpecialA (slot 10)"},
-			"82": {"name": "1 SpecialA (slot 11)"},
-			"83": {"name": "1 SpecialA (slot 12)"},
-			"84": {"name": "1 Special B (slot 1)"},
-			"85": {"name": "1 Special B (slot 2)"},
-			"86": {"name": "1 Special B (slot 3)"},
-			"87": {"name": "1 Special B (slot 4)"},
-			"88": {"name": "1 Special B (slot 5)"},
-			"89": {"name": "1 Special B (slot 6)"},
-			"90": {"name": "1 Special B (slot 7)"},
-			"91": {"name": "1 Special B (slot 8)"},
-			"92": {"name": "1 Special B (slot 9)"},
-			"93": {"name": "1 Special B (slot 10)"},
-			"94": {"name": "1 Special B (slot 11)"},
-			"95": {"name": "1 Special B (slot 12)"},
-			"96": {"name": "1 Special C (slot 1)"},
-			"97": {"name": "1 Special C (slot 2)"},
-			"98": {"name": "1 Special C (slot 3)"},
-			"99": {"name": "1 Special C (slot 4)"},
-			"100": {"name": "1 Special C (slot 5)"},
-			"101": {"name": "1 Special C (slot 6)"},
-			"102": {"name": "1 Special C (slot 7)"},
-			"103": {"name": "1 Special C (slot 8)"},
-			"104": {"name": "1 Special C (slot 9)"},
-			"105": {"name": "1 Special C (slot 10)"},
-			"106": {"name": "1 Special C (slot 11)"},
-			"107": {"name": "1 Special C (slot 12)"},
-			"108": {"name": "1 Special D (slot 1)"},
-			"109": {"name": "1 Special D (slot 2)"},
-			"110": {"name": "1 Special D (slot 3)"},
-			"111": {"name": "1 Special D (slot 4)"},
-			"112": {"name": "1 Special D (slot 5)"},
-			"113": {"name": "1 Special D (slot 6)"},
-			"114": {"name": "1 Special D (slot 7)"},
-			"115": {"name": "1 Special D (slot 8)"},
-			"116": {"name": "1 Special D (slot 9)"},
-			"117": {"name": "1 Special D (slot 10)"},
-			"118": {"name": "1 Special D (slot 11)"},
-			"119": {"name": "1 Special D (slot 12)"}
+			"0": { "name": "1 (SHIFT + 1) (slot 1)" },
+			"1": { "name": "1 (SHIFT + 1) (slot 2)" },
+			"2": { "name": "1 (SHIFT + 1) (slot 3)" },
+			"3": { "name": "1 (SHIFT + 1) (slot 4)" },
+			"4": { "name": "1 (SHIFT + 1) (slot 5)" },
+			"5": { "name": "1 (SHIFT + 1) (slot 6)" },
+			"6": { "name": "1 (SHIFT + 1) (slot 7)" },
+			"7": { "name": "1 (SHIFT + 1) (slot 8)" },
+			"8": { "name": "1 (SHIFT + 1) (slot 9)" },
+			"9": { "name": "1 (SHIFT + 1) (slot 10)" },
+			"10": { "name": "1 (SHIFT + 1) (slot 11)" },
+			"11": { "name": "1 (SHIFT + 1) (slot 12)" },
+			"12": { "name": "2 (SHIFT + 2) (slot 1)" },
+			"13": { "name": "2 (SHIFT + 2) (slot 2)" },
+			"14": { "name": "2 (SHIFT + 2) (slot 3)" },
+			"15": { "name": "2 (SHIFT + 2) (slot 4)" },
+			"16": { "name": "2 (SHIFT + 2) (slot 5)" },
+			"17": { "name": "2 (SHIFT + 2) (slot 6)" },
+			"18": { "name": "2 (SHIFT + 2) (slot 7)" },
+			"19": { "name": "2 (SHIFT + 2) (slot 8)" },
+			"20": { "name": "2 (SHIFT + 2) (slot 9)" },
+			"21": { "name": "2 (SHIFT + 2) (slot 10)" },
+			"22": { "name": "2 (SHIFT + 2) (slot 11)" },
+			"23": { "name": "2 (SHIFT + 2) (slot 12)" },
+			"24": { "name": "3 (SHIFT + 3) Right Side Bar (slot 1)" },
+			"25": { "name": "3 (SHIFT + 3) Right Side Bar (slot 2)" },
+			"26": { "name": "3 (SHIFT + 3) Right Side Bar (slot 3)" },
+			"27": { "name": "3 (SHIFT + 3) Right Side Bar (slot 4)" },
+			"28": { "name": "3 (SHIFT + 3) Right Side Bar (slot 5)" },
+			"29": { "name": "3 (SHIFT + 3) Right Side Bar (slot 6)" },
+			"30": { "name": "3 (SHIFT + 3) Right Side Bar (slot 7)" },
+			"31": { "name": "3 (SHIFT + 3) Right Side Bar (slot 8)" },
+			"32": { "name": "3 (SHIFT + 3) Right Side Bar (slot 9)" },
+			"33": { "name": "3 (SHIFT + 3) Right Side Bar (slot 10)" },
+			"34": { "name": "3 (SHIFT + 3) Right Side Bar (slot 11)" },
+			"35": { "name": "3 (SHIFT + 3) Right Side Bar (slot 12)" },
+			"36": { "name": "4 (SHIFT + 4) Right Side Bar 2 (slot 1)" },
+			"37": { "name": "4 (SHIFT + 4) Right Side Bar 2 (slot 2)" },
+			"38": { "name": "4 (SHIFT + 4) Right Side Bar 2 (slot 3)" },
+			"39": { "name": "4 (SHIFT + 4) Right Side Bar 2 (slot 4)" },
+			"40": { "name": "4 (SHIFT + 4) Right Side Bar 2 (slot 5)" },
+			"41": { "name": "4 (SHIFT + 4) Right Side Bar 2 (slot 6)" },
+			"42": { "name": "4 (SHIFT + 4) Right Side Bar 2 (slot 7)" },
+			"43": { "name": "4 (SHIFT + 4) Right Side Bar 2 (slot 8)" },
+			"44": { "name": "4 (SHIFT + 4) Right Side Bar 2 (slot 9)" },
+			"45": { "name": "4 (SHIFT + 4) Right Side Bar 2 (slot 10)" },
+			"46": { "name": "4 (SHIFT + 4) Right Side Bar 2 (slot 11)" },
+			"47": { "name": "4 (SHIFT + 4) Right Side Bar 2 (slot 12)" },
+			"48": { "name": "5 (SHIFT + 5) Bottom Rigth Bar (slot 1)" },
+			"49": { "name": "5 (SHIFT + 5) Bottom Rigth Bar (slot 2)" },
+			"50": { "name": "5 (SHIFT + 5) Bottom Rigth Bar (slot 3)" },
+			"51": { "name": "5 (SHIFT + 5) Bottom Rigth Bar (slot 4)" },
+			"52": { "name": "5 (SHIFT + 5) Bottom Rigth Bar (slot 5)" },
+			"53": { "name": "5 (SHIFT + 5) Bottom Rigth Bar (slot 6)" },
+			"54": { "name": "5 (SHIFT + 5) Bottom Rigth Bar (slot 7)" },
+			"55": { "name": "5 (SHIFT + 5) Bottom Rigth Bar (slot 8)" },
+			"56": { "name": "5 (SHIFT + 5) Bottom Rigth Bar (slot 9)" },
+			"57": { "name": "5 (SHIFT + 5) Bottom Rigth Bar (slot 10)" },
+			"58": { "name": "5 (SHIFT + 5) Bottom Rigth Bar (slot 11)" },
+			"59": { "name": "5 (SHIFT + 5) Bottom Rigth Bar (slot 12)" },
+			"60": { "name": "6 (SHIFT + 6) Bottom Left Bar (slot 1)" },
+			"61": { "name": "6 (SHIFT + 6) Bottom Left Bar (slot 2)" },
+			"62": { "name": "6 (SHIFT + 6) Bottom Left Bar (slot 3)" },
+			"63": { "name": "6 (SHIFT + 6) Bottom Left Bar (slot 4)" },
+			"64": { "name": "6 (SHIFT + 6) Bottom Left Bar (slot 5)" },
+			"65": { "name": "6 (SHIFT + 6) Bottom Left Bar (slot 6)" },
+			"66": { "name": "6 (SHIFT + 6) Bottom Left Bar (slot 7)" },
+			"67": { "name": "6 (SHIFT + 6) Bottom Left Bar (slot 8)" },
+			"68": { "name": "6 (SHIFT + 6) Bottom Left Bar (slot 9)" },
+			"69": { "name": "6 (SHIFT + 6) Bottom Left Bar (slot 10)" },
+			"70": { "name": "6 (SHIFT + 6) Bottom Left Bar (slot 11)" },
+			"71": { "name": "6 (SHIFT + 6) Bottom Left Bar (slot 12)" },
+			"72": { "name": "1 SpecialA (slot 1)" },
+			"73": { "name": "1 SpecialA (slot 2)" },
+			"74": { "name": "1 SpecialA (slot 3)" },
+			"75": { "name": "1 SpecialA (slot 4)" },
+			"76": { "name": "1 SpecialA (slot 5)" },
+			"77": { "name": "1 SpecialA (slot 6)" },
+			"78": { "name": "1 SpecialA (slot 7)" },
+			"79": { "name": "1 SpecialA (slot 8)" },
+			"80": { "name": "1 SpecialA (slot 9)" },
+			"81": { "name": "1 SpecialA (slot 10)" },
+			"82": { "name": "1 SpecialA (slot 11)" },
+			"83": { "name": "1 SpecialA (slot 12)" },
+			"84": { "name": "1 Special B (slot 1)" },
+			"85": { "name": "1 Special B (slot 2)" },
+			"86": { "name": "1 Special B (slot 3)" },
+			"87": { "name": "1 Special B (slot 4)" },
+			"88": { "name": "1 Special B (slot 5)" },
+			"89": { "name": "1 Special B (slot 6)" },
+			"90": { "name": "1 Special B (slot 7)" },
+			"91": { "name": "1 Special B (slot 8)" },
+			"92": { "name": "1 Special B (slot 9)" },
+			"93": { "name": "1 Special B (slot 10)" },
+			"94": { "name": "1 Special B (slot 11)" },
+			"95": { "name": "1 Special B (slot 12)" },
+			"96": { "name": "1 Special C (slot 1)" },
+			"97": { "name": "1 Special C (slot 2)" },
+			"98": { "name": "1 Special C (slot 3)" },
+			"99": { "name": "1 Special C (slot 4)" },
+			"100": { "name": "1 Special C (slot 5)" },
+			"101": { "name": "1 Special C (slot 6)" },
+			"102": { "name": "1 Special C (slot 7)" },
+			"103": { "name": "1 Special C (slot 8)" },
+			"104": { "name": "1 Special C (slot 9)" },
+			"105": { "name": "1 Special C (slot 10)" },
+			"106": { "name": "1 Special C (slot 11)" },
+			"107": { "name": "1 Special C (slot 12)" },
+			"108": { "name": "1 Special D (slot 1)" },
+			"109": { "name": "1 Special D (slot 2)" },
+			"110": { "name": "1 Special D (slot 3)" },
+			"111": { "name": "1 Special D (slot 4)" },
+			"112": { "name": "1 Special D (slot 5)" },
+			"113": { "name": "1 Special D (slot 6)" },
+			"114": { "name": "1 Special D (slot 7)" },
+			"115": { "name": "1 Special D (slot 8)" },
+			"116": { "name": "1 Special D (slot 9)" },
+			"117": { "name": "1 Special D (slot 10)" },
+			"118": { "name": "1 Special D (slot 11)" },
+			"119": { "name": "1 Special D (slot 12)" }
 		}
 	},
 	"SummonSlotParameter": {
 		"values": {
-			"0": {"name": "Pet"},
-			"1": {"name": "Totem fire"},
-			"2": {"name": "Totem earth"},
-			"3": {"name": "Totem water"},
-			"4": {"name": "Totem air"},
-			"5": {"name": "Minipet"},
-			"6": {"name": "Quest"}
+			"0": { "name": "Pet" },
+			"1": { "name": "Totem fire" },
+			"2": { "name": "Totem earth" },
+			"3": { "name": "Totem water" },
+			"4": { "name": "Totem air" },
+			"5": { "name": "Minipet" },
+			"6": { "name": "Quest" }
 		}
 	},
 	"TotemSlotParameter": {
 		"values": {
-			"1": {"name": "Totem fire"},
-			"2": {"name": "Totem earth"},
-			"3": {"name": "Totem water"},
-			"4": {"name": "Totem air"}
+			"1": { "name": "Totem fire" },
+			"2": { "name": "Totem earth" },
+			"3": { "name": "Totem water" },
+			"4": { "name": "Totem air" }
 		}
 	},
 	"PetNameGenerationHalfParameter": {
 		"values": {
-			"0": {"name": "first half"},
-			"1": {"name": "second half"}
+			"0": { "name": "first half" },
+			"1": { "name": "second half" }
 		}
 	},
 	"LinkedRespawnTypeParameter": {
 		"values": {
-			"0": {"name": "Dependant: Creature, Master: Creature"},
-			"1": {"name": "Dependant: Creature, Master: Gameobject"},
-			"2": {"name": "Dependant: Gameobject, Master: Gameobject"},
-			"3": {"name": "Dependant: Gameobject, Master: Creature"}
+			"0": { "name": "Dependant: Creature, Master: Creature" },
+			"1": { "name": "Dependant: Creature, Master: Gameobject" },
+			"2": { "name": "Dependant: Gameobject, Master: Gameobject" },
+			"3": { "name": "Dependant: Gameobject, Master: Creature" }
 		}
 	},
 	"EncounterCreditTypeParameter": {
 		"values": {
-			"0": {"name": "monster kill credit"},
-			"1": {"name": "spell"}
+			"0": { "name": "monster kill credit" },
+			"1": { "name": "spell" }
 		}
 	},
 	"InstanceSpawnGroupInfoParameter": {
 		"isflag": true,
 		"values": {
-			"1": {"name": "activate spawn"},
-			"2": {"name": "block spawn"},
-			"4": {"name": "alliance only"},
-			"8": {"name": "horde only"},
-			"16": {"name": "link aggro"}
+			"1": { "name": "activate spawn" },
+			"2": { "name": "block spawn" },
+			"4": { "name": "alliance only" },
+			"8": { "name": "horde only" },
+			"16": { "name": "link aggro" }
 		}
 	},
 	"InstanceSpawnGroupBossStateMaskParameter": {
 		"isflag": true,
 		"values": {
-			"1": {"name": "not started"},
-			"2": {"name": "in progress"},
-			"4": {"name": "fail"},
-			"8": {"name": "done"},
-			"16": {"name": "special"}
+			"1": { "name": "not started" },
+			"2": { "name": "in progress" },
+			"4": { "name": "fail" },
+			"8": { "name": "done" },
+			"16": { "name": "special" }
 		}
 	},
 	"SpawnObjectTypeParameter": {
 		"values": {
-			"0": {"name": "Creature"},
-			"1": {"name": "GameObject"}
+			"0": { "name": "Creature" },
+			"1": { "name": "GameObject" }
 		}
 	},
 	"InvisibilityTypeParameter": {
 		"values": {
-			"0": {"name": "general"},
-			"1": {"name": "unk 1"},
-			"2": {"name": "unk 2"},
-			"3": {"name": "trap"},
-			"4": {"name": "unk 4"},
-			"5": {"name": "unk 5"},
-			"6": {"name": "drunk"},
-			"7": {"name": "unk 7"},
-			"8": {"name": "unk 8"},
-			"9": {"name": "unk 9"},
-			"10": {"name": "unk 10"},
-			"11": {"name": "unk 11"}
+			"0": { "name": "general" },
+			"1": { "name": "unk 1" },
+			"2": { "name": "unk 2" },
+			"3": { "name": "trap" },
+			"4": { "name": "unk 4" },
+			"5": { "name": "unk 5" },
+			"6": { "name": "drunk" },
+			"7": { "name": "unk 7" },
+			"8": { "name": "unk 8" },
+			"9": { "name": "unk 9" },
+			"10": { "name": "unk 10" },
+			"11": { "name": "unk 11" }
 		}
 	},
 	"GameobjectStateParameter": {
 		"values": {
-			"0": {"name": "active", "description": "show in world as used and not reset (closed door open)"},
-			"1": {"name": "ready", "description": "show in world as ready (closed door close)"},
-			"2": {"name": "active alternative", "description": "show in world as used in alt way and not reset (closed door open by cannon fire)"}
+			"0": {
+				"name": "active",
+				"description": "show in world as used and not reset (closed door open)"
+			},
+			"1": {
+				"name": "ready",
+				"description": "show in world as ready (closed door close)"
+			},
+			"2": {
+				"name": "active alternative",
+				"description": "show in world as used in alt way and not reset (closed door open by cannon fire)"
+			}
 		}
 	},
 	"GameEventAnnounceParameter": {
 		"values": {
-			"0": {"name": "never announce"},
-			"1": {"name": "always announce"},
-			"2": {"name": "announce if config"}
+			"0": { "name": "never announce" },
+			"1": { "name": "always announce" },
+			"2": { "name": "announce if config" }
 		}
 	},
 	"DisableTypeParameter": {
 		"values": {
-			"0": {"name": "spell"},
-			"1": {"name": "quest"},
-			"2": {"name": "map"},
-			"3": {"name": "battleground"},
-			"4": {"name": "achievement criteria"},
-			"5": {"name": "outdoor pvp"},
-			"6": {"name": "vmap"},
-			"7": {"name": "mmap"},
-			"8": {"name": "lfg map"}
+			"0": { "name": "spell" },
+			"1": { "name": "quest" },
+			"2": { "name": "map" },
+			"3": { "name": "battleground" },
+			"4": { "name": "achievement criteria" },
+			"5": { "name": "outdoor pvp" },
+			"6": { "name": "vmap" },
+			"7": { "name": "mmap" },
+			"8": { "name": "lfg map" }
 		}
 	},
 	"DisableTypeSpellFlagsParameter": {
 		"isflag": true,
 		"values": {
-			"0": {"name": "enabled"},
-			"1": {"name": "disabled for players"},
-			"2": {"name": "disabled for creatures"},
-			"4": {"name": "disabled for pets"},
-			"8": {"name": "completely disabled"},
-			"16": {"name": "disabled in map", "description": "Put map IDs in param0 field"},
-			"32": {"name": "disabled in area", "description": "Put area IDs in param1 field"},
-			"64": {"name": "ignore LoS"},
-			"128": {"name": "disabled for gameobjects"},
-			"256": {"name": "disabled in arena"},
-			"512": {"name": "disabled in battlegrounds"}
+			"0": { "name": "enabled" },
+			"1": { "name": "disabled for players" },
+			"2": { "name": "disabled for creatures" },
+			"4": { "name": "disabled for pets" },
+			"8": { "name": "completely disabled" },
+			"16": {
+				"name": "disabled in map",
+				"description": "Put map IDs in param0 field"
+			},
+			"32": {
+				"name": "disabled in area",
+				"description": "Put area IDs in param1 field"
+			},
+			"64": { "name": "ignore LoS" },
+			"128": { "name": "disabled for gameobjects" },
+			"256": { "name": "disabled in arena" },
+			"512": { "name": "disabled in battlegrounds" }
 		}
 	},
 	"DisableTypeMapFlagsParameter": {
 		"isflag": true,
 		"values": {
-			"1": {"name": "DUNGEON_STATUSFLAG_NORMAL OR RAID_STATUSFLAG_10MAN_NORMAL"},
-			"2": {"name": "DUNGEON_STATUSFLAG_HEROIC OR RAID_STATUSFLAG_25MAN_NORMAL"},
-			"4": {"name": "RAID_STATUSFLAG_10MAN_HEROIC"},
-			"8": {"name": "RAID_STATUSFLAG_25MAN_HEROIC"}
+			"1": { "name": "DUNGEON_STATUSFLAG_NORMAL OR RAID_STATUSFLAG_10MAN_NORMAL" },
+			"2": { "name": "DUNGEON_STATUSFLAG_HEROIC OR RAID_STATUSFLAG_25MAN_NORMAL" },
+			"4": { "name": "RAID_STATUSFLAG_10MAN_HEROIC" },
+			"8": { "name": "RAID_STATUSFLAG_25MAN_HEROIC" }
 		}
 	},
 	"DisableTypeVMapFlagsParameter": {
 		"isflag": true,
 		"values": {
-			"1": {"name": "VMAP_DISABLE_AREAFLAG"},
-			"2": {"name": "VMAP_DISABLE_HEIGHT"},
-			"4": {"name": "VMAP_DISABLE_LOS"},
-			"8": {"name": "VMAP_LIQUIDSTATUS"}
+			"1": { "name": "VMAP_DISABLE_AREAFLAG" },
+			"2": { "name": "VMAP_DISABLE_HEIGHT" },
+			"4": { "name": "VMAP_DISABLE_LOS" },
+			"8": { "name": "VMAP_LIQUIDSTATUS" }
 		}
 	},
 	"AchievementCriteriaTypeParameter": {
 		"values": {
-			"0": {"name": "None"},
-			"1": {"name": "Target creature"},
-			"2": {"name": "Target player class race"},
-			"3": {"name": "Target player less health"},
-			"4": {"name": "Target player dead"},
-			"5": {"name": "Player has aura"},
-			"6": {"name": "Player in area"},
-			"7": {"name": "Target player has aura"},
-			"8": {"name": "Value"},
-			"9": {"name": "Target Level"},
-			"10": {"name": "Target Gender"},
-			"11": {"name": "Script"},
-			"12": {"name": "Map difficulty"},
-			"13": {"name": "Map player count"},
-			"14": {"name": "Target Team"},
-			"15": {"name": "Player is drunk"},
-			"16": {"name": "Holiday"},
-			"17": {"name": "Bg loss team score"},
-			"18": {"name": "Instance script"},
-			"19": {"name": "Player has item level"},
-			"20": {"name": "Map"},
-			"21": {"name": "Player class race"},
-			"22": {"name": "Nth birthday"},
-			"23": {"name": "Player has title"}			
+			"0": { "name": "None" },
+			"1": { "name": "Target creature" },
+			"2": { "name": "Target player class race" },
+			"3": { "name": "Target player less health" },
+			"4": { "name": "Target player dead" },
+			"5": { "name": "Player has aura" },
+			"6": { "name": "Player in area" },
+			"7": { "name": "Target player has aura" },
+			"8": { "name": "Value" },
+			"9": { "name": "Target Level" },
+			"10": { "name": "Target Gender" },
+			"11": { "name": "Script" },
+			"12": { "name": "Map difficulty" },
+			"13": { "name": "Map player count" },
+			"14": { "name": "Target Team" },
+			"15": { "name": "Player is drunk" },
+			"16": { "name": "Holiday" },
+			"17": { "name": "Bg loss team score" },
+			"18": { "name": "Instance script" },
+			"19": { "name": "Player has item level" },
+			"20": { "name": "Map" },
+			"21": { "name": "Player class race" },
+			"22": { "name": "Nth birthday" },
+			"23": { "name": "Player has title" }
 		}
 	},
 	"AchievementCriteriaValueCompareTypeParameter": {
 		"values": {
-			"0": {"name": "=="},
-			"1": {"name": ">"},
-			"2": {"name": "<"},
-			"3": {"name": ">="},
-			"4": {"name": "<="}
+			"0": { "name": "==" },
+			"1": { "name": ">" },
+			"2": { "name": "<" },
+			"3": { "name": ">=" },
+			"4": { "name": "<=" }
 		}
 	},
 	"AchievementRequiredFactionParameter": {
 		"values": {
-			"-1": {"name": "both"},
-			"0": {"name": "horde"},
-			"1": {"name": "alliance"}
+			"-1": { "name": "both" },
+			"0": { "name": "horde" },
+			"1": { "name": "alliance" }
 		}
 	},
 	"AchievementFlagsParameter": {
 		"isflag": true,
 		"values": {
-			"1": {"name": "Counter", "description": "Just count statistic (never stop and complete)"},
-			"2": {"name": "Hidden", "description": "Not sent to client - internal use only"},
-			"4": {"name": "Store max value", "description": "Store only max value? used only in \"Reach level xx\""},
-			"8": {"name": "Summ", "description": "Use summ criteria value from all requirements (and calculate max value)"},
-			"16": {"name": "Max used", "description": "Show max criteria (and calculate max value ??)"},
-			"32": {"name": "Req count", "description": "Use not zero req count (and calculate max value)"},
-			"64": {"name": "Average", "description": "Show as average value (value / time_in_days) depend from other flag (by def use last criteria value)"},
-			"128": {"name": "Bar", "description": "Show as progress bar (value / max vale) depend from other flag (by def use last criteria value)"},
-			"256": {"name": "Realm first reach"},
-			"512": {"name": "Realm first kill"}
+			"1": {
+				"name": "Counter",
+				"description": "Just count statistic (never stop and complete)"
+			},
+			"2": {
+				"name": "Hidden",
+				"description": "Not sent to client - internal use only"
+			},
+			"4": {
+				"name": "Store max value",
+				"description": "Store only max value? used only in \"Reach level xx\""
+			},
+			"8": {
+				"name": "Summ",
+				"description": "Use summ criteria value from all requirements (and calculate max value)"
+			},
+			"16": {
+				"name": "Max used",
+				"description": "Show max criteria (and calculate max value ??)"
+			},
+			"32": {
+				"name": "Req count",
+				"description": "Use not zero req count (and calculate max value)"
+			},
+			"64": {
+				"name": "Average",
+				"description": "Show as average value (value / time_in_days) depend from other flag (by def use last criteria value)"
+			},
+			"128": {
+				"name": "Bar",
+				"description": "Show as progress bar (value / max vale) depend from other flag (by def use last criteria value)"
+			},
+			"256": { "name": "Realm first reach" },
+			"512": { "name": "Realm first kill" }
 		}
 	},
 	"BattlefieldParameter": {
 		"values": {
-			"1": {"name": "Wintergrasp"}
+			"1": { "name": "Wintergrasp" }
 		}
 	},
 	"FormationGroupAIParameter": {
 		"values": {
-			"0": {"name": "Noone assists noone and member don't follow the leader"},
-			"1": {"name": "The member aggroes if the leader aggroes"},
-			"2": {"name": "The leader aggroes if the member aggroes"},
-			"3": {"name": "Everyone assists everyone and member don't follow the leader"},
-			"512": {"name": "Noone assists noone and member follow the leader"},
-			"515": {"name": "Everyone assists everyone and member follow the leader"}
+			"0": { "name": "Noone assists noone and member don't follow the leader" },
+			"1": { "name": "The member aggroes if the leader aggroes" },
+			"2": { "name": "The leader aggroes if the member aggroes" },
+			"3": { "name": "Everyone assists everyone and member don't follow the leader" },
+			"512": { "name": "Noone assists noone and member follow the leader" },
+			"515": { "name": "Everyone assists everyone and member follow the leader" }
 		}
 	},
 	"ItemClassParameter": {
@@ -2845,7 +3472,7 @@
 			"13": "key",
 			"14": "permanent",
 			"15": "misc",
-			"16": "glyph"			
+			"16": "glyph"
 		}
 	},
 	"EventScriptTalkTypeParameter": {
@@ -2860,10 +3487,10 @@
 	},
 	"GameobjectLootStateParameter": {
 		"values": {
-			"0": {"name": "GO_NOT_READY"},
-			"1": {"name": "GO_READY"},
-			"2": {"name": "GO_ACTIVATED"},
-			"3": {"name": "GO_JUST_DEACTIVATED"}
+			"0": { "name": "GO_NOT_READY" },
+			"1": { "name": "GO_READY" },
+			"2": { "name": "GO_ACTIVATED" },
+			"3": { "name": "GO_JUST_DEACTIVATED" }
 		}
 	}
 }

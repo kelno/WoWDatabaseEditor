@@ -1,0 +1,50 @@
+{
+  "id": "creature_entry",
+  "compatibility": [
+    "Sunstrider"
+  ],
+  "name": "Creature Entry",
+  "description": "The table contains all creature spawns",
+  "table_name": "creature_entry",
+  "table_index_name": "spawnID",
+  "record_mode": "SingleRow",
+  "group_name": "Spawns",
+  "icon_path": "Icons/document_creatures.png",
+  "primary_key": [
+    "spawnID"
+  ],
+  "foreign_tables": [
+    
+  ], 
+  "groups": [
+    {
+      "group_name": "General",
+      "fields": [
+        {
+          "name": "Guid",
+          "db_column_name": "spawnID",
+          "value_type": "uint",
+          "read_only": true
+        },
+        {
+          "name": "Entry",
+          "db_column_name": "entry",
+          "value_type": "uint",
+          "foreign_table": "creature_entry"
+        },
+        {
+          "name": "chance",
+          "db_column_name": "chance",
+          "value_type": "float",
+          "foreign_table": "creature_entry"
+        },
+        {
+          "name": "equipment_id",
+          "db_column_name": "equipment_id",
+          "value_type": "uint",
+          "foreign_table": "creature_entry"
+        }
+      ]
+    }
+  ]
+}
